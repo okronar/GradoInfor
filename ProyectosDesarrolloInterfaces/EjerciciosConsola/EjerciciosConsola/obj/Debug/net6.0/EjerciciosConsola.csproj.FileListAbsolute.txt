@@ -1,0 +1,14 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\bin\Debug\net6.0\EjerciciosConsola.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\bin\Debug\net6.0\EjerciciosConsola.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\bin\Debug\net6.0\EjerciciosConsola.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\bin\Debug\net6.0\EjerciciosConsola.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\bin\Debug\net6.0\EjerciciosConsola.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\refint\EjerciciosConsola.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\EjerciciosConsola.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\obj\Debug\net6.0\ref\EjerciciosConsola.dll

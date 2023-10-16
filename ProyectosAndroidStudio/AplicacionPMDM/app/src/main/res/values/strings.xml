@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AplicacionPMDM</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">altura</string>
+
+</resources>
