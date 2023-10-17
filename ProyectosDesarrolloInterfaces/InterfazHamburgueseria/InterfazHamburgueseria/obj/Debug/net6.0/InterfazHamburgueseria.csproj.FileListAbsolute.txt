@@ -1,0 +1,14 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\InterfazHamburgueseria.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\InterfazHamburgueseria.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\InterfazHamburgueseria.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\InterfazHamburgueseria.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\InterfazHamburgueseria.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\refint\InterfazHamburgueseria.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\ref\InterfazHamburgueseria.dll

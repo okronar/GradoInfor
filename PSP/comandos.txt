@@ -1,0 +1,24 @@
+ip -br a
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoremove
+
+gcc -v
+sudo nano /etc/netplan/0-installer-config.yaml
+sudo netplan apply
+
+10.5.4.103
+
+
+gateway 10.5.4.254
+
+alumno@10.5.4.103
+
+
+sudo nano holamundo.c para por ejemplo crear un archivo de c
+
+sudo gcc holamundo.c -o holamundo2  con esto compilas el fichero.c en el fichero objeto holamundo2
+
+./holamundo2 ejecutara el fichero
+
+#define es un final o constante
