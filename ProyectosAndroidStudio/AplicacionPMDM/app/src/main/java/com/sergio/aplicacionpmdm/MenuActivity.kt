@@ -25,7 +25,7 @@ class MenuActivity : AppCompatActivity() {
 
         var btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
 
-        btnMessageApp.setOnClickListener {
+        btnIMCApp.setOnClickListener {
             navigateToIMCApp()
         }
     }

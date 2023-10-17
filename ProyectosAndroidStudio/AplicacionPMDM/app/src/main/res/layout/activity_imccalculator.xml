@@ -153,7 +153,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvPeso"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Peso"
@@ -162,6 +162,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvPeso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="60"
@@ -241,7 +242,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvEdad"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Edad"
@@ -250,6 +251,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvEdad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30"
