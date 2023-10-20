@@ -1,5 +1,6 @@
 package com.sergio.aplicacionpmdm.IMCApp
 
+import android.content.Intent
 import android.icu.text.DecimalFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -90,8 +91,8 @@ class IMCcalculator : AppCompatActivity() {
         }
         btnCalculate.setOnClickListener {
             val result = calculateIMC()
-//            navigateToResult()
-            Log.i("IMC","El IMC es $result")
+             navigateToResult(result)
+//            Log.i("IMC","El IMC es $result")
         }
 
     }
@@ -128,13 +129,19 @@ class IMCcalculator : AppCompatActivity() {
     // Log.i("IMC", "El IMC es $result") en el método
     // setOnClickListener para mostrarlo por consola
     private fun calculateIMC():Double {
+
         val df = DecimalFormat("#.##")
         val imc = currentWeight / pow(currentHeight.toDouble() /100, 2.0)
 //df format saca un string por eso lo parseamos a double
         return df.format(imc).toDouble()
     }
 
+    private fun navigateToResult(result : Double) {
 
+        var intent = Intent(this, IMCActivity::class.java)
+        intent.putExtra("IMC_extra",result)
+        startActivity(intent)
+    }
 
 
 
