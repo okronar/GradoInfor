@@ -12,7 +12,7 @@ sudo netplan apply
 
 gateway 10.5.4.254
 
-alumno@10.5.4.103
+ssh alumno@10.5.4.103
 
 
 sudo nano holamundo.c para por ejemplo crear un archivo de c

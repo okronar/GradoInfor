@@ -52,10 +52,10 @@ namespace InterfazHamburgueseria
                     this.ingredientes = "Completa :lechuga,carne,queso y huevo";
                     break;
                 case 3:
-                    this.ingredientes = "Bacon : lechuga,carne, bacon ";
+                    this.ingredientes = "Bacon : lechuga,carne,bacon";
                     break;
                 case 4:
-                    this.ingredientes = "Apocalipsis : lechuga,carne,bacon,huevo,pate de pato foie";
+                    this.ingredientes = "Muerte : lechuga,carne,bacon,huevo,pate de pato foie";
                     break;
                 default:
                     this.ingredientes = "no hay hamburguesa para pobres";

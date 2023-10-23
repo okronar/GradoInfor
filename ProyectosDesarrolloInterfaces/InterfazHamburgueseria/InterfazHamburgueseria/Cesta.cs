@@ -15,14 +15,25 @@ namespace InterfazHamburgueseria
             Hamburguesas.Add(Ham);
             
         }
-        public static String ListadoHamburguesas() {
-            String lista = " ";
-            foreach (Hamburguesa ham in Hamburguesas) {
-                lista = ham.PrintBurguer() + ", " + lista ;
-            }
-            return lista;
+        public static String ListadoHamburguesas()
+        {
+            String lista = "";
+            bool esPrimerElemento = true;
 
+            foreach (Hamburguesa ham in Hamburguesas)
+            {
+                if (!esPrimerElemento)
+                {
+                    lista += ", ";
+                }
+
+                lista += ham.PrintBurguer();
+                esPrimerElemento = false;
+            }
+
+            return lista;
         }
+
         public static double PrecioHam()
         {
             double total = 0 ;
