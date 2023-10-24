@@ -34,6 +34,8 @@
             buttonAction = new Button();
             statusStrip1 = new StatusStrip();
             Label_Debug = new ToolStripStatusLabel();
+            button_newForm = new Button();
+            button_ocult = new Button();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -92,11 +94,33 @@
             Label_Debug.Size = new Size(87, 17);
             Label_Debug.Text = "NumeroOculto";
             // 
+            // button_newForm
+            // 
+            button_newForm.Location = new Point(717, 401);
+            button_newForm.Name = "button_newForm";
+            button_newForm.Size = new Size(75, 23);
+            button_newForm.TabIndex = 5;
+            button_newForm.Text = "NF";
+            button_newForm.UseVisualStyleBackColor = true;
+            button_newForm.Click += button_newForm_Click;
+            // 
+            // button_ocult
+            // 
+            button_ocult.Location = new Point(5, 477);
+            button_ocult.Name = "button_ocult";
+            button_ocult.Size = new Size(75, 23);
+            button_ocult.TabIndex = 6;
+            button_ocult.Text = "OcultarChivato";
+            button_ocult.UseVisualStyleBackColor = true;
+            button_ocult.Click += button_ocult_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(886, 521);
+            Controls.Add(button_ocult);
+            Controls.Add(button_newForm);
             Controls.Add(statusStrip1);
             Controls.Add(buttonAction);
             Controls.Add(label_Intentos);
@@ -119,5 +143,7 @@
         private Button buttonAction;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel Label_Debug;
+        private Button button_newForm;
+        private Button button_ocult;
     }
 }

@@ -1,0 +1,17 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\bin\Debug\net6.0-windows\GuessNumber_Ex3.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\bin\Debug\net6.0-windows\GuessNumber_Ex3.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\bin\Debug\net6.0-windows\GuessNumber_Ex3.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\bin\Debug\net6.0-windows\GuessNumber_Ex3.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\bin\Debug\net6.0-windows\GuessNumber_Ex3.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.Form1.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.csproj.GenerateResource.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\refint\GuessNumber_Ex3.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\ref\GuessNumber_Ex3.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\GuessNumber_Ex3\GuessNumber_Ex3\obj\Debug\net6.0-windows\GuessNumber_Ex3.Form2.resources
