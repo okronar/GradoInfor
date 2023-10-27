@@ -22,4 +22,4 @@ class CategoriesAdapter(private val categories: List<GameCategory>) :
 
     override fun getItemCount(): Int = categories.size
     }
-}
+
