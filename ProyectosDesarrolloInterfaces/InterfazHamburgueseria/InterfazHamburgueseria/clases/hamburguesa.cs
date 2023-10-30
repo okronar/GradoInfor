@@ -19,7 +19,7 @@ namespace InterfazHamburgueseria
             setIngredientes(codigo);
 
         }
-
+        //simplemente dependiendo el parametro que se le pase asocia a la instancia los valores
         public void setPrecio(int codigo)
         {
             switch (codigo)
@@ -40,6 +40,7 @@ namespace InterfazHamburgueseria
 
             }
         }
+        //lo mismo que el anterior
         public void setIngredientes(int codigo)
         {
 
@@ -66,6 +67,8 @@ namespace InterfazHamburgueseria
 
         public double getPrecio() { return precio; }
 
+
+        //esto te printea los ingredientes
         public String PrintBurguer() {
             return this.ingredientes;
         }

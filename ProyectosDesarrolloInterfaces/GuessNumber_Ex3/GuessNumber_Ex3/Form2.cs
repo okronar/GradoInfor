@@ -15,6 +15,30 @@ namespace GuessNumber_Ex3
         public Form2()
         {
             InitializeComponent();
+
+            ////cargar imagen de manera directa a picture box
+            //picBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            //string ruta = "D:\\Sergio\\ProyectosDesarrolloInterfaces\\GuessNumber_Ex3\\GuessNumber_Ex3\\recursos\\imagenes\\doggo.jpg";
+            ////esto carga la imagen 
+            //var MyImage = new Bitmap(ruta);
+            //picBox1.Image = MyImage;
+
+
+            //cargar imagen desde openfiledialog
+            picBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                string ruta = ofd.FileName;
+                //esto carga la imagen 
+                var MyImage = new Bitmap(ruta);
+                picBox1.Image = MyImage;
+            }
+            else { 
+            
+            }
+            
         }
     }
 }

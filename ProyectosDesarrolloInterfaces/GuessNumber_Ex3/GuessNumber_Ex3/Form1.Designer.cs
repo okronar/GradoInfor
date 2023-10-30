@@ -93,6 +93,7 @@
             Label_Debug.Name = "Label_Debug";
             Label_Debug.Size = new Size(87, 17);
             Label_Debug.Text = "NumeroOculto";
+            Label_Debug.Click += Label_Debug_Click;
             // 
             // button_newForm
             // 

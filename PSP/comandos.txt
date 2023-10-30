@@ -22,3 +22,5 @@ sudo gcc holamundo.c -o holamundo2  con esto compilas el fichero.c en el fichero
 ./holamundo2 ejecutara el fichero
 
 #define es un final o constante
+
+less <fichero> si quieres sacar por consola pa copy paste

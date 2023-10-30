@@ -134,12 +134,18 @@ namespace GuessNumber_Ex3
 
         private void button_ocult_Click(object sender, EventArgs e)
         {
-            if(!Label_Debug.Visible)
+            if (!Label_Debug.Visible)
 
                 Label_Debug.Visible = true;
-            else{
+            else
+            {
                 Label_Debug.Visible = false;
             }
+        }
+
+        private void Label_Debug_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
