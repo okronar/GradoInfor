@@ -73,10 +73,12 @@ namespace InterfazHamburgueseria
             return this.ingredientes;
         }
 
+        //printea precio
         public void showPrecio(int codigo)
         {
             Console.WriteLine(this.precio);
         }
+        //esto es para pruebas
         public void showIngredientes(int codigo)
         {
             Console.WriteLine(this.ingredientes);

@@ -1,0 +1,96 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>82</y><w>220</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Hamburguesa&gt;&gt;
+Package::clases
+
+--
+-Int -codigo
+-Double-precio
+-String-ingredientes
+--
++setIngredientes()
++setPrecio()
++getprecio()
++showPrecio()
++showIngredientes()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>42</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Postre&gt;&gt;
+Package::clases
+
+--
+-Double-precio
+--
++getprecio()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>192</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Patatas&gt;&gt;
+Package::clases
+
+--
+-Int -tamaño
+-Double-precio
+--
++setPrecio()
++getprecio()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>42</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Nuggets&gt;&gt;
+Package::clases
+
+--
+-Double-precio
+--
++getprecio()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>182</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Bebidas&gt;&gt;
+Package::clases
+
+--
+-int -tamanno
+-Double-precio
+--
++setPrecio()
++getprecio()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>512</y><w>290</w><h>320</h></coordinates><panel_attributes>&lt;&lt;Cesta&gt;&gt;
+Package::gestor
+
+--
+-List&lt;hamburguesa&gt;
+-List&lt;Postre&gt;
+-List&lt;Patatas&gt;
+-List&lt;Nuggets&gt;
+-List&lt;Bebidas&gt;
+--
++altaHamburguesa(Hamburguesa ham)
++ListadoHamburguesas()
++PrecioHam()
++altaPostre(Postre Pos)
++PrecioPos()
++altaNugget(Nuggets Nug)
++PrecioNug()
++altaBebida(Bebidas Beb)
++PrecioBeb()
++altaPatatas(Patatas Pat)
++PrecioPat()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1030</x><y>562</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Program&gt;&gt;
+Package::exec
+
+--
++ string linea
++ int numero
+--
+-Elegiburguer(linea)
+-ElegirBebida(linea)
+-ElegirPatatas(linea)
++Cesta.*
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>212</y><w>210</w><h>320</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=1
+&lt; crea</panel_attributes><additional_attributes>10;10;190;300</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>142</y><w>140</w><h>390</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=1
+&lt; crea</panel_attributes><additional_attributes>10;10;120;370</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>142</y><w>110</w><h>390</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=1
+&lt; crea</panel_attributes><additional_attributes>90;10;10;370</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>312</y><w>70</w><h>220</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=1
+&lt; crea</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>322</y><w>230</w><h>210</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=1
+&lt; crea</panel_attributes><additional_attributes>210;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>612</y><w>350</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+&lt; Llama a </panel_attributes><additional_attributes>10;20;330;20</additional_attributes></element></diagram>
