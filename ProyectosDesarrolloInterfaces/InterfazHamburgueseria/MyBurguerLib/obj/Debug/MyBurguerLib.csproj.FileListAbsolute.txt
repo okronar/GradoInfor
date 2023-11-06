@@ -1,0 +1,6 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\MyBurguerLib\bin\Debug\MyBurguerLib.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\MyBurguerLib\bin\Debug\MyBurguerLib.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\MyBurguerLib\obj\Debug\MyBurguerLib.csproj.AssemblyReference.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\MyBurguerLib\obj\Debug\MyBurguerLib.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\MyBurguerLib\obj\Debug\MyBurguerLib.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\MyBurguerLib\obj\Debug\MyBurguerLib.pdb

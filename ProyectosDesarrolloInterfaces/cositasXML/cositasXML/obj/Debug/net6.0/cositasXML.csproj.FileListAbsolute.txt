@@ -1,0 +1,14 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\bin\Debug\net6.0\cositasXML.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\bin\Debug\net6.0\cositasXML.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\bin\Debug\net6.0\cositasXML.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\bin\Debug\net6.0\cositasXML.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\bin\Debug\net6.0\cositasXML.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\refint\cositasXML.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\cositasXML.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\cositasXML\cositasXML\obj\Debug\net6.0\ref\cositasXML.dll

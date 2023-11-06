@@ -12,4 +12,10 @@
     <Folder Include="recursos\imagenes\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MyBurguerLib">
+      <HintPath>..\..\InterfazHamburgueseria\MyBurguerLib\bin\Debug\MyBurguerLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

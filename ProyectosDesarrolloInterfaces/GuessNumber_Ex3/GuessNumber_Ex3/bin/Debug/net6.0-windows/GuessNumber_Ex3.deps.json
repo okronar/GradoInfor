@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "GuessNumber_Ex3/1.0.0": {
+        "dependencies": {
+          "MyBurguerLib": "1.0.0.0"
+        },
         "runtime": {
           "GuessNumber_Ex3.dll": {}
+        }
+      },
+      "MyBurguerLib/1.0.0.0": {
+        "runtime": {
+          "MyBurguerLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -16,6 +27,11 @@
   "libraries": {
     "GuessNumber_Ex3/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBurguerLib/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

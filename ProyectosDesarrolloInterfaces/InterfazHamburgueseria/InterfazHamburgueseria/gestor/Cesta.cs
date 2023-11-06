@@ -12,9 +12,9 @@ namespace InterfazHamburgueseria
     {   //creas una lista de hamburguesas
         private static List<Hamburguesa> Hamburguesas = new List<Hamburguesa>();
 
-        //para printear hamburguesas tienes la lista o coger una hamburgesa y llamar al metodo propio
+            //para printear hamburguesas tienes la lista o coger una hamburgesa y llamar al metodo propio
 
-        //y le vas añadiendo productos cuando lo llames
+            //y le vas añadiendo productos cuando lo llames
         public static void altaHamburguesa(Hamburguesa Ham) {
 
             Hamburguesas.Add(Ham);

@@ -1,0 +1,14 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\bin\Debug\net6.0\FicherosYcosis.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\bin\Debug\net6.0\FicherosYcosis.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\bin\Debug\net6.0\FicherosYcosis.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\bin\Debug\net6.0\FicherosYcosis.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\bin\Debug\net6.0\FicherosYcosis.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\refint\FicherosYcosis.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\ref\FicherosYcosis.dll

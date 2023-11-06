@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "InterfazHamburgueseria/1.0.0": {
+        "dependencies": {
+          "MyBurguerLib": "1.0.0"
+        },
         "runtime": {
           "InterfazHamburgueseria.dll": {}
+        }
+      },
+      "MyBurguerLib/1.0.0": {
+        "runtime": {
+          "MyBurguerLib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "InterfazHamburgueseria/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBurguerLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

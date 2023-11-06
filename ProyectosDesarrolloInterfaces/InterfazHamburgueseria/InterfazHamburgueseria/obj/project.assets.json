@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "MyBurguerLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/MyBurguerLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBurguerLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MyBurguerLib/1.0.0": {
+      "type": "project",
+      "path": "../MyBurguerLib/MyBurguerLib.csproj",
+      "msbuildProject": "../MyBurguerLib/MyBurguerLib.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "MyBurguerLib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Alumno\\.nuget\\packages\\": {},
@@ -38,7 +56,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Sergio\\ProyectosDesarrolloInterfaces\\InterfazHamburgueseria\\MyBurguerLib\\MyBurguerLib.csproj": {
+              "projectPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\InterfazHamburgueseria\\MyBurguerLib\\MyBurguerLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

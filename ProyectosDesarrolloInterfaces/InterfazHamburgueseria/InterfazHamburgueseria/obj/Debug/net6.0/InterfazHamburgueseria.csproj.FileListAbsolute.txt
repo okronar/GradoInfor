@@ -12,3 +12,7 @@ D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgue
 D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.pdb
 D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.genruntimeconfig.cache
 D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\ref\InterfazHamburgueseria.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\MyBurguerLib.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\bin\Debug\net6.0\MyBurguerLib.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.csproj.AssemblyReference.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\InterfazHamburgueseria\InterfazHamburgueseria\obj\Debug\net6.0\InterfazHamburgueseria.csproj.CopyComplete
