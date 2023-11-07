@@ -31,6 +31,57 @@
     <color name="bgapp_cooperative_category">#D016F1</color>
     <color name="bgapp_legacy_category">#EDF351</color>
 
+    <color name="verde20">#3347B61F</color>
+    <color name="verde35">#5947B61F</color>
+    <color name="verde50">#8047B61F</color>
+    <color name="verde65">#A647B61F</color>
+    <color name="verde80">#CC47B61F</color>
+    <color name="marron20">#33510202</color>
+    <color name="marron35">#59510202</color>
+    <color name="marron50">#80510202</color>
+    <color name="marron65">#A6510202</color>
+    <color name="marron80">#CC510202</color>
+    <color name="amarillo20">#33D9DF23</color>
+    <color name="amarillo35">#59D9DF23</color>
+    <color name="amarillo50">#80D9DF23</color>
+    <color name="amarillo65">#A6D9DF23</color>
+    <color name="amarillo80">#CCD9DF23</color>
+    <color name="rojo20">#33DA0404</color>
+    <color name="rojo35">#59DA0404</color>
+    <color name="rojo50">#80DA0404</color>
+    <color name="rojo65">#A6DA0404</color>
+    <color name="rojo80">#CCDA0404</color>
+    <color name="rosa20">#33E803E4</color>
+    <color name="rosa35">#59E803E4</color>
+    <color name="rosa50">#80E803E4</color>
+    <color name="rosa65">#A6E803E4</color>
+    <color name="rosa80">#CCE803E4</color>
+    <color name="azul20">#330D3EED</color>
+    <color name="azul35">#590D3EED</color>
+    <color name="azul50">#800D3EED</color>
+    <color name="azul65">#A60D3EED</color>
+    <color name="azul80">#CC0D3EED</color>
+    <color name="blanco20">#33FFFFFF</color>
+    <color name="blanco35">#59FFFFFF</color>
+    <color name="blanco50">#80FFFFFF</color>
+    <color name="blanco65">#A6FFFFFF</color>
+    <color name="blanco80">#CCFFFFFF</color>
+    <color name="negro20">#33000000</color>
+    <color name="negro35">#59000000</color>
+    <color name="negro50">#80000000</color>
+    <color name="negro65">#A6000000</color>
+    <color name="negro80">#CC000000</color>
+    <color name="naranja20">#33FF5722</color>
+    <color name="naranja35">#59FF5722</color>
+    <color name="naranja50">#80FF5722</color>
+    <color name="naranja65">#A6FF5722</color>
+    <color name="naranja80">#CCFF5722</color>
+
+
+
+
+
+
 
 
 

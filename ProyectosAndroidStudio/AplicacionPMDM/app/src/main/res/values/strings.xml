@@ -25,4 +25,7 @@
     <string name="dialog_deckbuilding_category">DeckBuilding</string>
     <string name="dialog_lcg_category">LCG</string>
     <string name="dialog_Legacy_category">Legacy</string>
+    <string name="Colors_palette">PALETA DE COLORES</string>
+    <string name="change_color">Cambiar Color</string>
+
 </resources>
