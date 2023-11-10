@@ -50,8 +50,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/CardviewH3"
 
+
         >
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="H2(50%)"
@@ -76,7 +78,15 @@
             android:textSize="16sp"
             android:textColor="@color/black"/>
     </androidx.cardview.widget.CardView>
-    AQUI LOS RECICLECOSASRARAS
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicler1"
+        app:layout_constraintTop_toBottomOf="@id/textViewColores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnColor"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        />
     <androidx.cardview.widget.CardView
 
         android:id="@+id/btnColor"
@@ -91,6 +101,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp"
         android:layout_marginVertical="20dp"
+
 
         >
         <TextView

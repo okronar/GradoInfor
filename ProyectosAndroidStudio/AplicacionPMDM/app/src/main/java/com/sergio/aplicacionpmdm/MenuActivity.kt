@@ -8,6 +8,7 @@ import com.sergio.aplicacionpmdm.BoardGamesApp.BoardGames
 import com.sergio.aplicacionpmdm.HelloApp.MainActivity
 import com.sergio.aplicacionpmdm.IMCApp.IMCcalculator
 import com.sergio.aplicacionpmdm.MessageApp.MessageActivity
+import com.sergio.aplicacionpmdm.Tarea1.actividad_colores2
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +35,11 @@ class MenuActivity : AppCompatActivity() {
         btnBoardGamesApp.setOnClickListener {
             navigateToBoardGamesApp()
         }
+        var btnColorear = findViewById<Button>(R.id.btnColorear)
 
+        btnColorear.setOnClickListener {
+            navigateToColorearApp()
+        }
 
     }
 
@@ -56,6 +61,10 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToMessageApp() {
         var intent = Intent(this, MessageActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToColorearApp() {
+        var intent = Intent(this, actividad_colores2::class.java)
         startActivity(intent)
     }
 }

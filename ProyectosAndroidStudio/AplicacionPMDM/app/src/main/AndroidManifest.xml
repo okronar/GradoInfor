@@ -13,9 +13,12 @@
         android:theme="@style/Theme.AplicacionPMDM"
         tools:targetApi="31">
         <activity
-            android:name=".BoardGamesApp.BoardGames"
-            android:theme="@style/Theme.BoardgamesApp"
+            android:name=".Tarea1.actividad_colores2"
             android:exported="false" />
+        <activity
+            android:name=".BoardGamesApp.BoardGames"
+            android:exported="false"
+            android:theme="@style/Theme.BoardgamesApp" />
         <activity
             android:name=".IMCApp.IMCcalculator"
             android:exported="false" />

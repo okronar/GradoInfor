@@ -27,5 +27,6 @@
     <string name="dialog_Legacy_category">Legacy</string>
     <string name="Colors_palette">PALETA DE COLORES</string>
     <string name="change_color">Cambiar Color</string>
+    <string name="Painting">Colorear</string>
 
 </resources>
