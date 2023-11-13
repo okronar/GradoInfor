@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tbl_lout_panel = new TableLayoutPanel();
             label16 = new Label();
             label15 = new Label();
@@ -45,7 +46,13 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            timer2 = new System.Windows.Forms.Timer(components);
+            menuStrip1 = new MenuStrip();
+            juegoToolStripMenuItem = new ToolStripMenuItem();
+            nuevoToolStripMenuItem = new ToolStripMenuItem();
             tbl_lout_panel.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // tbl_lout_panel
@@ -74,7 +81,7 @@
             tbl_lout_panel.Controls.Add(label2, 1, 0);
             tbl_lout_panel.Controls.Add(label1, 0, 0);
             tbl_lout_panel.Dock = DockStyle.Fill;
-            tbl_lout_panel.Location = new Point(0, 0);
+            tbl_lout_panel.Location = new Point(0, 24);
             tbl_lout_panel.Name = "tbl_lout_panel";
             tbl_lout_panel.RowCount = 4;
             tbl_lout_panel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
@@ -82,8 +89,9 @@
             tbl_lout_panel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tbl_lout_panel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tbl_lout_panel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tbl_lout_panel.Size = new Size(800, 544);
+            tbl_lout_panel.Size = new Size(822, 543);
             tbl_lout_panel.TabIndex = 0;
+            tbl_lout_panel.Paint += tbl_lout_panel_Paint;
             // 
             // label16
             // 
@@ -91,7 +99,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label16.ForeColor = Color.Teal;
-            label16.Location = new Point(629, 426);
+            label16.Location = new Point(648, 425);
             label16.Name = "label16";
             label16.Size = new Size(138, 97);
             label16.TabIndex = 15;
@@ -105,7 +113,7 @@
             label15.AutoSize = true;
             label15.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = Color.Teal;
-            label15.Location = new Point(430, 426);
+            label15.Location = new Point(442, 425);
             label15.Name = "label15";
             label15.Size = new Size(138, 97);
             label15.TabIndex = 14;
@@ -119,7 +127,7 @@
             label14.AutoSize = true;
             label14.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label14.ForeColor = Color.Teal;
-            label14.Location = new Point(231, 426);
+            label14.Location = new Point(238, 425);
             label14.Name = "label14";
             label14.Size = new Size(138, 97);
             label14.TabIndex = 13;
@@ -133,7 +141,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label13.ForeColor = Color.Teal;
-            label13.Location = new Point(32, 426);
+            label13.Location = new Point(34, 425);
             label13.Name = "label13";
             label13.Size = new Size(138, 97);
             label13.TabIndex = 12;
@@ -147,7 +155,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label12.ForeColor = Color.Teal;
-            label12.Location = new Point(629, 290);
+            label12.Location = new Point(648, 290);
             label12.Name = "label12";
             label12.Size = new Size(138, 97);
             label12.TabIndex = 11;
@@ -161,7 +169,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.Teal;
-            label11.Location = new Point(430, 290);
+            label11.Location = new Point(442, 290);
             label11.Name = "label11";
             label11.Size = new Size(138, 97);
             label11.TabIndex = 10;
@@ -175,7 +183,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.Teal;
-            label10.Location = new Point(231, 290);
+            label10.Location = new Point(238, 290);
             label10.Name = "label10";
             label10.Size = new Size(138, 97);
             label10.TabIndex = 9;
@@ -189,7 +197,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.Teal;
-            label9.Location = new Point(32, 290);
+            label9.Location = new Point(34, 290);
             label9.Name = "label9";
             label9.Size = new Size(138, 97);
             label9.TabIndex = 8;
@@ -203,7 +211,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Teal;
-            label8.Location = new Point(629, 155);
+            label8.Location = new Point(648, 155);
             label8.Name = "label8";
             label8.Size = new Size(138, 97);
             label8.TabIndex = 7;
@@ -217,7 +225,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Teal;
-            label7.Location = new Point(430, 155);
+            label7.Location = new Point(442, 155);
             label7.Name = "label7";
             label7.Size = new Size(138, 97);
             label7.TabIndex = 6;
@@ -231,7 +239,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Teal;
-            label6.Location = new Point(231, 155);
+            label6.Location = new Point(238, 155);
             label6.Name = "label6";
             label6.Size = new Size(138, 97);
             label6.TabIndex = 5;
@@ -245,7 +253,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Teal;
-            label5.Location = new Point(32, 155);
+            label5.Location = new Point(34, 155);
             label5.Name = "label5";
             label5.Size = new Size(138, 97);
             label5.TabIndex = 4;
@@ -259,7 +267,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Teal;
-            label4.Location = new Point(629, 20);
+            label4.Location = new Point(648, 20);
             label4.Name = "label4";
             label4.Size = new Size(138, 97);
             label4.TabIndex = 3;
@@ -273,7 +281,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Teal;
-            label3.Location = new Point(430, 20);
+            label3.Location = new Point(442, 20);
             label3.Name = "label3";
             label3.Size = new Size(138, 97);
             label3.TabIndex = 2;
@@ -287,7 +295,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Teal;
-            label2.Location = new Point(231, 20);
+            label2.Location = new Point(238, 20);
             label2.Name = "label2";
             label2.Size = new Size(138, 97);
             label2.TabIndex = 1;
@@ -301,7 +309,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Webdings", 72F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Teal;
-            label1.Location = new Point(32, 20);
+            label1.Location = new Point(34, 20);
             label1.Name = "label1";
             label1.Size = new Size(138, 97);
             label1.TabIndex = 0;
@@ -309,17 +317,55 @@
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label_Click;
             // 
+            // timer1
+            // 
+            timer1.Interval = 750;
+            timer1.Tick += timer1_Tick;
+            // 
+            // timer2
+            // 
+            timer2.Interval = 1000;
+            timer2.Tick += timer2_Tick;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { juegoToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(822, 24);
+            menuStrip1.TabIndex = 1;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // juegoToolStripMenuItem
+            // 
+            juegoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nuevoToolStripMenuItem });
+            juegoToolStripMenuItem.Name = "juegoToolStripMenuItem";
+            juegoToolStripMenuItem.Size = new Size(50, 20);
+            juegoToolStripMenuItem.Text = "Juego";
+            // 
+            // nuevoToolStripMenuItem
+            // 
+            nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            nuevoToolStripMenuItem.Size = new Size(180, 22);
+            nuevoToolStripMenuItem.Text = "nuevo";
+            nuevoToolStripMenuItem.Click += nuevoToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 544);
+            ClientSize = new Size(822, 567);
             Controls.Add(tbl_lout_panel);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Juego de memoria";
             tbl_lout_panel.ResumeLayout(false);
             tbl_lout_panel.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -341,5 +387,10 @@
         private Label label4;
         private Label label3;
         private Label label2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem juegoToolStripMenuItem;
+        private ToolStripMenuItem nuevoToolStripMenuItem;
     }
 }
