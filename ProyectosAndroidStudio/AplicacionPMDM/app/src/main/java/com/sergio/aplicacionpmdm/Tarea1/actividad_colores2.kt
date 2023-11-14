@@ -2,14 +2,18 @@ package com.sergio.aplicacionpmdm.Tarea1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.sergio.aplicacionpmdm.R
 
 class actividad_colores2 : AppCompatActivity() {
 
     private lateinit var rvVertical: RecyclerView
     private lateinit var rvAdapter: VerticalAdapter
+    private lateinit var tvCambiar: TextView
 
     var Barras = mutableListOf(
         VerticalObject("V1(20%)", -871890688),
@@ -23,8 +27,8 @@ class actividad_colores2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividad_colores2)
-        initUi()
         initComponents()
+        initUi()
 
 
 
@@ -37,7 +41,7 @@ class actividad_colores2 : AppCompatActivity() {
     }
 
     private fun initComponents() {
-        rvVertical = findViewById(R.id.recicler1)
+        rvVertical = findViewById<RecyclerView>(R.id.recicler1)
         rvAdapter = VerticalAdapter(Barras)
     }
 }

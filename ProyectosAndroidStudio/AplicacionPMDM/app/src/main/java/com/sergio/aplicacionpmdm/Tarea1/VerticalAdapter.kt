@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.sergio.aplicacionpmdm.R
 
 
-class VerticalAdapter (private val ListaVerticales: List<VerticalObject>) : RecyclerView.Adapter<VerticalViewHolder> () {
+class VerticalAdapter (private val listaVerticales: List<VerticalObject>) : RecyclerView.Adapter<VerticalViewHolder> () {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VerticalViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.verticalitem, parent, false)
@@ -14,11 +14,11 @@ class VerticalAdapter (private val ListaVerticales: List<VerticalObject>) : Recy
     }
 
     override fun getItemCount(): Int {
-        return ListaVerticales.size
+        return listaVerticales.size
     }
 
     override fun onBindViewHolder(holder: VerticalViewHolder, position: Int) {
-        holder.pintarViews(ListaVerticales[position])
+        holder.pintarViews(listaVerticales[position])
     }
 
 

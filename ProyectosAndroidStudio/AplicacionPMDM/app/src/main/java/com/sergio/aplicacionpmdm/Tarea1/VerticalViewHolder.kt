@@ -15,8 +15,8 @@ class VerticalViewHolder (view: View) : RecyclerView.ViewHolder(view) {
 
     fun pintarViews(item: VerticalObject){
         tvVertical.text = item.texto
-        tvVertical.setTextColor(item.colorFondo)
-
+        //tvVertical.setTextColor(item.colorFcondo)
+        cvVertical.setCardBackgroundColor(item.colorFondo)
     }
 
 

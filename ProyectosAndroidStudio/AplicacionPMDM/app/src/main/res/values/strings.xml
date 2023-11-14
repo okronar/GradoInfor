@@ -28,5 +28,6 @@
     <string name="Colors_palette">PALETA DE COLORES</string>
     <string name="change_color">Cambiar Color</string>
     <string name="Painting">Colorear</string>
+    <string name="apply">Aplicar</string>
 
 </resources>
