@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <math.h>
+
 
 #define PI 3.14
 
-int sacarArea(); //le pasas el radio y sacas el area
+void sacarArea(); //le pasas el radio y sacas el area
 void opcion1();//llama a la de arriba
 bool esPrimo(int numero);//comprueba si es primo el numero que se le pasa
 void opcion2();//le pasa los numeros a la de arriba
@@ -42,13 +44,13 @@ int main()
         printf("1. Opción 1\n");
         printf("2. Opción 2\n");
         printf("3. Opción 3\n");
-        printf("3. Opción 4\n");
-        printf("3. Opción 5\n");
-        printf("3. Opción 6\n");
-        printf("3. Opción 7\n");
-        printf("3. Opción 8\n");
-        printf("3. Opción 9\n");
-        printf("3. Opción 10\n");
+        printf("4. Opción 4\n");
+        printf("5. Opción 5\n");
+        printf("6. Opción 6\n");
+        printf("7. Opción 7\n");
+        printf("8. Opción 8\n");
+        printf("9. Opción 9\n");
+        printf("10. Opción 10\n");
 
         printf("0. Salir\n");
         printf("Selecciona una opción: ");
@@ -99,16 +101,16 @@ int main()
 
     return 0;
 }
-int sacarArea(){
+void sacarArea(){
 
     printf("Has seleccionado la opción 1.\n");
     double total;
     double radio;
     printf("Calculemos el area de un circulo, pasame el radio:");
-    scanf("%d", &radio);
+    scanf("%lf", &radio);
     total = PI * (radio*radio);
     printf("El area de tu circulo es ");
-    printf(total);
+    printf("%lf",total);
 
 }
 void opcion1()
@@ -117,7 +119,7 @@ void opcion1()
    
 }
 
-boolean esPrimo(int numero) {
+bool esPrimo(int numero) {
     if (numero <= 1) {
         return false;
     }
@@ -144,6 +146,7 @@ void opcion2()
     } else {
         printf("%d no es un número primo.\n", num);
     }
+}
 
     
 
@@ -151,24 +154,26 @@ void fibonacci(int n) {
     int a = 0, b = 1, c;
 
     printf("Los primeros %d términos de la secuencia de Fibonacci son:\n", n);
+    printf("%d %d ", a, b);  // Print the first two terms (0 and 1)
 
-    for (int i = 0; i < n; i++) {
-        printf("%d ", a);
+    for (int i = 2; i < n; i++) {
         c = a + b;
+        printf("%d ", c);
         a = b;
         b = c;
     }
     printf("\n");
 }
+
     
-}
+
 void opcion3()
 {
     int numero;
 
     
     printf("Ingrese el número de términos de la secuencia de Fibonacci a imprimir: ");
-    scanf("%d", &num_terminos);
+    scanf("%d", &numero);
     fibonacci(numero);
 }
 double calcularPotencia(double base, int exponente) {
@@ -195,7 +200,7 @@ void opcion4()
     scanf("%d", &exponente);
 
     resultado = calcularPotencia(base,exponente);
-    printf("el resultado es " + resultado);
+    printf("el resultado es %lf",resultado);
 
 }
 double sumar(double a, double b) {
@@ -280,11 +285,11 @@ void opcion6()
 
    
     printf("Ingrese un número entero para calcular su factorial: ");
-    scanf("%d", &numero);
+    scanf("%ld", &numero);
 
     
     long resultado = calcularFactorial(numero);
-    printf("El factorial de %d es %d\n", numero, resultado);
+    printf("El factorial de %ld es %ld\n", numero, resultado);
 } 
 
 double raizCuadrada(double num) {
@@ -305,17 +310,15 @@ void opcion7()
     
     double resultado = raizCuadrada(numero);
 
-    printf("el resultado es :" + resultado)
+    printf("el resultado es : %lf " ,resultado);
 } 
 void opcion8()
 {
-    // Código para la opción 8
-    printf("Has seleccionado la opción 3.\n");
+    printf("Hola mundo!!");
 }
 void opcion9()
 {
-    // Código para la opción 9
-    printf("Has seleccionado la opción 3.\n");
+    printf("Hola mundo!!");
 }
 void opcion10()
 {   
