@@ -315,8 +315,7 @@ opcion7()
     printf("el resultado es :" + resultado)
 } 
 opcion10()
-{   String nombre;
-    printf("¿Como te llamas?");
-    scanf(nombre);
-    printf("Hola "+ nombre );
+{   
+    printf("Hola mundo!!");
+    
 }
