@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -13,7 +14,7 @@ class actividad_colores2 : AppCompatActivity() {
 
     private lateinit var rvVertical: RecyclerView
     private lateinit var rvAdapter: VerticalAdapter
-    private lateinit var tvCambiar: TextView
+    private lateinit var cVcambiar: CardView
 
     var Barras = mutableListOf(
         VerticalObject("V1(20%)", -871890688),
@@ -43,5 +44,12 @@ class actividad_colores2 : AppCompatActivity() {
     private fun initComponents() {
         rvVertical = findViewById<RecyclerView>(R.id.recicler1)
         rvAdapter = VerticalAdapter(Barras)
+        cVcambiar = findViewById(R.id.btnColor)
     }
+
+
+
+
+
+
 }
