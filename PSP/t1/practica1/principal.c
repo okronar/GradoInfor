@@ -22,7 +22,8 @@ long calcularFactorial(long n);//pasas un numero y si no es 0 o 1 calcula el fac
 void opcion6();//pide el numero de  calcularFactorial()
 double raizCuadrada(double num);// ejecuta el metodo sqrt despues de hacer una comprobacion basiquilla
 void opcion7();//simplemente pasa el metodo raiz cuadrada y lo printea
-void opcion8();
+void opcion8();//hace un system que permite al usuario escribir alguna cosilla
+
 void opcion9();
 void opcion10();//el genial y dificil holamundo
 
@@ -314,8 +315,9 @@ void opcion7()
 } 
 void opcion8()
 {
-    printf("Hola mundo!!");
+    printf("%d",system("nano ficheroEscritura"));
 }
+
 void opcion9()
 {
     printf("Hola mundo!!");
