@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
+#include <stdlib.h> 
 
 
 #define PI 3.14
@@ -110,7 +111,7 @@ void sacarArea(){
     printf("Calculemos el area de un circulo, pasame el radio:");
     scanf("%lf", &radio);
     total = PI * (radio*radio);
-    printf("El area de tu circulo es ");
+    printf("El area de tu circulo es  \n");
     printf("%lf",total);
 
 }
@@ -138,7 +139,7 @@ void opcion2()
     int num;
 
     
-    printf("Ingrese un número: ");
+    printf("Ingrese un número para ver si es primo: ");
     scanf("%d", &num);
 
     
@@ -201,7 +202,7 @@ void opcion4()
     scanf("%d", &exponente);
 
     resultado = calcularPotencia(base,exponente);
-    printf("el resultado es %lf",resultado);
+    printf("el resultado es %lf \n",resultado);
 
 }
 double sumar(double a, double b) {
@@ -298,8 +299,8 @@ double raizCuadrada(double num) {
         printf("No se puede calcular la raíz cuadrada de un número negativo.\n");
         return -1.0; 
     }
-
-    return sqrt(num);
+           double resultado = sqrt(num);
+    return resultado;
 }
 
 void opcion7()
@@ -320,10 +321,10 @@ void opcion8()
 
 void opcion9()
 {
-    printf("Hola mundo!!");
+    printf("Hola mundo!! \n");
 }
 void opcion10()
 {   
-    printf("Hola mundo!!");
+    printf("Hola mundo!! \n");
     
 }
