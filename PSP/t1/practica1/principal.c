@@ -1,39 +1,32 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
-#include <stdlib.h> 
-
-
+#include <unistd.h>      
+#include <stdlib.h>
+#include <sys/types.h>
 #define PI 3.14
 
-void sacarArea(); //le pasas el radio y sacas el area
-void opcion1();//llama a la de arriba
-bool esPrimo(int numero);//comprueba si es primo el numero que se le pasa
-void opcion2();//le pasa los numeros a la de arriba
-void fibonacci(int n);//Desarrolla un programa en c que imprima los primeros N (que pases en la opcion3)términos de la secuencia de Fibonacci
-void opcion3();// Solicita al usuario el número de términos que desea imprimir
-double calcularPotencia(double base, int exponente);//se calcula la potencia con la base y exponente que pedira en la opcion 4
-void opcion4();//solicita los datos
-double sumar(double a, double b);//suma
-double restar(double a, double b);//resta
-double dividir(double a, double b);//division
-double multiplicar(double a, double b);//multiplicacion
-void opcion5();//realiza el switch y dependiendo el input se usa una funcion u otra
-long calcularFactorial(long n);//pasas un numero y si no es 0 o 1 calcula el factorial
-void opcion6();//pide el numero de  calcularFactorial()
-double raizCuadrada(double num);// ejecuta el metodo sqrt despues de hacer una comprobacion basiquilla
-void opcion7();//simplemente pasa el metodo raiz cuadrada y lo printea
-void opcion8();//hace un system que permite al usuario escribir alguna cosilla
-
-void opcion9();
-void opcion10();//el genial y dificil holamundo
-
-
-
-
-
- 
-
+void sacarArea();                                    // le pasas el radio y sacas el area
+void opcion1();                                      // llama a la de arriba
+bool esPrimo(int numero);                            // comprueba si es primo el numero que se le pasa
+void opcion2();                                      // le pasa los numeros a la de arriba
+void fibonacci(int n);                               // Desarrolla un programa en c que imprima los primeros N (que pases en la opcion3)términos de la secuencia de Fibonacci
+void opcion3();                                      // Solicita al usuario el número de términos que desea imprimir
+double calcularPotencia(double base, int exponente); // se calcula la potencia con la base y exponente que pedira en la opcion 4
+void opcion4();                                      // solicita los datos
+double sumar(double a, double b);                    // suma
+double restar(double a, double b);                   // resta
+double dividir(double a, double b);                  // division
+double multiplicar(double a, double b);              // multiplicacion
+void opcion5();                                      // realiza el switch y dependiendo el input se usa una funcion u otra
+long calcularFactorial(long n);                      // pasas un numero y si no es 0 o 1 calcula el factorial
+void opcion6();                                      // pide el numero de  calcularFactorial()
+long raizCuadrada(long num);                     // ejecuta el metodo sqrt despues de hacer una comprobacion basiquilla
+void opcion7();                                      // simplemente pasa el metodo raiz cuadrada y lo printea
+void opcion8();                                      // hace un system que permite al usuario escribir alguna cosilla
+void nacimiento();                                   // se ejecuta un metodo fork, si todo sale bien nacerá un proceso nuevo y el padre estará contento, sino no se dará a luz.
+void opcion9();                                      // llama al metodo nacimiento();
+void opcion10();                                     // el genial y dificil holamundo
 
 int main()
 {
@@ -64,7 +57,7 @@ int main()
         case 1:
             opcion1();
             break;
-       case 2:
+        case 2:
             opcion2();
             break;
         case 3:
@@ -103,30 +96,34 @@ int main()
 
     return 0;
 }
-void sacarArea(){
+void sacarArea()
+{
 
     printf("Has seleccionado la opción 1.\n");
     double total;
     double radio;
     printf("Calculemos el area de un circulo, pasame el radio:");
     scanf("%lf", &radio);
-    total = PI * (radio*radio);
+    fflush(stdin);
+    total = PI * (radio * radio);
     printf("El area de tu circulo es  \n");
-    printf("%lf",total);
-
+    printf("%lf", total);
 }
 void opcion1()
 {
     sacarArea();
-   
 }
 
-bool esPrimo(int numero) {
-    if (numero <= 1) {
+bool esPrimo(int numero)
+{
+    if (numero <= 1)
+    {
         return false;
     }
-    for (int i = 2; i * i <= numero; i++) {
-        if (numero % i == 0) {
+    for (int i = 2; i * i <= numero; i++)
+    {
+        if (numero % i == 0)
+        {
             return false;
         }
     }
@@ -138,27 +135,28 @@ void opcion2()
 
     int num;
 
-    
     printf("Ingrese un número para ver si es primo: ");
     scanf("%d", &num);
 
-    
-    if (esPrimo(num)) {
+    if (esPrimo(num))
+    {
         printf("%d es un número primo.\n", num);
-    } else {
+    }
+    else
+    {
         printf("%d no es un número primo.\n", num);
     }
 }
 
-    
-
-void fibonacci(int n) {
+void fibonacci(int n)
+{
     int a = 0, b = 1, c;
 
     printf("Los primeros %d términos de la secuencia de Fibonacci son:\n", n);
-    printf("%d %d ", a, b);  // Print the first two terms (0 and 1)
+    printf("%d %d ", a, b); // Print the first two terms (0 and 1)
 
-    for (int i = 2; i < n; i++) {
+    for (int i = 2; i < n; i++)
+    {
         c = a + b;
         printf("%d ", c);
         a = b;
@@ -167,22 +165,20 @@ void fibonacci(int n) {
     printf("\n");
 }
 
-    
-
 void opcion3()
 {
     int numero;
 
-    
     printf("Ingrese el número de términos de la secuencia de Fibonacci a imprimir: ");
     scanf("%d", &numero);
     fibonacci(numero);
 }
-double calcularPotencia(double base, int exponente) {
+double calcularPotencia(double base, int exponente)
+{
     double resultado = 1.0;
 
-    
-    for (int i = 0; i < exponente; i++) {
+    for (int i = 0; i < exponente; i++)
+    {
         resultado *= base;
     }
 
@@ -201,32 +197,35 @@ void opcion4()
     printf("Ingrese el exponente (entero no negativo): ");
     scanf("%d", &exponente);
 
-    resultado = calcularPotencia(base,exponente);
-    printf("el resultado es %lf \n",resultado);
-
+    resultado = calcularPotencia(base, exponente);
+    printf("el resultado es %lf \n", resultado);
 }
-double sumar(double a, double b) {
+double sumar(double a, double b)
+{
     return a + b;
 }
 
-
-double restar(double a, double b) {
+double restar(double a, double b)
+{
     return a - b;
 }
 
-
-double multiplicar(double a, double b) {
+double multiplicar(double a, double b)
+{
     return a * b;
 }
 
+double dividir(double a, double b)
+{
 
-double dividir(double a, double b) {
-    
-    if (b != 0) {
+    if (b != 0)
+    {
         return a / b;
-    } else {
+    }
+    else
+    {
         printf("Error: No se puede dividir por cero.\n");
-        return 0.0; 
+        return 0.0;
     }
 }
 
@@ -235,46 +234,47 @@ void opcion5()
     double num1, num2;
     char operador;
 
-  
     printf("Ingrese el primer número: ");
     scanf("%lf", &num1);
 
     printf("Ingrese el operador (+, -, *, /): ");
-    scanf(" %c", &operador); 
+    scanf(" %c", &operador);
 
     printf("Ingrese el segundo número: ");
     scanf("%lf", &num2);
 
-    
-    switch (operador) {
-        case '+':
-            printf("%.2lf + %.2lf = %.2lf\n", num1, num2, sumar(num1, num2));
-            break;
-        case '-':
-            printf("%.2lf - %.2lf = %.2lf\n", num1, num2, restar(num1, num2));
-            break;
-        case '*':
-            printf("%.2lf * %.2lf = %.2lf\n", num1, num2, multiplicar(num1, num2));
-            break;
-        case '/':
-            printf("%.2lf / %.2lf = %.2lf\n", num1, num2, dividir(num1, num2));
-            break;
-        default:
-            printf("Operador no válido. Por favor, ingrese +, -, *, o /.\n");
-            break;
+    switch (operador)
+    {
+    case '+':
+        printf("%.2lf + %.2lf = %.2lf\n", num1, num2, sumar(num1, num2));
+        break;
+    case '-':
+        printf("%.2lf - %.2lf = %.2lf\n", num1, num2, restar(num1, num2));
+        break;
+    case '*':
+        printf("%.2lf * %.2lf = %.2lf\n", num1, num2, multiplicar(num1, num2));
+        break;
+    case '/':
+        printf("%.2lf / %.2lf = %.2lf\n", num1, num2, dividir(num1, num2));
+        break;
+    default:
+        printf("Operador no válido. Por favor, ingrese +, -, *, o /.\n");
+        break;
     }
 }
-long calcularFactorial(long n) {
-   
+long calcularFactorial(long n)
+{
 
-    if (n == 0 || n == 1) {
-        return 1; 
-    } else {
-        
+    if (n == 0 || n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+
         int factorial = 1;
-        for (int i = 2; i <= n; i++) {
-            
-        
+        for (int i = 2; i <= n; i++)
+        {
 
             factorial *= i;
         }
@@ -285,46 +285,61 @@ void opcion6()
 {
     long numero;
 
-   
     printf("Ingrese un número entero para calcular su factorial: ");
     scanf("%ld", &numero);
 
-    
     long resultado = calcularFactorial(numero);
     printf("El factorial de %ld es %ld\n", numero, resultado);
-} 
+}
 
-double raizCuadrada(double num) {
-    if (num < 0) {
+long raizCuadrada(long num)
+{
+    if (num < 0)
+    {
         printf("No se puede calcular la raíz cuadrada de un número negativo.\n");
-        return -1.0; 
+        
     }
-           double resultado = sqrt(num);
+    long resultado = sqrt(num);
     return resultado;
 }
 
 void opcion7()
 {
-   double numero;
+    long numero;
     printf("Ingrese un número para calcular su raíz cuadrada: ");
-    scanf("%lf", &numero);
+    scanf("%ld", &numero);
 
-    
-    double resultado = raizCuadrada(numero);
+    long resultado = raizCuadrada(numero);
 
-    printf("el resultado es : %lf " ,resultado);
-} 
+    printf("el resultado es : %ld ", resultado);
+}
 void opcion8()
 {
-    printf("%d",system("nano ficheroEscritura"));
+    printf("%d", system("nano ficheroEscritura"));
 }
+void nacimiento()
+{
 
+    pid_t intentoProceso = fork();
+
+    if (intentoProceso == 0)
+    {
+        printf("Hola, acabo de nacer, soy %d y mi padre es %d", getpid(), getppid());
+    }
+    if (intentoProceso > 0)
+    {   wait(10);
+        printf("Mi hijo ya ha nacido y muerto despues :S, soy %d",getpid());
+    }
+    if(intentoProceso<0){
+        printf("Parece que ha habido un problema en la creación");
+    }
+
+}
 void opcion9()
 {
-    printf("Hola mundo!! \n");
+    nacimiento();
 }
 void opcion10()
-{   
+{
     printf("Hola mundo!! \n");
-    
 }

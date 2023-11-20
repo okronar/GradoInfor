@@ -12,9 +12,12 @@ int main(int argc, char *argv[])
         return 0;
     }
     else
-    { /* padre */
+     if((pid=fork())>0){ /* padre */
         printf("Soy el padre (%d, hijo de %d)\n", getpid(), getppid());
         return 0;
+    }else {
+
+        printf("Error al crear un hijo, se acabó")
     }
  
     return 0;
