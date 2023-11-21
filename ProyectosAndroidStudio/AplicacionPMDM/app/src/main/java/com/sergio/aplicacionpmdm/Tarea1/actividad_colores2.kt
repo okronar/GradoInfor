@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.res.ColorStateList
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -26,11 +27,11 @@ class actividad_colores2 : AppCompatActivity() {
 
 
     var Barras = mutableListOf(
-        VerticalObject("V1(20%)",R.color.naranja20),
-        VerticalObject("V2(35%)", R.color.rojo35),
-        VerticalObject("V3(50%)", R.color.negro50),
-        VerticalObject("V4(65%)", R.color.rosa65),
-        VerticalObject("V5(80%)",R.color.azul80)
+        VerticalObject("V1(20%)",872415231),
+        VerticalObject("V2(35%)", 1507460100),
+        VerticalObject("V3(50%)",-2146615571),
+        VerticalObject("V4(65%)", -1509949440),
+        VerticalObject("V5(80%)",-857209884)
     )
 
 
@@ -59,7 +60,9 @@ class actividad_colores2 : AppCompatActivity() {
     }
 
     private fun initListeners() {
-        cVcambiar.setOnClickListener { showDialog() }
+        cVcambiar.setOnClickListener {
+            showDialog()
+        }
     }
 
     private fun showDialog() {
@@ -203,6 +206,8 @@ class actividad_colores2 : AppCompatActivity() {
                 "Negro" -> H3.setCardBackgroundColor(ContextCompat.getColor(this, R.color.negro80))
             }
 
+
+
             "V1(20%)" -> when (selectedRadioButtonColor.text) {
                 "Blanco" -> Barras[0].colorFondo = (ContextCompat.getColor(this, R.color.blanco20))
                 "Rojo" -> Barras[0].colorFondo = (ContextCompat.getColor(this, R.color.rojo20))
@@ -285,6 +290,7 @@ class actividad_colores2 : AppCompatActivity() {
 
 
         }
+
         rvAdapter.notifyDataSetChanged()
     }
 

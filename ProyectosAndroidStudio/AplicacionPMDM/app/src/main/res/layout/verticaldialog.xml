@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="325dp"
     android:layout_height="wrap_content"
     android:padding="16dp"
@@ -32,7 +33,7 @@
                 android:id="@+id/H1_20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro20"
+                app:buttonTint="@color/negro20"
                 android:checked="true"
                 android:text="H1(20%)"
                 android:textColor="@color/negro20" />
@@ -40,49 +41,49 @@
                 android:id="@+id/H2_50"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro50"
+                app:buttonTint="@color/negro50"
                 android:text="H2(50%)"
                 android:textColor="@color/negro50" />
             <RadioButton
                 android:id="@+id/H3_80"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro80"
+                app:buttonTint="@color/negro80"
                 android:text="H3(80)"
                 android:textColor="@color/negro80" />
             <RadioButton
                 android:id="@+id/v1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro20"
+                app:buttonTint="@color/negro20"
                 android:text="V1(20%)"
                 android:textColor="@color/negro20" />
             <RadioButton
                 android:id="@+id/v2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro35"
+                app:buttonTint="@color/negro35"
                 android:text="V2(35%)"
                 android:textColor="@color/negro35" />
             <RadioButton
                 android:id="@+id/v3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro50"
+                app:buttonTint="@color/negro50"
                 android:text="V3(50%)"
                 android:textColor="@color/negro50" />
             <RadioButton
                 android:id="@+id/v4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro65"
+                app:buttonTint="@color/negro65"
                 android:text="V4(65%)"
                 android:textColor="@color/negro65" />
             <RadioButton
                 android:id="@+id/v5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/negro80"
+                app:buttonTint="@color/negro80"
                 android:text="V5(80%)"
                 android:textColor="@color/negro80" />
         </RadioGroup>
@@ -110,7 +111,7 @@
             android:id="@+id/colorBlanco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/blanco80"
+            app:buttonTint="@color/blanco80"
             android:checked="true"
             android:text="Blanco"
             android:textColor="@color/blanco80" />
@@ -118,56 +119,56 @@
             android:id="@+id/colorNaranja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/naranja80"
+            app:buttonTint="@color/naranja80"
             android:text="Naranja"
             android:textColor="@color/naranja80" />
         <RadioButton
             android:id="@+id/colorAzul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/azul80"
+            app:buttonTint="@color/azul80"
             android:text="Azul"
             android:textColor="@color/azul80" />
         <RadioButton
             android:id="@+id/colorRojo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/rojo80"
+            app:buttonTint="@color/rojo80"
             android:text="Rojo"
             android:textColor="@color/rojo80" />
         <RadioButton
             android:id="@+id/colorRosa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/rosa80"
+            app:buttonTint="@color/rosa80"
             android:text="Rosa"
             android:textColor="@color/rosa80" />
         <RadioButton
             android:id="@+id/colorAmarillo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/amarillo80"
+            app:buttonTint="@color/amarillo80"
             android:text="Amarillo"
             android:textColor="@color/amarillo80" />
         <RadioButton
             android:id="@+id/colorVerde"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/verde80"
+            app:buttonTint="@color/verde80"
             android:text="Verde"
             android:textColor="@color/verde80" />
         <RadioButton
             android:id="@+id/colorMarron"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/marron80"
+            app:buttonTint="@color/marron80"
             android:text="Marrón"
             android:textColor="@color/marron80" />
         <RadioButton
             android:id="@+id/colorNegro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/negro80"
+            app:buttonTint="@color/negro80"
             android:text="Negro"
             android:textColor="@color/negro80" />
     </RadioGroup>

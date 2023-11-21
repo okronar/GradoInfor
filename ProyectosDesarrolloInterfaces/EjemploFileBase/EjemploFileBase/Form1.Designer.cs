@@ -184,6 +184,7 @@
             buttonRecuperar.TabIndex = 1;
             buttonRecuperar.Text = "Recuperar elemento";
             buttonRecuperar.UseVisualStyleBackColor = true;
+            buttonRecuperar.Click += buttonRecuperar_Click;
             // 
             // buttonActualizar
             // 
@@ -194,7 +195,7 @@
             buttonActualizar.TabIndex = 2;
             buttonActualizar.Text = "Actualizar elemento";
             buttonActualizar.UseVisualStyleBackColor = true;
-            buttonActualizar.Click += button3_Click;
+            buttonActualizar.Click += buttonActualizar_Click;
             // 
             // buttonEliminar
             // 
@@ -205,6 +206,7 @@
             buttonEliminar.TabIndex = 3;
             buttonEliminar.Text = "Eliminar elemento";
             buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Click += buttonEliminar_Click;
             // 
             // dgv1
             // 
@@ -242,6 +244,7 @@
             buttonAgregar.TabIndex = 5;
             buttonAgregar.Text = "Agregar datos";
             buttonAgregar.UseVisualStyleBackColor = true;
+            buttonAgregar.Click += buttonAgregar_Click;
             // 
             // Form1
             // 

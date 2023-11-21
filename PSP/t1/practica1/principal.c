@@ -4,6 +4,7 @@
 #include <unistd.h>      
 #include <stdlib.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 #define PI 3.14
 
 void sacarArea();                                    // le pasas el radio y sacas el area
@@ -36,15 +37,15 @@ int main()
     {
         // Mostrar el menú
         printf("Menú:\n");
-        printf("1. Opción 1\n");
-        printf("2. Opción 2\n");
-        printf("3. Opción 3\n");
-        printf("4. Opción 4\n");
-        printf("5. Opción 5\n");
-        printf("6. Opción 6\n");
-        printf("7. Opción 7\n");
-        printf("8. Opción 8\n");
-        printf("9. Opción 9\n");
+        printf("1. Opción 1 Calcular area de un circulo\n");
+        printf("2. Opción 2 Comprobar si es numero primo\n");
+        printf("3. Opción 3 Imprime x numeros de la frecuencia de fibonacci\n");
+        printf("4. Opción 4 Calcula la potencia de  x numero\n");
+        printf("5. Opción 5 Calculadora\n");
+        printf("6. Opción 6 Calcula factorial\n");
+        printf("7. Opción 7 Calcula la raiz cuadrada de x\n");
+        printf("8. Opción 8 Llamamos a nano\n");
+        printf("9. Opción 9 Un fork sencillo\n");
         printf("10. Opción 10\n");
 
         printf("0. Salir\n");
@@ -316,6 +317,8 @@ void opcion7()
 void opcion8()
 {
     printf("%d", system("nano ficheroEscritura"));
+    
+    printf("%d", system("cat ficheroEscritura"));
 }
 void nacimiento()
 {
@@ -324,11 +327,12 @@ void nacimiento()
 
     if (intentoProceso == 0)
     {
-        printf("Hola, acabo de nacer, soy %d y mi padre es %d", getpid(), getppid());
+        printf("Hola, acabo de nacer, soy %d y mi padre es %d, déjame vivir 3 segunditos anda \n", getpid(), getppid());
+        exit(0);
     }
     if (intentoProceso > 0)
-    {   wait(10);
-        printf("Mi hijo ya ha nacido y muerto despues :S, soy %d",getpid());
+    {   sleep(3);
+        printf("Mi hijo ya ha nacido y muerto despues :S, soy %d \n",getpid());
     }
     if(intentoProceso<0){
         printf("Parece que ha habido un problema en la creación");

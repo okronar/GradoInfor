@@ -9,6 +9,6 @@ namespace EjemploFireBase.Service
     internal class Counter_class
     {
 
-        public int Cnt { get; set; }
+        public string Cnt { get; set; }
     }
 }
