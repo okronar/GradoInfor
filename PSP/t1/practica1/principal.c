@@ -22,12 +22,12 @@ double multiplicar(double a, double b);              // multiplicacion
 void opcion5();                                      // realiza el switch y dependiendo el input se usa una funcion u otra
 long calcularFactorial(long n);                      // pasas un numero y si no es 0 o 1 calcula el factorial
 void opcion6();                                      // pide el numero de  calcularFactorial()
-long raizCuadrada(long num);                     // ejecuta el metodo sqrt despues de hacer una comprobacion basiquilla
+long raizCuadrada(long num);                         // ejecuta el metodo sqrt despues de hacer una comprobacion basiquilla
 void opcion7();                                      // simplemente pasa el metodo raiz cuadrada y lo printea
 void opcion8();                                      // hace un system que permite al usuario escribir alguna cosilla
 void nacimiento();                                   // se ejecuta un metodo fork, si todo sale bien nacerá un proceso nuevo y el padre estará contento, sino no se dará a luz.
 void opcion9();                                      // llama al metodo nacimiento();
-void opcion10();                                     // el genial y dificil holamundo
+void opcion10();                                     // llamo mediante execl a echo, y si hay algun error se printea
 
 int main()
 {
@@ -345,5 +345,6 @@ void opcion9()
 }
 void opcion10()
 {
-    printf("Hola mundo!! \n");
+    execl("/bin/echo", "echo", "Hola mundillo!", NULL);
+    perror("execl");
 }
