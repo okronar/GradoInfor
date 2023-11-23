@@ -26,8 +26,8 @@ long raizCuadrada(long num);                         // ejecuta el metodo sqrt d
 void opcion7();                                      // simplemente pasa el metodo raiz cuadrada y lo printea
 void opcion8();                                      // hace un system que permite al usuario escribir alguna cosilla
 void nacimiento();                                   // se ejecuta un metodo fork, si todo sale bien nacerá un proceso nuevo y el padre estará contento, sino no se dará a luz.
-void opcion9();                                      // llama al metodo nacimiento();
-void opcion10();                                     // llamo mediante execl a echo, y si hay algun error se printea
+void opcion9();                                      // llama al metodo nacimiento();                            
+void opcion10();                                     // llamo mediante execl a echo, haciendo un fork para que lo ejecute el proceso hijo
 
 int main()
 {
@@ -46,7 +46,7 @@ int main()
         printf("7. Opción 7 Calcula la raiz cuadrada de x\n");
         printf("8. Opción 8 Llamamos a nano\n");
         printf("9. Opción 9 Un fork sencillo\n");
-        printf("10. Opción 10\n");
+        printf("10. Opción 10 fork para llamar a execl y echo\n");
 
         printf("0. Salir\n");
         printf("Selecciona una opción: ");
@@ -343,8 +343,22 @@ void opcion9()
 {
     nacimiento();
 }
+
 void opcion10()
-{
-    execl("/bin/echo", "echo", "Hola mundillo!", NULL);
-    perror("execl");
+{   
+pid_t intentoProceso = fork();
+
+    if (intentoProceso == 0)
+    {   execl("/bin/echo", "echo", "Hola mundillo!", NULL);
+        
+        
+    }
+    if (intentoProceso > 0)
+    {   sleep(1);
+        
+    }
+    if(intentoProceso<0){
+        printf("Parece que ha habido un problema en la creación");
+    }
+   
 }
