@@ -27,7 +27,7 @@ void opcion7();                                      // simplemente pasa el meto
 void opcion8();                                      // hace un system que permite al usuario escribir alguna cosilla
 void nacimiento();                                   // se ejecuta un metodo fork, si todo sale bien nacerá un proceso nuevo y el padre estará contento, sino no se dará a luz.
 void opcion9();                                      // llama al metodo nacimiento();                            
-void opcion10();                                     // llamo mediante execl a echo, haciendo un fork para que lo ejecute el proceso hijo
+void opcion10();                                     // llamo mediante execl a echo, haciendo un fork para que lo ejecute el proceso hijo y se termine ahi
 
 int main()
 {
