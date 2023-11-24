@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.sergio.aplicacionpmdm"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.sergio.aplicacionpmdm"
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true   //Además, hay que darle a sincronizar
+    }
+
 }
 
 dependencies {
