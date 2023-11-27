@@ -20,3 +20,4 @@ D:\Sergio\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\bin\Debu
 D:\Sergio\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\bin\Debug\net6.0-windows\RestSharp.dll
 D:\Sergio\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\obj\Debug\net6.0-windows\EjemploFireBase.csproj.AssemblyReference.cache
 D:\Sergio\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\obj\Debug\net6.0-windows\EjemploFireBase.csproj.CopyComplete
+D:\Sergio\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\obj\Debug\net6.0-windows\EjemploFireBase.Form2.resources

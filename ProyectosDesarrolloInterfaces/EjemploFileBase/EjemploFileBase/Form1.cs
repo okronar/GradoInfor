@@ -1,3 +1,4 @@
+using EjemploFireBase;
 using EjemploFireBase.Model;
 using EjemploFireBase.Service;
 using FireSharp.Config;
@@ -27,6 +28,9 @@ namespace EjemploFileBase
         };
 
         IFirebaseClient client;
+        
+
+        Form2 Nwin = new Form2();
 
 
         public Form1()
@@ -83,6 +87,7 @@ namespace EjemploFileBase
 
             FirebaseResponse resp = await client.GetTaskAsync("Contador/node");
             Counter_class get = resp.ResultAs<Counter_class>();
+            MessageBox.Show("El número de elementos actual es " + get.Cnt);
 
             //preparamos el dato a insertar en la DB
             var data = new Data
@@ -101,10 +106,13 @@ namespace EjemploFileBase
 
             SetResponse response = await client.SetTaskAsync("Information/" + data.Id, data);
             Data result = response.ResultAs<Data>();
+
             MessageBox.Show("Insercion realizada con id:" + result.Id);
-            MessageBox.Show("El número de elementos actual es " + get.Cnt);
+
 
             SetResponse response2 = await client.SetTaskAsync("Contador/node", obj);
+
+
             limpiar();
 
         }
@@ -169,10 +177,16 @@ namespace EjemploFileBase
                     dt.Rows.Add(row);
 
                 }
-                catch
+                catch (NullReferenceException)
                 {
+                    i++;
+                }
+                catch (Exception ex)
+                {
+
                     MessageBox.Show("Algo ha fallado ");
                 }
+
 
             }
             MessageBox.Show("todo bien ");
@@ -183,6 +197,12 @@ namespace EjemploFileBase
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
             bringData();
+        }
+
+        private void buttonGestor_Click(object sender, EventArgs e)
+        {
+            Nwin.Show();
+
         }
     }
 }
