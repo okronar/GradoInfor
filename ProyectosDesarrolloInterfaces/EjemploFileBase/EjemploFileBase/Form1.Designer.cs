@@ -225,6 +225,7 @@
             buttonGestor.TabIndex = 3;
             buttonGestor.Text = "Gestor de imagenes";
             buttonGestor.UseVisualStyleBackColor = true;
+            buttonGestor.Click += buttonGestor_Click;
             // 
             // labeltitle
             // 
