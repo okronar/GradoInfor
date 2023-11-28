@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExamenPrueba</string>
+    <string name="blanco">Blanco!</string>
+    <string name="red">Rojo!</string>
+    <string name="orange">Naranja!</string>
+    <string name="yellow">Amarillo!</string>
+    <string name="green">Verde!</string>
+    <string name="cian">Cian!</string>
+    <string name="blue">Azul!</string>
+    <string name="violet">Violeta!</string>
+    <string name="grey">gris!</string>
+    <string name="black">negro!</string>
+    <string name="apply_color">Aplicar color</string>
+</resources>
