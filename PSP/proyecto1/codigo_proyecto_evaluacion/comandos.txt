@@ -1,0 +1,62 @@
+Librerías: Incluye las librerías necesarias para trabajar con operaciones de entrada/salida, manejo de strings, procesos y ejecución de comandos.
+
+Definición de constantes: MAX_LINE define la longitud máxima del comando que puede ingresar el usuario.
+
+Función principal main():
+
+char input[MAX_LINE]; declara un arreglo de caracteres para almacenar la entrada del usuario.
+int should_run = 1; es una bandera que controla si el programa debe seguir ejecutándose o no. Se inicializa en 1 para iniciar el bucle.
+
+El bucle while (should_run) se ejecuta continuamente hasta que should_run sea 0 (cuando el usuario ingresa "exit").
+Interfaz de línea de comandos:
+
+printf("MiShell> "); imprime el indicador del shell para que el usuario ingrese comandos.
+
+fflush(stdout); asegura que el indicador se muestre inmediatamente en la consola.
+
+fgets(input, MAX_LINE, stdin); lee la entrada del usuario desde la consola y la almacena en input.
+
+input[strlen(input) - 1] = '\0'; reemplaza el salto de línea al final del comando con el carácter nulo para formar una cadena válida.
+
+Verificación de comando "exit":
+
+if (strcmp(input, "exit") == 0) verifica si el usuario ingresó "exit" para terminar el programa.
+
+
+
+Creación de procesos hijos:
+
+pid_t pid = fork(); crea un nuevo proceso. En el proceso hijo (pid == 0), se ejecuta el comando ingresado por el usuario.
+
+
+En el proceso hijo:
+
+
+char *args[MAX_LINE / 2 + 1]; crea un arreglo de punteros para almacenar los argumentos del comando.
+strtok(input, " "); divide la entrada del usuario en tokens separados por espacios.
+
+Se utiliza un bucle while con strtok(NULL, " ") para tokenizar la entrada y almacenar cada token en args[].
+
+args[i] = NULL; marca el final de los argumentos para la función execvp.
+
+execvp(args[0], args); ejecuta el comando con sus argumentos en el proceso hijo.
+
+Espera del proceso padre:
+
+En el proceso padre, espera a que el proceso hijo termine ejecutando wait(NULL);.
+
+El bucle continúa, volviendo a solicitar la entrada del usuario ("MiShell> ") hasta que el usuario ingrese "exit".
+
+En resumen, este código implementa un shell básico que permite al usuario ejecutar comandos del sistema operativo. Cada comando se ejecuta en un proceso hijo y el programa principal espera a que el proceso hijo termine antes de solicitar el siguiente comando.
+
+
+
+stdout: Es el flujo estándar de salida en C. Se refiere al dispositivo de salida estándar, generalmente la pantalla o la consola, donde se envían los datos cuando se usa la función printf() u otras funciones de salida.
+
+stdin: Es el flujo estándar de entrada en C. Se refiere al dispositivo de entrada estándar, generalmente el teclado, desde donde se obtienen los datos cuando se utiliza la función scanf() u otras funciones de entrada.
+
+fgets: Es una función en C utilizada para leer una cadena (una línea completa) desde un flujo de entrada, en este caso, desde stdin. Toma tres argumentos: el buffer donde se almacenará la cadena, el número máximo de caracteres a leer y el flujo de entrada desde donde se leerá la cadena.
+
+strcmp: Es una función en C que se utiliza para comparar dos cadenas. Devuelve un valor entero que indica la relación entre las cadenas: 0 si son idénticas, un número negativo si la primera cadena es menor que la segunda y un número positivo si la primera cadena es mayor que la segunda.
+
+strtok: Es una función en C que se utiliza para dividir una cadena en tokens (fragmentos más pequeños) utilizando un delimitador específico. Toma dos argumentos: la cadena a dividir y el delimitador que define dónde se realizarán las divisiones. Devuelve un puntero al token actual en la cadena, y se puede llamar repetidamente para obtener los siguientes tokens.
