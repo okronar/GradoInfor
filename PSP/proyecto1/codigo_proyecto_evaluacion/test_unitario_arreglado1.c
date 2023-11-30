@@ -26,20 +26,22 @@ int ejecutarComando(char* comando) {
     } else if (pid > 0) {
         int estado;
         wait(&estado);
-        
-        if (WIFEXITED(estado)) {
-            if (WEXITSTATUS(estado) == EXIT_SUCCESS) {
-                return 0; // Éxito
-            } else {
-                return -1; // El comando falló
-            }
-        } 
+
+        if (WEXITSTATUS(estado) == EXIT_SUCCESS) {
+            return 0; // Éxito
+        } else {
+            return -1; // El comando falló
+        }
     } else {
         return -1; // Error al crear el proceso hijo
     }
 }
+
 int main() {
-    char comando[] = "ls"; // Cambiar el comando según lo que desees probar
+    char comando[100];
+    printf("Introduce un comando válido: ");
+    scanf("%s", comando);
+
     int resultado = ejecutarComando(comando);
 
     if (resultado == 0) {
@@ -50,4 +52,3 @@ int main() {
 
     return 0;
 }
-
