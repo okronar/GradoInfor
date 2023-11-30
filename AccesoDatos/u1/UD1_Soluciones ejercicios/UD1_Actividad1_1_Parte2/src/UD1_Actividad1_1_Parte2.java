@@ -1,8 +1,8 @@
 /* Muestra los ficheros (archivos o directorios) de
  * un determinado directorio que se cargan en 
- * un array de elementos tipo String usando el método list()
+ * un array de elementos tipo String usando el mï¿½todo list()
  * El nombre del directorio a listar se pasa 
- * como parámetro al método main
+ * como parï¿½metro al mï¿½todo main
  */
 
 
