@@ -76,7 +76,21 @@ class MainActivity : AppCompatActivity() {
             val selectedColor = rgColores.checkedRadioButtonId
             val selectedRadioButtonColor: RadioButton = rgColores.findViewById(selectedColor)
             when (selectedRadioButtonColor.text) {
-                "@string/blanco" -> view.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                getString(R.string.blanco) -> {view.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                view.text = getString(R.string.blanco)
+                        view.setTextColor(getColor(R.color.black))}
+                getString(R.string.red) -> {view.setBackgroundColor(ContextCompat.getColor(this, R.color.rojo))
+                    view.text = getString(R.string.red)
+                    view.setTextColor(getColor(R.color.black))}
+                getString(R.string.orange) -> {view.setBackgroundColor(ContextCompat.getColor(this, R.color.naranja))
+                    view.text = getString(R.string.black)
+                    view.setTextColor(getColor(R.color.naranja))}
+                getString(R.string.yellow) -> {view.setBackgroundColor(ContextCompat.getColor(this, R.color.amarillo))
+                    view.text = getString(R.string.black)
+                    view.setTextColor(getColor(R.color.amarillo))}
+                getString(R.string.green) -> {view.setBackgroundColor(ContextCompat.getColor(this, R.color.verde))
+                    view.text = getString(R.string.blanco)
+                    view.setTextColor(getColor(R.color.verde))}
                 "@string/red"-> view.setBackgroundColor(ContextCompat.getColor(this, R.color.rojo))
                 "@string/orange"-> view.setBackgroundColor(ContextCompat.getColor(this, R.color.naranja))
                 "@string/yellow"-> view.setBackgroundColor(ContextCompat.getColor(this, R.color.amarillo))
