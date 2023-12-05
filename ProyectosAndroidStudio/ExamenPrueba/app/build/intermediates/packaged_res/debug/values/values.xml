@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amarillo">#C8C143</color>
+    <color name="azul">#0A2F9C</color>
+    <color name="black">#FF000000</color>
+    <color name="cian">#2BFFFF</color>
+    <color name="gris">#82709A</color>
+    <color name="naranja">#E6624A</color>
+    <color name="rojo">#EA0C0C</color>
+    <color name="verde">#198500</color>
+    <color name="violeta">#6C0AEF</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ExamenPrueba</string>
+    <string name="apply_color">Aplicar color</string>
+    <string name="black">negro!</string>
+    <string name="blanco">Blanco!</string>
+    <string name="blue">Azul!</string>
+    <string name="cian">Cian!</string>
+    <string name="green">Verde!</string>
+    <string name="grey">gris!</string>
+    <string name="orange">Naranja!</string>
+    <string name="red">Rojo!</string>
+    <string name="violet">Violeta!</string>
+    <string name="yellow">Amarillo!</string>
+    <style name="Base.Theme.ExamenPrueba" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ExamenPrueba" parent="Base.Theme.ExamenPrueba"/>
+</resources>
