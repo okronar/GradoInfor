@@ -24,9 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bDiv: TextView
     private lateinit var bResto: TextView
     private lateinit var bEqual: TextView
-    private lateinit var texto1: String
-    private lateinit var simbolo: String
-    private lateinit var texto2: String
+
 
 
 
@@ -87,6 +85,10 @@ class MainActivity : AppCompatActivity() {
     }}
     var resultado = 0.0
     var resultadoString = ""
+    //1º correccion
+     var texto1 = ""
+     var simbolo = ""
+     var texto2 = ""
 
     fun funEquals() {
         if (Consola.text == ""){
@@ -107,23 +109,39 @@ class MainActivity : AppCompatActivity() {
                     resultado = (texto1.toDouble() + texto2.toDouble())
                     resultadoString= texto1+simbolo+texto2+"="+resultado
                     Consola.text = resultadoString
+                    //segunda correccion
+                    texto1=""
+                    texto2=""
+                    simbolo=""
                 }
 
                 "-" -> {resultado = (texto1.toDouble()-texto2.toDouble())
                     resultadoString = texto1+simbolo+texto2+"="+resultado
                 Consola.text = resultadoString
+                    texto1=""
+                    texto2=""
+                    simbolo=""
             }
                 "/" -> {resultado = (texto1.toDouble()/texto2.toDouble())
                     resultadoString = texto1+simbolo+texto2+"="+resultado
             Consola.text = resultadoString
+                    texto1=""
+                    texto2=""
+                    simbolo=""
         }
                 "*"  -> {resultado = (texto1.toDouble()*texto2.toDouble())
                     resultadoString =texto1+simbolo+texto2+"="+resultado
         Consola.text = resultadoString
+                    texto1=""
+                    texto2=""
+                    simbolo=""
     }
                 "%"  -> {resultado = (texto1.toDouble()%texto2.toDouble())
                     resultadoString = texto1+simbolo+texto2+"="+resultado
     Consola.text = resultadoString
+                    texto1=""
+                    texto2=""
+                    simbolo=""
 }
              }
         }
