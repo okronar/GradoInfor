@@ -1,3 +1,0 @@
-com.sergio.examenprueba.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
