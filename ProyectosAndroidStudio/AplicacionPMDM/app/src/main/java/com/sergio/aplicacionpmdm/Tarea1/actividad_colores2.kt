@@ -270,8 +270,8 @@ class actividad_colores2 : AppCompatActivity() {
                 "Marrón" -> Barras[3].colorFondo = (ContextCompat.getColor(this, R.color.marron65))
                 "Negro" -> Barras[3].colorFondo = (ContextCompat.getColor(this, R.color.negro65))
             }
-
-            "V1(80%)" -> when (selectedRadioButtonColor.text) {
+            //corregido
+            "V5(80%)" -> when (selectedRadioButtonColor.text) {
                 "Blanco" -> Barras[4].colorFondo = (ContextCompat.getColor(this, R.color.blanco80))
                 "Rojo" -> Barras[4].colorFondo = (ContextCompat.getColor(this, R.color.rojo80))
                 "Naranja" -> Barras[4].colorFondo =
