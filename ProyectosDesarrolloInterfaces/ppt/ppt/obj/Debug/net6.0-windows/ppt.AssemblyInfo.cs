@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ppt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75bdec976d5b9ce6ba01f26bca4d90580772ebcc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ppt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ppt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
