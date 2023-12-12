@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MZ//oblTPnf+JpKIvLtjyz53cBx1e5M45wdnMLG+hmYGZIuZ/PgMnr6wfAHF7QHdUCce/Deuv//nhum3mBUkiQ==",
+  "dgSpecHash": "uxssOB+Uq5BcWaTg8FoaY+M5g9yb474E2ZA8eILUu3/aUM0czGNQHWcmJoIlajiiSh8Cwo+sLv+oBz+ZAOS9vA==",
   "success": true,
-  "projectFilePath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\EjemploFireBase.csproj",
+  "projectFilePath": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\EjemploFireBase.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alumno\\.nuget\\packages\\firesharp\\1.1.0\\firesharp.1.1.0.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\firesharp.serialization.jsonnet\\1.1.0\\firesharp.serialization.jsonnet.1.1.0.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\restsharp\\104.4.0\\restsharp.104.4.0.nupkg.sha512"
+    "C:\\Users\\okron\\.nuget\\packages\\firesharp\\1.1.0\\firesharp.1.1.0.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\firesharp.serialization.jsonnet\\1.1.0\\firesharp.serialization.jsonnet.1.1.0.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\restsharp\\104.4.0\\restsharp.104.4.0.nupkg.sha512"
   ],
   "logs": [
     {

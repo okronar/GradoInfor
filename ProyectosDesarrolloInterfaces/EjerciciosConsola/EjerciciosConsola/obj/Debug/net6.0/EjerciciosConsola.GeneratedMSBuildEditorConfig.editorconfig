@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EjerciciosConsola
-build_property.ProjectDir = D:\Sergio\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\
+build_property.ProjectDir = C:\Users\okron\OneDrive\Escritorio\DAMD\GradoInfor\ProyectosDesarrolloInterfaces\EjerciciosConsola\EjerciciosConsola\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

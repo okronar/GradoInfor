@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "apO/30heZiQSPM2HUquYU9NuKfV/jCH+mrwSYGuy/GgA53YY+Lar2m7UElZYjnBSA+2X3hBxmRCKB2X+9hc7nA==",
+  "dgSpecHash": "t/D9Lj46phiXK2wRFA2lvgn2jRgkcGg2vkl1R/k5ureApsHFDBHTVv5hZG9gnZhSyFTnE7vJ+45ZkgO6xtHMOQ==",
   "success": true,
-  "projectFilePath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\MemoryGame\\MemoryGame\\MemoryGame.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\MemoryGame\\MemoryGame\\MemoryGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

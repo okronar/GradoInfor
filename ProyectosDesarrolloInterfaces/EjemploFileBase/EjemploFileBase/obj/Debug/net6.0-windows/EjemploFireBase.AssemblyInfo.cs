@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EjemploFireBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+585f8730700c6553e354477587bb63a81741f233")]
 [assembly: System.Reflection.AssemblyProductAttribute("EjemploFireBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EjemploFireBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
