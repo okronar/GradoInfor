@@ -126,7 +126,42 @@ namespace ppt
                 numeroGanadas++;
                 partidasTotales++;
             }
-            // ... Repetir para las demás combinaciones de elecciones ...
+            else if (lblMaq.Text == "Papel" && lblJug.Text == "Piedra")
+            {
+                labelResultado.Text = "pierdes";
+                partidasTotales++;
+                numeroPerdidas++;
+            }
+            else if (lblMaq.Text == "Papel" && lblJug.Text == "Tijera")
+            {
+                labelResultado.Text = "ganaas";
+                numeroGanadas++;
+                partidasTotales++;
+            }
+            else if (lblMaq.Text == "Papel" && lblJug.Text == "Papel")
+            {
+                labelResultado.Text = "empate";
+               
+                partidasTotales++;
+            }
+           else if (lblMaq.Text == "Tijeras" && lblJug.Text == "Piedra")
+            {
+                labelResultado.Text = "ganaas";
+                partidasTotales++;
+                numeroGanadas++;
+            }
+            else if (lblMaq.Text == "Tijeras" && lblJug.Text == "Tijera")
+            {
+                labelResultado.Text = "empate";
+                partidasTotales++;
+            }
+            else if (lblMaq.Text == "Tijeras" && lblJug.Text == "Papel")
+            {
+                labelResultado.Text = "pierdees";
+                numeroPerdidas++;
+                partidasTotales++;
+            }
+            
         }
 
         // Iniciar la cuenta atrás
