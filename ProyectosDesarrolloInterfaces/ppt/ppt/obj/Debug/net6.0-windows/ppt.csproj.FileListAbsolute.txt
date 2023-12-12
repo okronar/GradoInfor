@@ -1,0 +1,16 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\bin\Debug\net6.0-windows\ppt.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\bin\Debug\net6.0-windows\ppt.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\bin\Debug\net6.0-windows\ppt.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\bin\Debug\net6.0-windows\ppt.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\bin\Debug\net6.0-windows\ppt.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.Form1.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.csproj.GenerateResource.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\refint\ppt.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ppt.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\ppt\ppt\obj\Debug\net6.0-windows\ref\ppt.dll
