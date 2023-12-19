@@ -9,6 +9,7 @@ import com.sergio.aplicacionpmdm.HelloApp.MainActivity
 import com.sergio.aplicacionpmdm.IMCApp.IMCcalculator
 import com.sergio.aplicacionpmdm.MessageApp.MessageActivity
 import com.sergio.aplicacionpmdm.Tarea1.actividad_colores2
+import com.sergio.aplicacionpmdm.superheroAPI.superheroListActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,11 @@ class MenuActivity : AppCompatActivity() {
         btnColorear.setOnClickListener {
             navigateToColorearApp()
         }
+        var btnHeroApp = findViewById<Button>(R.id.btnHeroApp)
+
+        btnHeroApp.setOnClickListener {
+            navigateToHeroApp()
+        }
 
     }
 
@@ -65,6 +71,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToColorearApp() {
         var intent = Intent(this, actividad_colores2::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToHeroApp() {
+        var intent = Intent(this, superheroListActivity::class.java)
         startActivity(intent)
     }
 }
