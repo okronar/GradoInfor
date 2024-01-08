@@ -1,0 +1,17 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\bin\Debug\net6.0-windows\CrearComponentes1.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\bin\Debug\net6.0-windows\CrearComponentes1.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\bin\Debug\net6.0-windows\CrearComponentes1.runtimeconfig.json
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\bin\Debug\net6.0-windows\CrearComponentes1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\bin\Debug\net6.0-windows\CrearComponentes1.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.Form1.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.UserControl1.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.csproj.GenerateResource.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\refint\CrearComponentes1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\CrearComponentes1.genruntimeconfig.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\CrearComponentes1\CrearComponentes1\obj\Debug\net6.0-windows\ref\CrearComponentes1.dll
