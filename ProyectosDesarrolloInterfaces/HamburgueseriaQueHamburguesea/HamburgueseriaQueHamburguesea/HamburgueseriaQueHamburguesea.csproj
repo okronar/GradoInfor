@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BurguerAndres">
+      <HintPath>..\..\..\Interfaces-trabajos\burguers\ANDRES BANOS LAJUSTICIA_90594_assignsubmission_file\AE1_BurgerConsola_BañosLajusticiaAndrés\ConsoleBurguer\BurguerAndres\bin\Debug\BurguerAndres.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
