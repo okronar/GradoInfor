@@ -77,7 +77,13 @@
     <color name="naranja65">#A6FF5722</color>
     <color name="naranja80">#CCFF5722</color>
 
-
+    <!--SuperheroApp-->
+    <color name="superhero_stat_intelligence">#00ff00</color>
+    <color name="superhero_stat_strength">#FF0000</color>
+    <color name="superhero_stat_speed">#E88B00</color>
+    <color name="superhero_stat_durability">#03A9F4</color>
+    <color name="superhero_stat_power">#FFEB3B</color>
+    <color name="superhero_stat_combat">#673AB7</color>
 
 
 
