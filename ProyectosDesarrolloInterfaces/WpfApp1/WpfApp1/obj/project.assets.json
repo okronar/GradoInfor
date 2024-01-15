@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\okron\\.nuget\\packages\\": {},
+    "C:\\Users\\Alumno\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+      "projectUniqueName": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
       "projectName": "WpfApp1",
-      "projectPath": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
-      "packagesPath": "C:\\Users\\okron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\WpfApp1\\WpfApp1\\obj\\",
+      "projectPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+      "outputPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\WpfApp1\\WpfApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\okron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -69,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ConsoleBurguer
-build_property.ProjectDir = D:\Sergio\Interfaces-trabajos\ConsoleBurguer\ConsoleBurguer\
+build_property.ProjectDir = D:\Sergio\Interfaces-trabajos\1ºev\ConsoleBurguer\ConsoleBurguer\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -92,7 +92,6 @@
             // 
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Center;
-            button1.Cursor = Cursors.No;
             button1.ForeColor = Color.DarkOrange;
             button1.Location = new Point(731, 291);
             button1.Name = "button1";
@@ -100,6 +99,7 @@
             button1.TabIndex = 5;
             button1.Text = "Menú";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
