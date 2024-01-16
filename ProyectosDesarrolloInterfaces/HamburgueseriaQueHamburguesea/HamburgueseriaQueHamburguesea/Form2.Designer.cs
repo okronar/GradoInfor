@@ -43,7 +43,7 @@
             // pictureBox4
             // 
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.Location = new Point(154, -2);
+            pictureBox4.Location = new Point(0, -2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(641, 564);
             pictureBox4.TabIndex = 5;
@@ -53,7 +53,7 @@
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(263, -2);
+            pictureBox3.Location = new Point(101, -2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(439, 96);
             pictureBox3.TabIndex = 6;
@@ -64,7 +64,7 @@
             instrucciones.AutoSize = true;
             instrucciones.BackColor = SystemColors.ButtonHighlight;
             instrucciones.FlatStyle = FlatStyle.Flat;
-            instrucciones.Location = new Point(393, 97);
+            instrucciones.Location = new Point(247, 97);
             instrucciones.Name = "instrucciones";
             instrucciones.Size = new Size(147, 15);
             instrucciones.TabIndex = 8;
@@ -74,7 +74,7 @@
             // 
             botonBurguer.BackgroundImage = (Image)resources.GetObject("botonBurguer.BackgroundImage");
             botonBurguer.ForeColor = SystemColors.Window;
-            botonBurguer.Location = new Point(419, 252);
+            botonBurguer.Location = new Point(273, 252);
             botonBurguer.Name = "botonBurguer";
             botonBurguer.Size = new Size(121, 32);
             botonBurguer.TabIndex = 9;
@@ -86,7 +86,7 @@
             // 
             botonBebida.BackgroundImage = (Image)resources.GetObject("botonBebida.BackgroundImage");
             botonBebida.ForeColor = SystemColors.ButtonFace;
-            botonBebida.Location = new Point(154, 252);
+            botonBebida.Location = new Point(0, 252);
             botonBebida.Name = "botonBebida";
             botonBebida.Size = new Size(109, 32);
             botonBebida.TabIndex = 10;
@@ -98,7 +98,7 @@
             // 
             botonPatacas.BackgroundImage = (Image)resources.GetObject("botonPatacas.BackgroundImage");
             botonPatacas.ForeColor = SystemColors.ControlLightLight;
-            botonPatacas.Location = new Point(671, 252);
+            botonPatacas.Location = new Point(517, 252);
             botonPatacas.Name = "botonPatacas";
             botonPatacas.Size = new Size(124, 32);
             botonPatacas.TabIndex = 11;
@@ -110,7 +110,7 @@
             // 
             botonCesta.BackgroundImage = (Image)resources.GetObject("botonCesta.BackgroundImage");
             botonCesta.ForeColor = SystemColors.ControlLight;
-            botonCesta.Location = new Point(393, 471);
+            botonCesta.Location = new Point(247, 470);
             botonCesta.Name = "botonCesta";
             botonCesta.Size = new Size(170, 27);
             botonCesta.TabIndex = 12;
@@ -123,7 +123,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(940, 563);
+            ClientSize = new Size(639, 563);
             Controls.Add(botonCesta);
             Controls.Add(botonPatacas);
             Controls.Add(botonBebida);
@@ -133,7 +133,7 @@
             Controls.Add(pictureBox4);
             Name = "Form2";
             Text = "Form2";
-            Load += Form2_Load;
+          
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);

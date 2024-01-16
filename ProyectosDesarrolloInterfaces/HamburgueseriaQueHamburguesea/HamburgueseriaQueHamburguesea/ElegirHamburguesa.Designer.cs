@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ElegirHamburguesa";
+            userControl11 = new UserControl1();
+            SuspendLayout();
+            // 
+            // userControl11
+            // 
+            userControl11.Location = new Point(12, 12);
+            userControl11.Name = "userControl11";
+            userControl11.Size = new Size(223, 399);
+            userControl11.TabIndex = 0;
+       
+            // 
+            // ElegirHamburguesa
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(458, 450);
+            Controls.Add(userControl11);
+            Name = "ElegirHamburguesa";
+            Text = "ElegirHamburguesa";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private UserControl1 userControl11;
     }
 }

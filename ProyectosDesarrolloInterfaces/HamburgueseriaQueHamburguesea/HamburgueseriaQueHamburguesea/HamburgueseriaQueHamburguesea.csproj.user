@@ -16,5 +16,11 @@
     <Compile Update="elegirPatatas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CestaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -12,12 +12,17 @@ namespace HamburgueseriaQueHamburguesea
 {
     public partial class ElegirBebida : Form
     {
-        
-        
-        public ElegirBebida()
+
+
+        public ElegirBebida(Form2 formito)
         {
+
+            
             
             InitializeComponent();
+            userControlBebidas.nombre.Text = "Pepe";
         }
+
+       
     }
 }

@@ -25,6 +25,7 @@ class superheroListActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivitySuperheroListBinding
+
     //el retrofit conecta con la base de datos y haremos querys
     private lateinit var retrofit: Retrofit
     private lateinit var adapter: SuperheroAdapter
@@ -33,14 +34,13 @@ class superheroListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //importante poner esto antes del setcontentview
         binding = ActivitySuperheroListBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_superhero_list)
+        setContentView(binding.root)
         retrofit = getRetrofit()
         initUI()
     }
 
     private fun initUI() {
-        binding.searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener
-        {
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 searchByName(query.orEmpty())
                 return false
@@ -49,7 +49,7 @@ class superheroListActivity : AppCompatActivity() {
             override fun onQueryTextChange(newText: String?) = false
 
         })
-        adapter = SuperheroAdapter { superheroId ->  navigateToDetail(superheroId) }
+        adapter = SuperheroAdapter { superheroId -> navigateToDetail(superheroId) }
         binding.rvSuperhero.setHasFixedSize(true)
         binding.rvSuperhero.layoutManager = LinearLayoutManager(this)
         binding.rvSuperhero.adapter = adapter
@@ -72,8 +72,8 @@ class superheroListActivity : AppCompatActivity() {
 //                    con esto se ejecuta en el main thread no en la corrutina
                     runOnUiThread {
                         adapter.updateList(response.superheroes)
-                    binding.progressBar.isVisible = false
-                }
+                        binding.progressBar.isVisible = false
+                    }
                 }
 
             } else {
@@ -84,12 +84,13 @@ class superheroListActivity : AppCompatActivity() {
     }
 
     private fun getRetrofit(): Retrofit {
-            return Retrofit
-                .Builder()
-                .baseUrl("https://superheroapi.com/api/122099224400128532/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
+        return Retrofit
+            .Builder()
+            .baseUrl("https://superheroapi.com/api/122099224400128532/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
     }
+
     private fun navigateToDetail(id: String) {
         val intent = Intent(this, DetailSuperheroActivity::class.java)
         intent.putExtra(EXTRA_ID, id)

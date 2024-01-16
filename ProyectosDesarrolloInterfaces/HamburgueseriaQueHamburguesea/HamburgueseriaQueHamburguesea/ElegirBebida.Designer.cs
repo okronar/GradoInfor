@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ElegirBebida";
+            userControlBebidas = new UserControl1();
+            SuspendLayout();
+            // 
+            // userControlBebidas
+            // 
+            userControlBebidas.Location = new Point(-1, 1);
+            userControlBebidas.Name = "userControlBebidas";
+            userControlBebidas.Size = new Size(246, 446);
+            userControlBebidas.TabIndex = 0;
+           
+            // 
+            // ElegirBebida
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(535, 450);
+            Controls.Add(userControlBebidas);
+            Name = "ElegirBebida";
+            Text = "ElegirBebida";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private UserControl1 userControlBebidas;
     }
 }

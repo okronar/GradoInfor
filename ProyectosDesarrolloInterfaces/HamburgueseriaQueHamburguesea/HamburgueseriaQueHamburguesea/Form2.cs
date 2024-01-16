@@ -13,20 +13,22 @@ namespace HamburgueseriaQueHamburguesea
 {
     public partial class Form2 : Form
     {
-      
-        public Pedido Cesta = new Pedido();
+
+        public  static Pedido Cesta = new Pedido();
 
         public Form2(Form1 ventana1)
         {
+
             InitializeComponent();
-      
+
 
         }
 
         private void botonBebida_Click(object sender, EventArgs e)
         {
-            CocaCola coc = new CocaCola(1);
-            Cesta.addItem(coc);
+            ElegirBebida brooo = new ElegirBebida(this);
+            brooo.Show();
+            this.Hide();
 
         }
 
@@ -42,13 +44,12 @@ namespace HamburgueseriaQueHamburguesea
 
         private void botonCesta_Click(object sender, EventArgs e)
         {
-
+            CestaForm formcesta = new CestaForm(this);
+            formcesta.Show();
+            this.Hide();
 
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {         
-            
-        }
+      
     }
 }
