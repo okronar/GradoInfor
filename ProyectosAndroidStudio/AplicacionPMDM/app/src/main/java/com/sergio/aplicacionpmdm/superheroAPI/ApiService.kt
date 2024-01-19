@@ -3,6 +3,7 @@ package com.sergio.aplicacionpmdm.superheroAPI
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface ApiService {
     //aqui definimos las busquedas en la API
@@ -12,4 +13,6 @@ interface ApiService {
 
     @GET("{id}")
    suspend fun getSuperheroDetail(@Path("id") superheroId:String):Response<SuperHeroDetailResponse>
+
+
 }
