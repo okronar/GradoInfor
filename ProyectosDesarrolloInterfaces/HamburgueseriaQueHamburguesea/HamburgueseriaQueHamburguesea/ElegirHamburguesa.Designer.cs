@@ -37,7 +37,6 @@
             userControl11.Name = "userControl11";
             userControl11.Size = new Size(223, 399);
             userControl11.TabIndex = 0;
-       
             // 
             // ElegirHamburguesa
             // 

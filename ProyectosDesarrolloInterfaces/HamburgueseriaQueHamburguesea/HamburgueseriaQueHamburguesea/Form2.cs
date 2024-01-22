@@ -26,20 +26,25 @@ namespace HamburgueseriaQueHamburguesea
 
         private void botonBebida_Click(object sender, EventArgs e)
         {
-            ElegirBebida brooo = new ElegirBebida(this);
-            brooo.Show();
+            ElegirBebida ventanaBebida = new ElegirBebida(this);
+            ventanaBebida.Show();
             this.Hide();
 
         }
 
         private void botonBurguer_Click(object sender, EventArgs e)
         {
+            ElegirHamburguesa ventanaBurguer = new ElegirHamburguesa(this);
+            ventanaBurguer.Show();
+            this.Hide();
 
         }
 
         private void botonPatacas_Click(object sender, EventArgs e)
         {
-
+            elegirPatatas ventanaPatacas = new elegirPatatas(this);
+            ventanaPatacas.Show();
+            this.Hide();
         }
 
         private void botonCesta_Click(object sender, EventArgs e)

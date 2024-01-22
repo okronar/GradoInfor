@@ -92,6 +92,7 @@
             Imagen.Location = new Point(0, 0);
             Imagen.Name = "Imagen";
             Imagen.Size = new Size(223, 130);
+            Imagen.SizeMode = PictureBoxSizeMode.Zoom;
             Imagen.TabIndex = 0;
             Imagen.TabStop = false;
             // 
@@ -102,6 +103,7 @@
             Controls.Add(Panel);
             Name = "UserControl1";
             Size = new Size(223, 399);
+            Load += UserControl1_Load;
             Panel.ResumeLayout(false);
             Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Imagen).EndInit();
@@ -110,7 +112,7 @@
 
         #endregion
 
-         public Panel Panel;
+        public Panel Panel;
          public Label precio;
          public Label nombre;
          public PictureBox Imagen;

@@ -37,7 +37,6 @@
             userControlBebidas.Name = "userControlBebidas";
             userControlBebidas.Size = new Size(246, 446);
             userControlBebidas.TabIndex = 0;
-           
             // 
             // ElegirBebida
             // 

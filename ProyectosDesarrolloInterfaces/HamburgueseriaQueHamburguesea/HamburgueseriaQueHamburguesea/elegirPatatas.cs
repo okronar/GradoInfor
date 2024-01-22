@@ -15,9 +15,10 @@ namespace HamburgueseriaQueHamburguesea
     {
 
 
-        public elegirPatatas()
+        public elegirPatatas(Form2 formitoe)
         {
             InitializeComponent();
+            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\patacas.jpg");
 
         }
 

@@ -33,11 +33,10 @@
             // 
             // userControl11
             // 
-            userControl11.Location = new Point(2, 12);
+            userControl11.Location = new Point(0, 2);
             userControl11.Name = "userControl11";
-            userControl11.Size = new Size(223, 399);
+            userControl11.Size = new Size(230, 447);
             userControl11.TabIndex = 0;
-           
             // 
             // elegirPatatas
             // 

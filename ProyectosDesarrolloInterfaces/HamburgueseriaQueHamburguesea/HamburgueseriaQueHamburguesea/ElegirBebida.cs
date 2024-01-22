@@ -20,7 +20,9 @@ namespace HamburgueseriaQueHamburguesea
             
             
             InitializeComponent();
+            userControlBebidas.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
             userControlBebidas.nombre.Text = "Pepe";
+           // userControlBebidas.Imagen.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida");
         }
 
        

@@ -14,17 +14,29 @@ namespace HamburgueseriaQueHamburguesea
     public partial class UserControl1 : UserControl
     {
 
-        public static PictureBox img;
+
 
         public UserControl1()
         {
             InitializeComponent();
-            img = this.Imagen;
+
         }
 
         private void nombre_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public PictureBox pictureModification{
+
+            get { return Imagen; }
+            set { Imagen = pictureModification; }
+        
         }
     }
 }
