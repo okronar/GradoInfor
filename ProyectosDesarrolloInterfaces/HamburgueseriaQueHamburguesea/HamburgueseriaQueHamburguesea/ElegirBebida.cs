@@ -17,14 +17,41 @@ namespace HamburgueseriaQueHamburguesea
         public ElegirBebida(Form2 formito)
         {
 
-            
-            
+
+
             InitializeComponent();
-            userControlBebidas.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
-            userControlBebidas.nombre.Text = "Pepe";
-           // userControlBebidas.Imagen.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida");
+            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
+            userControl11.nombre.Text = "Bebidas";
+
+
+           
+
+            // userControlBebidas.Imagen.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida");
         }
 
-       
+        private void radioNestea_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioAgua.Checked)
+            {
+                userControl11.nombre.Text = "Agüita";
+                userControl11.precio.Text = "1.8 Lereles";
+            }
+            else if (radioNestea.Checked)
+            {
+                userControl11.nombre.Text = "Nestea";
+                userControl11.precio.Text = "2.8 Lereles";
+            }
+            else if (radioCoca.Checked)
+            {
+                userControl11.nombre.Text = "Coca cola";
+                userControl11.precio.Text = "2.3 Lereles";
+            }
+            else {
+                userControl11.nombre.Text = "Bebida";
+                userControl11.precio.Text = "Dineros";
+
+            }
+
+        }
     }
 }

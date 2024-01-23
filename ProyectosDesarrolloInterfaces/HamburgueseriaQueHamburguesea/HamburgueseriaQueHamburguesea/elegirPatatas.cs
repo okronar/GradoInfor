@@ -19,6 +19,7 @@ namespace HamburgueseriaQueHamburguesea
         {
             InitializeComponent();
             userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\patacas.jpg");
+            userControl11.nombre.Text = "Bebidas";
 
         }
 

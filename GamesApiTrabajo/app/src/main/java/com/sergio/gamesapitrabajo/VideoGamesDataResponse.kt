@@ -11,7 +11,8 @@ data class VideogamesItemResponse(
 
     @SerializedName("id") val videoGameId: Int,
     @SerializedName("name") val name: String,
-    @SerializedName("image") val videogameImage:VideogamesImageResponse
+    @SerializedName("background_image") val videogameImage:String,
+    @SerializedName("rating") val rating:String
 
 )
 data class VideogamesImageResponse(@SerializedName("url") val url:String)

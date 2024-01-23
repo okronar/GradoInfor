@@ -17,17 +17,28 @@ namespace HamburgueseriaQueHamburguesea
         {
             InitializeComponent();
 
-            
+            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\burguer.jpg");
+            userControl11.nombre.Text = "Bebidas";
 
-                userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\burguer.jpg");
-           
-            
         }
 
-        private void userControl11_Load(object sender, EventArgs e)
+        private void radioBurra_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioBurra.Checked)
+            {
+                userControl11.nombre.Text = "Agüita";
+                userControl11.precio.Text = "1.8 Lereles";
+            }
+            else if (radioApocalipsis.Checked)
+            {
+                userControl11.nombre.Text = "La muerte hecha Burguer";
+                userControl11.precio.Text = "2.8 Lereles";
+            }
+
 
         }
-
     }
+
+
+   
 }
