@@ -15,30 +15,81 @@
         android:id="@+id/ivVideoGame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/rosa20">
-
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_gravity="bottom">
-
+        android:background="@color/negro20"
+        android:orientation="vertical"
+        android:gravity="center">
         <TextView
             android:id="@+id/tvVideoGameName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:background="@color/rojo80"
-            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="20sp"
             tools:text="VIDEOJUEGO" />
+        <TextView
+            android:id="@+id/tvVideoGamePlatformsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Plataformas:"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/tvVideoGamePlatforms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Plataformas"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/PlataformaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Rating:"
+            android:layout_weight="0.1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="0.5">
+        <TextView
+            android:id="@+id/tvVideoRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
 
-    </FrameLayout>
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Rating" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/btn_star"
+                />
+
+
+
+    </LinearLayout>
+
+
+
 
 
 
