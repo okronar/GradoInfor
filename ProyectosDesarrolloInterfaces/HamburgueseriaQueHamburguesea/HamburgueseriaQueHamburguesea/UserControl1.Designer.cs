@@ -58,6 +58,7 @@
             botonAnadir.TabIndex = 4;
             botonAnadir.Text = "Añadir";
             botonAnadir.UseVisualStyleBackColor = true;
+            botonAnadir.Click += botonAnadir_Click;
             // 
             // botonVolver
             // 
@@ -67,6 +68,7 @@
             botonVolver.TabIndex = 3;
             botonVolver.Text = "Volver";
             botonVolver.UseVisualStyleBackColor = true;
+            botonVolver.Click += botonVolver_Click;
             // 
             // precio
             // 

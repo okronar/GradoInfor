@@ -1,0 +1,12 @@
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.deps.json
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.AssemblyInfoInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.AssemblyInfo.cs
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.sourcelink.json
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\refint\ClassLibrary1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.pdb
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\ClassLibrary1\obj\Debug\net8.0\ref\ClassLibrary1.dll

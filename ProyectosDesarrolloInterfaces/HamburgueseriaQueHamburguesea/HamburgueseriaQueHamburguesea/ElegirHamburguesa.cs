@@ -26,13 +26,13 @@ namespace HamburgueseriaQueHamburguesea
         {
             if (radioBurra.Checked)
             {
-                userControl11.nombre.Text = "Agüita";
-                userControl11.precio.Text = "1.8 Lereles";
+                userControl11.nombre.Text = "La burra";
+                userControl11.precio.Text = "10.5 Lereles";
             }
             else if (radioApocalipsis.Checked)
             {
                 userControl11.nombre.Text = "La muerte hecha Burguer";
-                userControl11.precio.Text = "2.8 Lereles";
+                userControl11.precio.Text = "12.6 Lereles";
             }
 
 

@@ -54,7 +54,7 @@ public class JavaApplication1 {
 					Element elemento = (Element) pedi;
 					
 					
-					String numClienteString = getNodo("numero-pedido", elemento);
+					String numClienteString = getNodo("numero-cliente", elemento);
 					
 					String numPedidoString = getNodo("numero-pedido", elemento);
 					

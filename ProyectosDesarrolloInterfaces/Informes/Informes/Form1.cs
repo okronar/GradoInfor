@@ -1,5 +1,6 @@
 using System.Data.SQLite;
 using System.Data;
+using Microsoft.Reporting.WinForms;
 
 namespace Informes
 {
@@ -10,6 +11,9 @@ namespace Informes
         public Form1()
         {
             InitializeComponent();
+
+       
+
         }
 
         private void botonConectar_Click(object sender, EventArgs e)

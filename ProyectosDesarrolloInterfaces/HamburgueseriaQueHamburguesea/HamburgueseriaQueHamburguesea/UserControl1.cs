@@ -19,6 +19,8 @@ namespace HamburgueseriaQueHamburguesea
         public UserControl1()
         {
             InitializeComponent();
+            botonVolver.Click += botonVolver_Click;
+            botonAnadir.Click += botonAnadir_Click; 
 
         }
 
@@ -32,11 +34,29 @@ namespace HamburgueseriaQueHamburguesea
 
         }
 
-        public PictureBox pictureModification{
+        private void botonVolver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botonAnadir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public Button botoncin
+        {
+            get { return botonVolver; }
+            set { botonVolver = botoncin; }
+        }
+
+
+        public PictureBox pictureModification
+        {
 
             get { return Imagen; }
             set { Imagen = pictureModification; }
-        
+
         }
     }
 }

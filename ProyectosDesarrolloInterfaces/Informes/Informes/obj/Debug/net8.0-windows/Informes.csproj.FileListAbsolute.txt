@@ -1,4 +1,5 @@
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\Informes.exe
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\Report1.rdlc
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\Informes.deps.json
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\Informes.runtimeconfig.json
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\Informes.dll
@@ -51,8 +52,11 @@ D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windo
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\ClassLibrary1.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\bin\Debug\net8.0-windows\ClassLibrary1.pdb
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\obj\Debug\net8.0-windows\Informes.csproj.AssemblyReference.cache
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\obj\Debug\net8.0-windows\Informes.Form1.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\obj\Debug\net8.0-windows\Informes.Form2.resources
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\obj\Debug\net8.0-windows\Informes.csproj.GenerateResource.cache
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\obj\Debug\net8.0-windows\Informes.GeneratedMSBuildEditorConfig.editorconfig
 D:\Sergio\ProyectosDesarrolloInterfaces\Informes\Informes\obj\Debug\net8.0-windows\Informes.AssemblyInfoInputs.cache

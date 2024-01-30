@@ -11,7 +11,21 @@
   </xs:annotation>
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
     <xs:complexType>
-      <xs:choice minOccurs="0" maxOccurs="unbounded" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTSalesLines" msprop:Generator_RowClassName="DTSalesLinesRow" msprop:Generator_RowEvHandlerName="DTSalesLinesRowChangeEventHandler" msprop:Generator_RowDeletedName="DTSalesLinesRowDeleted" msprop:Generator_RowDeletingName="DTSalesLinesRowDeleting" msprop:Generator_RowEvArgName="DTSalesLinesRowChangeEvent" msprop:Generator_TablePropName="DTSalesLines" msprop:Generator_RowChangedName="DTSalesLinesRowChanged" msprop:Generator_UserTableName="DTSalesLines" msprop:Generator_RowChangingName="DTSalesLinesRowChanging" msprop:Generator_TableClassName="DTSalesLinesDataTable" msprop:Generator_TableVarName="tableDTSalesLines">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustAccount" msprop:Generator_UserColumnName="CustAccount" msprop:Generator_ColumnPropNameInTable="CustAccountColumn" msprop:Generator_ColumnPropNameInRow="CustAccount" msprop:Generator_ColumnVarNameInTable="columnCustAccount" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" msprop:Generator_UserColumnName="CustName" msprop:Generator_ColumnPropNameInTable="CustNameColumn" msprop:Generator_ColumnPropNameInRow="CustName" msprop:Generator_ColumnVarNameInTable="columnCustName" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemId" msprop:Generator_UserColumnName="ItemId" msprop:Generator_ColumnPropNameInTable="ItemIdColumn" msprop:Generator_ColumnPropNameInRow="ItemId" msprop:Generator_ColumnVarNameInTable="columnItemId" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalPrice" msprop:Generator_UserColumnName="TotalPrice" msprop:Generator_ColumnPropNameInTable="TotalPriceColumn" msprop:Generator_ColumnPropNameInRow="TotalPrice" msprop:Generator_ColumnVarNameInTable="columnTotalPrice" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
     </xs:complexType>
   </xs:element>
 </xs:schema>

@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_weight="1"
+            android:fontFamily="serif"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -39,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="100dp"
+            android:fontFamily="serif"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -50,11 +52,13 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/white"
+            android:fontFamily="serif"
             android:textSize="20sp"
             tools:text="Plataformas"
             android:layout_weight="0.5"/>
         <TextView
             android:id="@+id/PlataformaTitle"
+            android:fontFamily="serif"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="100dp"
@@ -68,9 +72,10 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_weight="0.5">
+            android:layout_weight="0.3">
         <TextView
             android:id="@+id/tvVideoRating"
+            android:fontFamily="serif"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
