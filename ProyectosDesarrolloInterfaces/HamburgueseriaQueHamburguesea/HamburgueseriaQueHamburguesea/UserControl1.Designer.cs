@@ -87,7 +87,7 @@
             nombre.Size = new Size(49, 15);
             nombre.TabIndex = 1;
             nombre.Text = "nombre";
-            nombre.Click += nombre_Click;
+          
             // 
             // Imagen
             // 

@@ -32,6 +32,8 @@
             opcionBurguer = new GroupBox();
             radioBurra = new RadioButton();
             radioApocalipsis = new RadioButton();
+            lbIngredientes = new Label();
+            lbLabel = new Label();
             opcionBurguer.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,11 +79,29 @@
             radioApocalipsis.UseVisualStyleBackColor = true;
             radioApocalipsis.CheckedChanged += radioBurra_CheckedChanged;
             // 
+            // lbIngredientes
+            // 
+            lbIngredientes.Location = new Point(272, 33);
+            lbIngredientes.Name = "lbIngredientes";
+            lbIngredientes.Size = new Size(240, 221);
+            lbIngredientes.TabIndex = 3;
+            // 
+            // lbLabel
+            // 
+            lbLabel.AutoSize = true;
+            lbLabel.Location = new Point(272, 18);
+            lbLabel.Name = "lbLabel";
+            lbLabel.Size = new Size(72, 15);
+            lbLabel.TabIndex = 4;
+            lbLabel.Text = "Ingredientes";
+            // 
             // ElegirHamburguesa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(577, 450);
+            Controls.Add(lbLabel);
+            Controls.Add(lbIngredientes);
             Controls.Add(opcionBurguer);
             Controls.Add(userControl11);
             Name = "ElegirHamburguesa";
@@ -89,6 +109,7 @@
             opcionBurguer.ResumeLayout(false);
             opcionBurguer.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -97,5 +118,7 @@
         private GroupBox opcionBurguer;
         private RadioButton radioBurra;
         private RadioButton radioApocalipsis;
+        private Label lbIngredientes;
+        private Label lbLabel;
     }
 }

@@ -13,14 +13,34 @@ namespace HamburgueseriaQueHamburguesea
 {
     public partial class ElegirHamburguesa : Form
     {
+        Form2 form2;
         public ElegirHamburguesa(Form2 formito)
         {
             InitializeComponent();
 
             userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\burguer.jpg");
             userControl11.nombre.Text = "Bebidas";
+            form2 = formito;
+            userControl11.botonAnadir.Click += botonAnadir_Click;
+            userControl11.botonVolver.Click += botonVolver_Click;
+           
 
         }
+
+        private void botonVolver_Click(object sender, EventArgs e)
+        {
+            form2.Show();
+            this.Hide();
+
+
+        }
+
+        private void botonAnadir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         private void radioBurra_CheckedChanged(object sender, EventArgs e)
         {
@@ -28,15 +48,25 @@ namespace HamburgueseriaQueHamburguesea
             {
                 userControl11.nombre.Text = "La burra";
                 userControl11.precio.Text = "10.5 Lereles";
+                lbLabel.Visible = true;
+                lbIngredientes.Text = "Pan de pueblo bien aceitado, omega3 de cancun\n Bacon del malo de bellota, Carne de Burro 78% artificial,\n" +
+                    "Queso de la cabra de la esquina, lechuga menos que ná,\n Cebolla ";
             }
             else if (radioApocalipsis.Checked)
             {
                 userControl11.nombre.Text = "La muerte hecha Burguer";
                 userControl11.precio.Text = "12.6 Lereles";
+                lbLabel.Visible = true;
+                lbIngredientes.Text = "Pan de Centeno bien grasoso, trigliceridos de Vallecas\n Bacon del bueno de pata negra, Carne de Vacuno 98% artificial,\n" +
+                    "Queso de la vaca de la esquina, lechuga mas bien poca,\n Cebolla sin caramelizar y un poco extracaramelizada";
+
+
             }
 
 
         }
+
+
     }
 
 

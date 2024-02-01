@@ -24,10 +24,7 @@ namespace HamburgueseriaQueHamburguesea
 
         }
 
-        private void nombre_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
@@ -48,6 +45,11 @@ namespace HamburgueseriaQueHamburguesea
         {
             get { return botonVolver; }
             set { botonVolver = botoncin; }
+        }
+        public Button botoncin2
+        {
+            get { return botonAnadir; }
+            set { botonAnadir = botoncin2; }
         }
 
 

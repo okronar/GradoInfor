@@ -33,6 +33,8 @@
             radioCoca = new RadioButton();
             radioAgua = new RadioButton();
             radioNestea = new RadioButton();
+            lbLabel = new Label();
+            lbIngredientes = new Label();
             opcionBebidas.SuspendLayout();
             SuspendLayout();
             // 
@@ -91,11 +93,29 @@
             radioNestea.UseVisualStyleBackColor = true;
             radioNestea.CheckedChanged += radioNestea_CheckedChanged;
             // 
+            // lbLabel
+            // 
+            lbLabel.AutoSize = true;
+            lbLabel.Location = new Point(260, 21);
+            lbLabel.Name = "lbLabel";
+            lbLabel.Size = new Size(72, 15);
+            lbLabel.TabIndex = 6;
+            lbLabel.Text = "Ingredientes";
+            // 
+            // lbIngredientes
+            // 
+            lbIngredientes.Location = new Point(260, 36);
+            lbIngredientes.Name = "lbIngredientes";
+            lbIngredientes.Size = new Size(240, 221);
+            lbIngredientes.TabIndex = 5;
+            // 
             // ElegirBebida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(535, 450);
+            Controls.Add(lbLabel);
+            Controls.Add(lbIngredientes);
             Controls.Add(opcionBebidas);
             Controls.Add(userControl11);
             Name = "ElegirBebida";
@@ -103,6 +123,7 @@
             opcionBebidas.ResumeLayout(false);
             opcionBebidas.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -112,5 +133,7 @@
         private RadioButton radioCoca;
         private RadioButton radioAgua;
         private RadioButton radioNestea;
+        private Label lbLabel;
+        private Label lbIngredientes;
     }
 }

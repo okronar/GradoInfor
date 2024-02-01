@@ -83,7 +83,7 @@ public class JavaApplication1 {
 							String cantidadString = getNodo("cantidad", elementoArticulo);
 							
 							
-							insertarArticulos(statement, numPedidoString, codigoString, cantidadString);
+							insertarArticulosPedido(statement, numPedidoString, codigoString, cantidadString);
 							
 
 							System.out.println("  Numero de pedido:" + numPedidoString );
@@ -102,25 +102,34 @@ public class JavaApplication1 {
 
 	}
 
-	private static void insertarArticulos(java.sql.Statement statement, String numPedidoString, String codigoString,
+	private static void insertarArticulosPedido(java.sql.Statement statement, String numPedidoString, String codigoString,
 			String cantidadString) throws SQLException {
-		if (!ComprobarExiste.ComprobarArticulo(numPedidoString)) {
-			statement.execute("INSERT INTO articulos values('" + numPedidoString + "','" + codigoString
+		if (!ComprobarExiste.ComprobarArticuloPedido(codigoString)&& ComprobarExiste.ComprobarArticulo(codigoString)) {
+			statement.execute("INSERT INTO articulosPedido values('" + numPedidoString + "','" + codigoString
 				+ "','" + cantidadString + "')");
-		}else {
-			System.out.println("El Articulo ya existe");
+		}else if (ComprobarExiste.ComprobarArticuloPedido(codigoString)){
+			System.out.println("El Articulo ya esta ingresado");
+		}else if(ComprobarExiste.ComprobarArticulo(codigoString)) {
+			System.out.println("El articulo no existe");
+			
 		}
 	}
 
 	private static void insertarPedido(java.sql.Statement statement, String numClienteString, String numPedidoString,
 			String fecha) throws SQLException {
-		if (!ComprobarExiste.ComprobarPedido(numPedidoString)) {
+		if (!ComprobarExiste.ComprobarPedido(numPedidoString)&&ComprobarExiste.ComprobarCliente(numClienteString)) {
 			statement.execute("INSERT INTO pedido values('" + numClienteString + "','"
 					+ numPedidoString + "','" + fecha + "')");
-		} else {
+		} else if(!ComprobarExiste.ComprobarCliente(numClienteString)){
+			System.out.println("El cliente no existe");
+		}
+		else if (ComprobarExiste.ComprobarPedido(numPedidoString)) {
 			System.out.println("El pedido ya existe");
 		}
 	}
+	
+	
+	
 	
 
 	private static String getNodo(String etiqueta, Element elem) {
