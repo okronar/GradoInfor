@@ -63,6 +63,8 @@ public class CrearTablas {
 		statement.execute("DROP TABLE IF EXISTS articulosPedido");
 		//statement.execute("DROP TABLE IF EXISTS clientes");
 		//statement.execute("DROP TABLE IF EXISTS articulosStock");
+		
+		connection.close();
 
 	}
 

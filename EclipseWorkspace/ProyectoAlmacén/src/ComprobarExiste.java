@@ -37,6 +37,7 @@ public class ComprobarExiste {
 		} catch (ClassNotFoundException | SQLException e) {
 			// Manejar la excepción si ocurre
 			e.printStackTrace();
+			System.out.println("no se pudo realizar la comprobacion de pedido");
 		}
 
 		// Devolver si el pedido existe o no
@@ -75,6 +76,7 @@ public class ComprobarExiste {
 		} catch (ClassNotFoundException | SQLException e) {
 			// Manejar la excepción si ocurre
 			e.printStackTrace();
+			System.out.println("no se pudo realizar la comprobacion de articulo del pedido");
 		}
 
 		// Devolver si el pedido existe o no
@@ -113,6 +115,7 @@ public class ComprobarExiste {
 		} catch (ClassNotFoundException | SQLException e) {
 			// Manejar la excepción si ocurre
 			e.printStackTrace();
+			System.out.println("no se pudo realizar la comprobacion de articulo");
 		}
 
 		// Devolver si el pedido existe o no
@@ -151,6 +154,7 @@ public class ComprobarExiste {
 		} catch (ClassNotFoundException | SQLException e) {
 			// Manejar la excepción si ocurre
 			e.printStackTrace();
+			System.out.println("no se pudo realizar la comprobacion de cliente");
 		}
 
 		// Devolver si el pedido existe o no
@@ -180,7 +184,7 @@ public class ComprobarExiste {
 				String stock = resultSet.getString("stock");
 				int stockInt = Integer.parseInt(stock);
 				// compruebo si hay stock
-				if (stockInt > cantidadInt) {
+				if (stockInt >= cantidadInt) {
 
 					hayStock = true;
 				}
@@ -201,6 +205,8 @@ public class ComprobarExiste {
 		} catch (ClassNotFoundException | SQLException e) {
 			// Manejar la excepción si ocurre
 			e.printStackTrace();
+			System.out.println("Error en la base de datos");
+			
 		}
 
 		// Devolver si el pedido existe o no
