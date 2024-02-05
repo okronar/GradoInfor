@@ -53,8 +53,12 @@ public class ServidorTCP {
 				 
 				 // Leemos datos de la peticion
 				 entrada = dis.readInt();
+				 if(entrada == 1) {
 				 // Calculamos resultado!!!!!!!!!!!!
-				 salida = (long)entrada*(long)entrada;
+				 salida = (long)entrada*(long)entrada;}
+				 else {
+					 
+				 }
 				 // Escribimos el resultado
 				 dos.writeLong(salida);
 				 // Cerramos los streams
