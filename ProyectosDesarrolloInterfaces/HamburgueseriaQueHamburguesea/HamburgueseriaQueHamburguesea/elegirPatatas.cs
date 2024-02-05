@@ -19,7 +19,8 @@ namespace HamburgueseriaQueHamburguesea
         public elegirPatatas(Form2 formitoe)
         {
             InitializeComponent();
-            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\patacas.jpg");
+            // userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\patacas.jpg");
+            userControl11.pictureModification.Image = Image.FromFile("C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\patacas.jpg");
             userControl11.nombre.Text = "Bebidas";
             userControl11.botonAnadir.Click += botonAnadir_Click;
             userControl11.botonVolver.Click += botonVolver_Click;
@@ -42,11 +43,17 @@ namespace HamburgueseriaQueHamburguesea
             {
                 Patatas pat = new Patatas(1,1);
                 Form2.Cesta.addItem(pat);
+                MessageBox.Show("Patacas simples añadidas chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
             }
             else if (radioDoble.Checked)
             {
                 Patatas pat = new Patatas(1, 2);
                 Form2.Cesta.addItem(pat);
+                MessageBox.Show("Patacas simples añadidas chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
             }
 
         }

@@ -32,6 +32,8 @@
             opcionPatacas = new GroupBox();
             radioSimple = new RadioButton();
             radioDoble = new RadioButton();
+            lblAnotaciones = new Label();
+            txtboxAnotaciones = new TextBox();
             opcionPatacas.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             // 
             opcionPatacas.Controls.Add(radioSimple);
             opcionPatacas.Controls.Add(radioDoble);
-            opcionPatacas.Location = new Point(236, 193);
+            opcionPatacas.Location = new Point(236, 144);
             opcionPatacas.Name = "opcionPatacas";
             opcionPatacas.Size = new Size(240, 100);
             opcionPatacas.TabIndex = 3;
@@ -77,12 +79,30 @@
             radioDoble.UseVisualStyleBackColor = true;
             radioDoble.CheckedChanged += radioSimple_CheckedChanged;
             // 
+            // lblAnotaciones
+            // 
+            lblAnotaciones.AutoSize = true;
+            lblAnotaciones.Location = new Point(236, 316);
+            lblAnotaciones.Name = "lblAnotaciones";
+            lblAnotaciones.Size = new Size(102, 15);
+            lblAnotaciones.TabIndex = 12;
+            lblAnotaciones.Text = "Anotaciones Extra";
+            // 
+            // txtboxAnotaciones
+            // 
+            txtboxAnotaciones.Location = new Point(236, 350);
+            txtboxAnotaciones.Name = "txtboxAnotaciones";
+            txtboxAnotaciones.Size = new Size(240, 23);
+            txtboxAnotaciones.TabIndex = 11;
+            // 
             // elegirPatatas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SaddleBrown;
             ClientSize = new Size(502, 450);
+            Controls.Add(lblAnotaciones);
+            Controls.Add(txtboxAnotaciones);
             Controls.Add(opcionPatacas);
             Controls.Add(userControl11);
             Name = "elegirPatatas";
@@ -91,6 +111,7 @@
             opcionPatacas.ResumeLayout(false);
             opcionPatacas.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -99,5 +120,7 @@
         private GroupBox opcionPatacas;
         private RadioButton radioSimple;
         private RadioButton radioDoble;
+        private Label lblAnotaciones;
+        private TextBox txtboxAnotaciones;
     }
 }

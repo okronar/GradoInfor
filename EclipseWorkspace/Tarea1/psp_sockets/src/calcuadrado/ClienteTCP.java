@@ -51,11 +51,20 @@ public class ClienteTCP {
 				DataOutputStream(sckt.getOutputStream());
 				 // Lo escribimos
 				 dos.writeInt(numero);
+				 dos.writeInt(numero2);
 				 
 				 // Leemos el resultado final
 				 long resultado = dis.readLong();
 				 // Indicamos en pantalla
-				 System.out.println( "Solicitud = " + numero +"\tResultado = " +resultado );
+				 String eleccion ="";
+				 
+				 if(numero==1) {
+					 eleccion = "cuadrado de ";
+				 }else {
+					 eleccion ="factorial de"; 
+				 }
+				 
+				 System.out.println( "Solicitud = " + numero +"\t"+eleccion+ numero2+"\t" +resultado );
 				 // y cerramos los streams y el socket
 				 dis.close();
 				 dos.close(); 

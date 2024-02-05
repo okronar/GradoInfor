@@ -28,7 +28,10 @@ public class ServidorTCP {
 		}
 		
 		int entrada;
-		long salida;
+		int entrada2;
+		
+		//salia error y pedia inicializar
+		long salida = 0;
 		// Bucle infinito 
 		while(true)
 		 { 
@@ -53,12 +56,13 @@ public class ServidorTCP {
 				 
 				 // Leemos datos de la peticion
 				 entrada = dis.readInt();
+				 entrada2 = dis.readInt();
 				 if(entrada == 1) {
 				 // Calculamos resultado!!!!!!!!!!!!
-				 salida = (long)entrada*(long)entrada;}
+				 salida = (long)entrada2*(long)entrada2;}
 				 else {
-					 
-				 }
+					salida = calcularFactorial(entrada2);
+					 }
 				 // Escribimos el resultado
 				 dos.writeLong(salida);
 				 // Cerramos los streams
@@ -77,5 +81,17 @@ public class ServidorTCP {
 		
 
 	}
+	 public static int calcularFactorial(int n) {
+	        if (n < 0) {
+	            throw new IllegalArgumentException("El factorial no está definido para números negativos");
+	        }
+	        
+	        int factorial = 1;
+	        for (int i = 1; i <= n; i++) {
+	            factorial *= i;
+	        }
+	        
+	        return factorial;
+	    }
 
 }

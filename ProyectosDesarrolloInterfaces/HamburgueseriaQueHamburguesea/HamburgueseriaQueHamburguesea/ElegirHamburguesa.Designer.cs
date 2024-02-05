@@ -34,6 +34,8 @@
             radioApocalipsis = new RadioButton();
             lbIngredientes = new Label();
             lbLabel = new Label();
+            lblAnotaciones = new Label();
+            txtboxAnotaciones = new TextBox();
             opcionBurguer.SuspendLayout();
             SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             // 
             opcionBurguer.Controls.Add(radioBurra);
             opcionBurguer.Controls.Add(radioApocalipsis);
-            opcionBurguer.Location = new Point(272, 277);
+            opcionBurguer.Location = new Point(272, 238);
             opcionBurguer.Name = "opcionBurguer";
             opcionBurguer.Size = new Size(240, 100);
             opcionBurguer.TabIndex = 2;
@@ -83,7 +85,7 @@
             // 
             lbIngredientes.Location = new Point(272, 33);
             lbIngredientes.Name = "lbIngredientes";
-            lbIngredientes.Size = new Size(240, 221);
+            lbIngredientes.Size = new Size(240, 202);
             lbIngredientes.TabIndex = 3;
             // 
             // lbLabel
@@ -95,12 +97,30 @@
             lbLabel.TabIndex = 4;
             lbLabel.Text = "Ingredientes";
             // 
+            // lblAnotaciones
+            // 
+            lblAnotaciones.AutoSize = true;
+            lblAnotaciones.Location = new Point(272, 367);
+            lblAnotaciones.Name = "lblAnotaciones";
+            lblAnotaciones.Size = new Size(102, 15);
+            lblAnotaciones.TabIndex = 10;
+            lblAnotaciones.Text = "Anotaciones Extra";
+            // 
+            // txtboxAnotaciones
+            // 
+            txtboxAnotaciones.Location = new Point(272, 401);
+            txtboxAnotaciones.Name = "txtboxAnotaciones";
+            txtboxAnotaciones.Size = new Size(240, 23);
+            txtboxAnotaciones.TabIndex = 9;
+            // 
             // ElegirHamburguesa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SaddleBrown;
             ClientSize = new Size(577, 450);
+            Controls.Add(lblAnotaciones);
+            Controls.Add(txtboxAnotaciones);
             Controls.Add(lbLabel);
             Controls.Add(lbIngredientes);
             Controls.Add(opcionBurguer);
@@ -122,5 +142,7 @@
         private RadioButton radioApocalipsis;
         private Label lbIngredientes;
         private Label lbLabel;
+        private Label lblAnotaciones;
+        private TextBox txtboxAnotaciones;
     }
 }

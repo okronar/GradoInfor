@@ -19,7 +19,8 @@ namespace HamburgueseriaQueHamburguesea
         {
             InitializeComponent();
 
-            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\burguer.jpg");
+            //userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\burguer.jpg");
+            userControl11.pictureModification.Image = Image.FromFile("C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\burguer.jpg");
             userControl11.nombre.Text = "Bebidas";
             form2 = formito;
             userControl11.botonAnadir.Click += botonAnadir_Click;
@@ -39,14 +40,17 @@ namespace HamburgueseriaQueHamburguesea
         private void botonAnadir_Click(object sender, EventArgs e)
 
 
-        { 
-            int[] extras = {0,0,0,0};
-            
+        {
+            int[] extras = { 0, 0, 0, 0 };
+
             if (radioBurra.Checked)
             {
-                
-               Burger bur1 = new Burger(1, 0, extras );
-               Form2.Cesta.addItem(bur1);
+
+                Burger bur1 = new Burger(1, 0, extras);
+                Form2.Cesta.addItem(bur1);
+                MessageBox.Show("Burra añadida chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
 
 
             }
@@ -55,6 +59,9 @@ namespace HamburgueseriaQueHamburguesea
 
                 Burger bur1 = new Burger(1, 2, extras);
                 Form2.Cesta.addItem(bur1);
+                MessageBox.Show("Apocalipsis añadida chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
 
             }
         }
@@ -70,6 +77,7 @@ namespace HamburgueseriaQueHamburguesea
                 lbLabel.Visible = true;
                 lbIngredientes.Text = "Pan de pueblo bien aceitado, omega3 de cancun\n Bacon del malo de bellota, Carne de Burro 78% artificial,\n" +
                     "Queso de la cabra de la esquina, lechuga menos que ná,\n Cebolla ";
+                
             }
             else if (radioApocalipsis.Checked)
             {
@@ -78,6 +86,7 @@ namespace HamburgueseriaQueHamburguesea
                 lbLabel.Visible = true;
                 lbIngredientes.Text = "Pan de Centeno bien grasoso, trigliceridos de Vallecas\n Bacon del bueno de pata negra, Carne de Vacuno 98% artificial,\n" +
                     "Queso de la vaca de la esquina, lechuga mas bien poca,\n Cebolla sin caramelizar y un poco extracaramelizada";
+                
 
 
             }
@@ -91,6 +100,7 @@ namespace HamburgueseriaQueHamburguesea
             this.Hide();
 
         }
+
     }
 
 

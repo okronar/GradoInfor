@@ -22,7 +22,8 @@ namespace HamburgueseriaQueHamburguesea
 
 
             InitializeComponent();
-            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
+            //userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
+            userControl11.pictureModification.Image = Image.FromFile("C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
             userControl11.nombre.Text = "Bebidas";
             form2 = formito;
 
@@ -46,20 +47,30 @@ namespace HamburgueseriaQueHamburguesea
             {
                 Agua water = new Agua(1);
                 Form2.Cesta.addItem(water);
-                
+                MessageBox.Show("Agüita añadida chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
+
             }
             else if (radioNestea.Checked)
             {
                 Nestea te = new Nestea(1);
-                Form2.Cesta.addItem(te);    
+                Form2.Cesta.addItem(te);
+                MessageBox.Show("Nestea añadido chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
 
             }
             else if (radioCoca.Checked)
             {
                CocaCola COCA = new CocaCola(1);
                 Form2.Cesta.addItem(COCA);
+                MessageBox.Show("Coca cola añadida chicu");
+                Form2.anotaciones += txtboxAnotaciones.Text + " .";
+                txtboxAnotaciones.Text = "";
 
             }
+            //Form2.anotaciones += 
 
         }
 

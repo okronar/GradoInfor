@@ -35,6 +35,8 @@
             radioNestea = new RadioButton();
             lbLabel = new Label();
             lbIngredientes = new Label();
+            txtboxAnotaciones = new TextBox();
+            lblAnotaciones = new Label();
             opcionBebidas.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             opcionBebidas.Controls.Add(radioCoca);
             opcionBebidas.Controls.Add(radioAgua);
             opcionBebidas.Controls.Add(radioNestea);
-            opcionBebidas.Location = new Point(260, 280);
+            opcionBebidas.Location = new Point(260, 260);
             opcionBebidas.Name = "opcionBebidas";
             opcionBebidas.Size = new Size(240, 100);
             opcionBebidas.TabIndex = 1;
@@ -109,12 +111,30 @@
             lbIngredientes.Size = new Size(240, 221);
             lbIngredientes.TabIndex = 5;
             // 
+            // txtboxAnotaciones
+            // 
+            txtboxAnotaciones.Location = new Point(260, 401);
+            txtboxAnotaciones.Name = "txtboxAnotaciones";
+            txtboxAnotaciones.Size = new Size(240, 23);
+            txtboxAnotaciones.TabIndex = 7;
+            // 
+            // lblAnotaciones
+            // 
+            lblAnotaciones.AutoSize = true;
+            lblAnotaciones.Location = new Point(260, 369);
+            lblAnotaciones.Name = "lblAnotaciones";
+            lblAnotaciones.Size = new Size(102, 15);
+            lblAnotaciones.TabIndex = 8;
+            lblAnotaciones.Text = "Anotaciones Extra";
+            // 
             // ElegirBebida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SaddleBrown;
             ClientSize = new Size(535, 450);
+            Controls.Add(lblAnotaciones);
+            Controls.Add(txtboxAnotaciones);
             Controls.Add(lbLabel);
             Controls.Add(lbIngredientes);
             Controls.Add(opcionBebidas);
@@ -137,5 +157,7 @@
         private RadioButton radioNestea;
         private Label lbLabel;
         private Label lbIngredientes;
+        private TextBox txtboxAnotaciones;
+        private Label lblAnotaciones;
     }
 }
