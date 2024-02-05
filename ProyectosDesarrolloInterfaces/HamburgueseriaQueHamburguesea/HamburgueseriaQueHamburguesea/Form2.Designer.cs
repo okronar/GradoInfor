@@ -133,7 +133,7 @@
             Controls.Add(pictureBox4);
             Name = "Form2";
             Text = "Form2";
-          
+            FormClosing += Form2_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);

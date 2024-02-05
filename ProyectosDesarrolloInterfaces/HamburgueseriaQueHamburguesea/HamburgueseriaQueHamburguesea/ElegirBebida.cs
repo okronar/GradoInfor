@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Hamburger;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,7 +28,7 @@ namespace HamburgueseriaQueHamburguesea
 
             userControl11.botonAnadir.Click += botonAnadir_Click;
             userControl11.botonVolver.Click += botonVolver_Click;
-           
+
 
         }
 
@@ -40,6 +42,24 @@ namespace HamburgueseriaQueHamburguesea
 
         private void botonAnadir_Click(object sender, EventArgs e)
         {
+            if (radioAgua.Checked)
+            {
+                Agua water = new Agua(1);
+                Form2.Cesta.addItem(water);
+                
+            }
+            else if (radioNestea.Checked)
+            {
+                Nestea te = new Nestea(1);
+                Form2.Cesta.addItem(te);    
+
+            }
+            else if (radioCoca.Checked)
+            {
+               CocaCola COCA = new CocaCola(1);
+                Form2.Cesta.addItem(COCA);
+
+            }
 
         }
 
@@ -66,7 +86,8 @@ namespace HamburgueseriaQueHamburguesea
                 lbLabel.Visible = true;
                 lbIngredientes.Text = "Pues esto es Coca-Cola si te cuento lo que lleva igual te matan";
             }
-            else {
+            else
+            {
                 userControl11.nombre.Text = "Bebida";
                 userControl11.precio.Text = "Dineros";
                 lbLabel.Visible = true;
@@ -74,6 +95,12 @@ namespace HamburgueseriaQueHamburguesea
 
             }
 
+        }
+
+        private void ElegirBebida_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            form2.Show();
+            this.Hide();
         }
     }
 }

@@ -113,6 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SaddleBrown;
             ClientSize = new Size(535, 450);
             Controls.Add(lbLabel);
             Controls.Add(lbIngredientes);
@@ -120,6 +121,7 @@
             Controls.Add(userControl11);
             Name = "ElegirBebida";
             Text = "ElegirBebida";
+            FormClosing += ElegirBebida_FormClosing;
             opcionBebidas.ResumeLayout(false);
             opcionBebidas.PerformLayout();
             ResumeLayout(false);

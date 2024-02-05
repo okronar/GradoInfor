@@ -12,9 +12,11 @@ namespace HamburgueseriaQueHamburguesea
 {
     public partial class CestaForm : Form
     {
+        Form2 form2;
         public CestaForm(Form2 formu2)
         {
             InitializeComponent();
+            form2 = formu2;
         }
 
         private void LabelPedido_Click(object sender, EventArgs e)
@@ -24,7 +26,14 @@ namespace HamburgueseriaQueHamburguesea
 
         private void botonVolverCesta_Click(object sender, EventArgs e)
         {
+            form2.Show();
+            this.Hide();
+        }
 
+        private void CestaForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            form2.Show();
+            this.Hide();
         }
     }
 }

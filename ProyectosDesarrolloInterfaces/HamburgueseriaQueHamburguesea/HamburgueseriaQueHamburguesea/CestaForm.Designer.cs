@@ -32,11 +32,9 @@
             pictureBox1 = new PictureBox();
             botonVolverCesta = new Button();
             botonPagarCesta = new Button();
-            LabelPedido = new Label();
-            panel1 = new Panel();
             pictureBox2 = new PictureBox();
+            LabelPedido = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -70,24 +68,6 @@
             botonPagarCesta.Text = "Pagar";
             botonPagarCesta.UseVisualStyleBackColor = true;
             // 
-            // LabelPedido
-            // 
-            LabelPedido.AutoSize = true;
-            LabelPedido.Location = new Point(3, 0);
-            LabelPedido.Name = "LabelPedido";
-            LabelPedido.Size = new Size(47, 15);
-            LabelPedido.TabIndex = 3;
-            LabelPedido.Text = "Pedido.";
-            LabelPedido.Click += LabelPedido_Click;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(LabelPedido);
-            panel1.Location = new Point(530, 58);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(258, 341);
-            panel1.TabIndex = 4;
-            // 
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
@@ -99,22 +79,30 @@
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
+            // LabelPedido
+            // 
+            LabelPedido.Location = new Point(570, 71);
+            LabelPedido.Name = "LabelPedido";
+            LabelPedido.Size = new Size(193, 314);
+            LabelPedido.TabIndex = 3;
+            LabelPedido.Text = "Pedido";
+            LabelPedido.Click += LabelPedido_Click;
+            // 
             // CestaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(LabelPedido);
             Controls.Add(pictureBox2);
-            Controls.Add(panel1);
             Controls.Add(botonPagarCesta);
             Controls.Add(botonVolverCesta);
             Controls.Add(pictureBox1);
             Name = "CestaForm";
             Text = "Pedido";
+            FormClosing += CestaForm_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -124,8 +112,7 @@
         private PictureBox pictureBox1;
         private Button botonVolverCesta;
         private Button botonPagarCesta;
-        private Label LabelPedido;
-        private Panel panel1;
         private PictureBox pictureBox2;
+        private Label LabelPedido;
     }
 }

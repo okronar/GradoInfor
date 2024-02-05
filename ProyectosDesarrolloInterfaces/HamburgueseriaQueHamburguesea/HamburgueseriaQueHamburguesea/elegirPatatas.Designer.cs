@@ -41,7 +41,6 @@
             userControl11.Name = "userControl11";
             userControl11.Size = new Size(230, 447);
             userControl11.TabIndex = 0;
-       
             // 
             // opcionPatacas
             // 
@@ -82,11 +81,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SaddleBrown;
             ClientSize = new Size(502, 450);
             Controls.Add(opcionPatacas);
             Controls.Add(userControl11);
             Name = "elegirPatatas";
             Text = "ElegirPatacas";
+            FormClosing += elegirPatatas_FormClosing;
             opcionPatacas.ResumeLayout(false);
             opcionPatacas.PerformLayout();
             ResumeLayout(false);

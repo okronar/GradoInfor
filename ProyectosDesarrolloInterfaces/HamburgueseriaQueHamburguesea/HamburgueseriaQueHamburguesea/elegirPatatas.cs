@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hamburger;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,19 +24,30 @@ namespace HamburgueseriaQueHamburguesea
             userControl11.botonAnadir.Click += botonAnadir_Click;
             userControl11.botonVolver.Click += botonVolver_Click;
             form2 = formitoe;
-                
+
         }
 
         private void botonVolver_Click(object sender, EventArgs e)
         {
             form2.Show();
             this.Hide();
-            
+
 
         }
 
         private void botonAnadir_Click(object sender, EventArgs e)
         {
+
+            if (radioSimple.Checked)
+            {
+                Patatas pat = new Patatas(1,1);
+                Form2.Cesta.addItem(pat);
+            }
+            else if (radioDoble.Checked)
+            {
+                Patatas pat = new Patatas(1, 2);
+                Form2.Cesta.addItem(pat);
+            }
 
         }
 
@@ -55,6 +67,11 @@ namespace HamburgueseriaQueHamburguesea
             }
         }
 
-   
+        private void elegirPatatas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            form2.Show();
+            this.Hide();
+
+        }
     }
 }

@@ -99,6 +99,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SaddleBrown;
             ClientSize = new Size(577, 450);
             Controls.Add(lbLabel);
             Controls.Add(lbIngredientes);
@@ -106,6 +107,7 @@
             Controls.Add(userControl11);
             Name = "ElegirHamburguesa";
             Text = "ElegirHamburguesa";
+            FormClosing += ElegirHamburguesa_FormClosing;
             opcionBurguer.ResumeLayout(false);
             opcionBurguer.PerformLayout();
             ResumeLayout(false);
