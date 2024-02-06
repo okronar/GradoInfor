@@ -3,9 +3,13 @@ package com.sergio.room_database
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.sergio.room_database.databinding.ActivityMainBinding
 import com.sergio.room_database.ui.viewmodel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +29,10 @@ class MainActivity : AppCompatActivity() {
             binding.tvQuote.text = currentQuote.quote
             binding.tvAuthor.text = currentQuote.author
         })
+        quoteViewModel.isLoading.observe(this, Observer {
+            binding.loading.isVisible = it
+        })
+
         binding.viewContainer.setOnClickListener { quoteViewModel.randomQuote() }
 
 
