@@ -41,7 +41,7 @@ public class JavaApplication1 {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
 			// AQUI VA EL FICHERO XML
-			Document document = builder.parse(new File("Pedidos_Tiendas.xml"));
+			Document document = builder.parse(new File("Pedidos_Tiendas2.xml"));
 			document.getDocumentElement().normalize();
 			System.out.println("Elemento raiz: " + document.getDocumentElement().getNodeName());
 
@@ -137,7 +137,7 @@ public class JavaApplication1 {
 			statement.execute("INSERT INTO articulosPedido values('" + numPedidoString + "','" + codigoString + "','"
 					+ cantidadString + "')");
 		} else if (ComprobarExiste.ComprobarArticuloPedido(codigoString)) {
-			System.out.println("El Articulo ya esta ingresado");
+			System.out.println("El Articulo ya esta ingresado en el pedido");
 		} else if (ComprobarExiste.ComprobarArticulo(codigoString)) {
 			System.out.println("El articulo no existe");
 
