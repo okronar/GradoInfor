@@ -22,8 +22,8 @@ namespace HamburgueseriaQueHamburguesea
 
 
             InitializeComponent();
-            userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
-            //userControl11.pictureModification.Image = Image.FromFile("C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
+            //userControl11.pictureModification.Image = Image.FromFile("D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
+            userControl11.pictureModification.Image = Image.FromFile("C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\bebida.jpg");
             userControl11.nombre.Text = "Bebidas";
             form2 = formito;
 
@@ -110,7 +110,7 @@ namespace HamburgueseriaQueHamburguesea
 
         private void ElegirBebida_FormClosing(object sender, FormClosingEventArgs e)
         {
-            form2.Show();
+            form2.Close();
             this.Hide();
         }
     }

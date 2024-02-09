@@ -32,8 +32,9 @@ namespace HamburgueseriaQueHamburguesea
 
         private void CestaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            form2.Show();
+            
             this.Hide();
+            form2.Close();
         }
     }
 }
