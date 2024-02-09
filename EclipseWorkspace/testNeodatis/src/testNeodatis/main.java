@@ -109,7 +109,7 @@ public class main {
 			break;
 		case 7:
 			// Agregados con selección
-			ODB odb7 = ODBFactory.open("D:/Carlos/Base_datos_OO/tutorial.odb");
+			ODB odb7 = ODBFactory.open("D:/Sergio/Base_datos_OO/tutorial.odb");
 			IValuesQuery valuesQuery7 = new ValuesCriteriaQuery(Sujeto.class, Where.gt("edad", 21)).count("nombre")
 					.field("ciudad").groupBy("ciudad");
 			Values values7 = odb7.getValues(valuesQuery7);
