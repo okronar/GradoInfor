@@ -84,9 +84,9 @@
             lblAnotaciones.AutoSize = true;
             lblAnotaciones.Location = new Point(236, 316);
             lblAnotaciones.Name = "lblAnotaciones";
-            lblAnotaciones.Size = new Size(102, 15);
+            lblAnotaciones.Size = new Size(217, 15);
             lblAnotaciones.TabIndex = 12;
-            lblAnotaciones.Text = "Anotaciones Extra";
+            lblAnotaciones.Text = "Anotaciones Extra especifique producto";
             // 
             // txtboxAnotaciones
             // 

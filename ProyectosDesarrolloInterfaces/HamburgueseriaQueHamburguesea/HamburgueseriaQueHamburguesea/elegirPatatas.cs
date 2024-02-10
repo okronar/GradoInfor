@@ -65,7 +65,7 @@ namespace HamburgueseriaQueHamburguesea
             if (radioSimple.Checked)
             {
                 userControl11.nombre.Text = "Ración simple";
-                userControl11.precio.Text = "5.25 lereles";
+                userControl11.precio.Text = "2.62 lereles";
             }
             else if (radioDoble.Checked)
             {

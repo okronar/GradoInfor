@@ -72,8 +72,8 @@ namespace HamburgueseriaQueHamburguesea
         {
             if (radioBurra.Checked)
             {
-                userControl11.nombre.Text = "La burra";
-                userControl11.precio.Text = "10.5 Lereles";
+                userControl11.nombre.Text = "La burra/normal";
+                userControl11.precio.Text = "9.45 Lereles";
                 lbLabel.Visible = true;
                 lbIngredientes.Text = "Pan de pueblo bien aceitado, omega3 de cancun\n Bacon del malo de bellota, Carne de Burro 78% artificial,\n" +
                     "Queso de la cabra de la esquina, lechuga menos que ná,\n Cebolla ";
@@ -81,8 +81,8 @@ namespace HamburgueseriaQueHamburguesea
             }
             else if (radioApocalipsis.Checked)
             {
-                userControl11.nombre.Text = "La muerte hecha Burguer";
-                userControl11.precio.Text = "12.6 Lereles";
+                userControl11.nombre.Text = "Apocalipsis/grande";
+                userControl11.precio.Text = "11.55 Lereles";
                 lbLabel.Visible = true;
                 lbIngredientes.Text = "Pan de Centeno bien grasoso, trigliceridos de Vallecas\n Bacon del bueno de pata negra, Carne de Vacuno 98% artificial,\n" +
                     "Queso de la vaca de la esquina, lechuga mas bien poca,\n Cebolla sin caramelizar y un poco extracaramelizada";

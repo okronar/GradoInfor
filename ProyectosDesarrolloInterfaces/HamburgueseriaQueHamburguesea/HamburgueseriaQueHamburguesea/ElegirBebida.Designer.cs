@@ -123,9 +123,9 @@
             lblAnotaciones.AutoSize = true;
             lblAnotaciones.Location = new Point(260, 369);
             lblAnotaciones.Name = "lblAnotaciones";
-            lblAnotaciones.Size = new Size(102, 15);
+            lblAnotaciones.Size = new Size(217, 15);
             lblAnotaciones.TabIndex = 8;
-            lblAnotaciones.Text = "Anotaciones Extra";
+            lblAnotaciones.Text = "Anotaciones Extra especifique producto";
             // 
             // ElegirBebida
             // 
