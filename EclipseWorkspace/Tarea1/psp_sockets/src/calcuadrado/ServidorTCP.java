@@ -60,9 +60,12 @@ public class ServidorTCP {
 				 if(entrada == 1) {
 				 // Calculamos resultado!!!!!!!!!!!!
 				 salida = (long)entrada2*(long)entrada2;}
-				 else {
-					salida = calcularFactorial(entrada2);
+				 if(entrada == 2) {
+					salida = (long)calcularFactorial(entrada2);
 					 }
+				 else {
+					 salida = (long)getFibonacciNumber(entrada2);
+				 }
 				 // Escribimos el resultado
 				 dos.writeLong(salida);
 				 // Cerramos los streams
@@ -93,5 +96,25 @@ public class ServidorTCP {
 	        
 	        return factorial;
 	    }
+	 public static int getFibonacciNumber(int position) {
+	        if (position <= 0) return -1; 
+	        
+	        if (position == 1 || position == 2) {
+	            return position - 1;
+	        } else {
+	            int a = 0;
+	            int b = 1;
+	            int sum = 0;
+	            
+	            for (int i = 1; i < position; i++) {
+	                sum = a + b;
+	                a = b;
+	                b = sum;
+	            }
+	            return sum;
+	        }
+	    }
+	
+	 
 
 }

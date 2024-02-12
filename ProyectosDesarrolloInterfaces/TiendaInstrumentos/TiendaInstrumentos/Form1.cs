@@ -18,7 +18,7 @@ namespace TiendaInstrumentos
             
 
             string sqlQuery;
-            sqlQuery = "SELECT * FROM Producto";
+            sqlQuery = "SELECT * FROM Productos";
 
             try
             {

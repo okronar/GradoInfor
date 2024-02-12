@@ -38,6 +38,7 @@ public class ClienteTCP {
 			       System.out.println("Seleccione una opción:");
 			       System.out.println("1. Calcular el cuadrado de un número");
 			       System.out.println("2. Factorial");
+			       System.out.println("3. número que se haya en la posicion de la secuencia de Fibonacci");
 			       System.out.print("Opción: ");
 			       int numero = scanner.nextInt();
 			       System.out.println("Que numero?");
@@ -60,8 +61,11 @@ public class ClienteTCP {
 				 
 				 if(numero==1) {
 					 eleccion = "cuadrado de ";
+				 }if(numero==2) {
+					 eleccion ="factorial de "; 
 				 }else {
-					 eleccion ="factorial de"; 
+					 eleccion = "numero de la posicion en la secuencia de fibonacci ";
+					 
 				 }
 				 
 				 System.out.println( "Solicitud = " + numero +"\t"+eleccion+ numero2+"\t" +resultado );
