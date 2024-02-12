@@ -1,10 +1,13 @@
 using Microsoft.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 namespace TiendaInstrumentos
 {
     public partial class Form1 : Form
     {
+        
+        string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
         public Form1()
         {
             InitializeComponent();
@@ -12,12 +15,13 @@ namespace TiendaInstrumentos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source = DESKTOP-F7EQIKK; Initial Catalog=Tienda_instrumentos; Encrypt=False; Integrated Security=true";
+            
 
             string sqlQuery;
             sqlQuery = "SELECT * FROM Producto";
 
-            try {
+            try
+            {
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
                 SqlConnection connection = new SqlConnection(connectionString);
@@ -29,8 +33,9 @@ namespace TiendaInstrumentos
 
                 MessageBox.Show("Exito");
             }
-            catch(Exception)
+            catch (Exception)
             {
+
                 MessageBox.Show("Fallo");
                 throw;
 
@@ -40,6 +45,72 @@ namespace TiendaInstrumentos
 
 
 
+
+        }
+
+        private void botonInsertar_Click(object sender, EventArgs e)
+        {
+            //esto es para hacerlo mediante visual
+
+            //string sqlQuery = "INSERT INTO Productos (codigo,nombre) VALUES (@codigo,@nombre)";
+
+
+            //    try {
+
+            //    SqlConnection connection = new SqlConnection(connectionString);
+            //    connection.Open();
+
+            //    SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+
+            //    var productoCodigoParametro = new SqlParameter("codigo", System.Data.SqlDbType.VarChar);
+            //    productoCodigoParametro.Value = txboxCodigo.Text;
+            //    cmd.Parameters.Add(productoCodigoParametro);
+
+            //    var productoNombreParametro = new SqlParameter("nombre", System.Data.SqlDbType.VarChar);
+            //    productoNombreParametro.Value = txboxNombre.Text;
+            //    cmd.Parameters.Add(productoNombreParametro);
+
+
+
+
+
+            //    cmd.ExecuteNonQuery();
+
+            //    connection.Close();
+            //    MessageBox.Show("Exito");
+
+
+            //}catch (Exception)
+            //{
+            //    MessageBox.Show("Fallo");
+            //    throw;
+            //}
+            try { 
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            SqlCommand cmd = new SqlCommand("SaveProduct", connection);
+
+                //esto es para especificar que es un procedimiento 
+             cmd.CommandType = CommandType.StoredProcedure;
+
+            String codigoProducto = txboxCodigo.Text;
+            String nombreProducto = txboxNombre.Text;
+
+            cmd.Parameters.Add(new SqlParameter("@codigoProducto", codigoProducto));
+            cmd.Parameters.Add(new SqlParameter("@nombreProducto", nombreProducto));
+
+            cmd.ExecuteNonQuery();
+
+            connection.Close();
+            MessageBox.Show("Exito");
+
+
+             }catch (Exception)
+            {
+                MessageBox.Show("Fallo");
+                throw;
+            }
 
         }
     }
