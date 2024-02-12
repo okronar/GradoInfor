@@ -67,7 +67,7 @@ namespace HamburgueseriaQueHamburguesea
             contenidoPedido.AppendLine("--------------------------");
             foreach (Item item in items)
             {
-                contenidoPedido.AppendLine(item.ToString());
+                contenidoPedido.AppendLine(item.ToString()) ;
             }
             contenidoPedido.AppendLine("--------------------------");
 
@@ -91,19 +91,28 @@ namespace HamburgueseriaQueHamburguesea
                 // Obtener la ruta del archivo de texto del escritorio
                 string rutaArchivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ultimo_pedido.txt");
 
-                // Leer el contenido del archivo de texto
-                string contenidoPedido = File.ReadAllText(rutaArchivo);
+                // Verificar si el archivo existe
+                if (File.Exists(rutaArchivo))
+                {
+                    // Leer el contenido del archivo de texto
+                    string contenidoPedido = File.ReadAllText(rutaArchivo);
 
-                // Mostrar el contenido del pedido en un cuadro de mensaje
-                MessageBox.Show(contenidoPedido, "Último Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Mostrar el contenido del pedido en un cuadro de mensaje
+                    MessageBox.Show(contenidoPedido, "Último Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // Mostrar un mensaje indicando que el archivo no existe
+                    MessageBox.Show("Parece que no hay pedidos anteriores", "Archivo no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception ex)
             {
                 // Manejar cualquier excepción que pueda ocurrir al leer el archivo
                 MessageBox.Show("Error al leer el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
     }
 
 
