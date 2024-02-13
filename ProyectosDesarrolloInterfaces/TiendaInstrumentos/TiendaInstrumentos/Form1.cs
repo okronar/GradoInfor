@@ -6,7 +6,7 @@ namespace TiendaInstrumentos
 {
     public partial class Form1 : Form
     {
-        
+
         string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
         public Form1()
         {
@@ -15,7 +15,7 @@ namespace TiendaInstrumentos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
 
             string sqlQuery;
             sqlQuery = "SELECT * FROM Productos";
@@ -85,32 +85,39 @@ namespace TiendaInstrumentos
             //    MessageBox.Show("Fallo");
             //    throw;
             //}
-            try { 
-            SqlConnection connection = new SqlConnection(connectionString);
-            connection.Open();
+            try
+            {
+                SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
 
-            SqlCommand cmd = new SqlCommand("SaveProduct", connection);
+                SqlCommand cmd = new SqlCommand("SaveProduct", connection);
 
                 //esto es para especificar que es un procedimiento 
-             cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
 
-            String codigoProducto = txboxCodigo.Text;
-            String nombreProducto = txboxNombre.Text;
+                String codigoProducto = txboxCodigo.Text;
+                String nombreProducto = txboxNombre.Text;
 
-            cmd.Parameters.Add(new SqlParameter("@codigoProducto", codigoProducto));
-            cmd.Parameters.Add(new SqlParameter("@nombreProducto", nombreProducto));
+                cmd.Parameters.Add(new SqlParameter("@codigoProducto", codigoProducto));
+                cmd.Parameters.Add(new SqlParameter("@nombreProducto", nombreProducto));
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            connection.Close();
-            MessageBox.Show("Exito");
+                connection.Close();
+                MessageBox.Show("Exito");
 
 
-             }catch (Exception)
+            }
+            catch (Exception)
             {
                 MessageBox.Show("Fallo");
                 throw;
             }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }
