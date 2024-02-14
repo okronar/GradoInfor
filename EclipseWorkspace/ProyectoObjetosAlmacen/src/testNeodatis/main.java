@@ -14,7 +14,7 @@ public class main {
 
 		
 		
-		System.out.println("elije opcion");
+		System.out.println("elige opcion");
 		Scanner scanner = new Scanner(System.in);
 
 		int opcion = scanner.nextInt();
