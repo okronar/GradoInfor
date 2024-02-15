@@ -152,6 +152,24 @@ public class main {
 
 				case 7: 
 			
+					ODB odb7 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
+
+					IValuesQuery query5 = new ValuesCriteriaQuery(LineaPedido.class).avg("cantidad").field("numeroPedido")
+							.groupBy("numeroPedido");
+					Values values5 = odb7.getValues(query5);
+					
+					System.out.println("Media de artículos por pedido recibidos : ");
+					while (values5.hasNext()) {
+						
+						ObjectValues ObjectValues = (ObjectValues) values5.next();
+						System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido") + " - Cantidad media de articulos: "
+								+ ObjectValues.getByAlias("cantidad"));
+						
+
+					}
+					odb7.close();
+					break; 
+
 			
 		
 
