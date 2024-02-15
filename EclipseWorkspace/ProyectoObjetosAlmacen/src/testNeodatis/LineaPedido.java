@@ -4,9 +4,9 @@ public class LineaPedido {
 	
 private String numeroPedido;
 private String codigo;
-private String cantidad;
+private int cantidad;
 
-public LineaPedido(String numeroPedido, String codigo, String cantidad) {
+public LineaPedido(String numeroPedido, String codigo, int cantidad) {
 	
 	this.numeroPedido = numeroPedido;
 	this.codigo = codigo;
@@ -19,7 +19,7 @@ public String getNumeroPedido() {
 public String getCodigo() {
 	return codigo;
 }
-public String getCantidad() {
+public int getCantidad() {
 	return cantidad;
 }
 
