@@ -112,7 +112,7 @@ public class main {
 					.groupBy("codigo");
 			Values values3 = odb5.getValues(query3);
 			
-			System.out.println("Listado de clientes con Pedidos:");
+			System.out.println("Listado de artículos con las cantidades sumadas de todos los pedidos:");
 			while (values3.hasNext()) {
 				
 				ObjectValues ObjectValues = (ObjectValues) values3.next();
@@ -124,6 +124,33 @@ public class main {
 
 			odb5.close();
 			break; 
+			
+			//Listado de unidades pedidas por pedido (independientemente del código)
+
+			case 6:
+				
+				ODB odb6 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
+
+				IValuesQuery query4 = new ValuesCriteriaQuery(LineaPedido.class).sum("cantidad").field("numeroPedido")
+						.groupBy("numeroPedido");
+				Values values4 = odb6.getValues(query4);
+				
+				System.out.println("Listado de unidades pedidas por pedido (independientemente del código):");
+				while (values4.hasNext()) {
+					
+					ObjectValues ObjectValues = (ObjectValues) values4.next();
+					System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido") + " - Cantidad Total articulos: "
+							+ ObjectValues.getByAlias("cantidad"));
+					
+
+				}
+
+				odb6.close();
+				break; 
+				
+				//Media de artículos por pedido recibidos.
+
+				case 7: 
 			
 			
 		
