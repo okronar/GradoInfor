@@ -165,7 +165,18 @@ public class main {
 						System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido") + " - Cantidad media de articulos: "
 								+ ObjectValues.getByAlias("cantidad"));
 						
+						
+					/*
+					 * IValuesQuery queryMediaArticulosPorPedido = new ValuesCriteriaQuery(LineaPedido.class)
+                                                    .avg("cantidad");
 
+    Values valuesMediaArticulosPorPedido = odb7.getValues(queryMediaArticulosPorPedido);
+    
+    double mediaArticulos = (Double) valuesMediaArticulosPorPedido.next().getByAlias("$1");
+    
+    System.out.println("Media de artículos por pedido recibidos en general: " + mediaArticulos);
+						
+*/
 					}
 					odb7.close();
 					break; 
