@@ -16,11 +16,16 @@ public class main {
 
 	public static void main(String[] args) {
 
-		
-			//traspasoDatos();
-		
-		
+		// traspasoDatos();
+
 		System.out.println("elige opcion");
+		System.out.println("1-Número de pedidos recibidos y procesados correctamente.");
+		System.out.println("2-Número de líneas de pedido recibidas..");
+		System.out.println("3-Listado de artículos diferentes recibidos.");
+		System.out.println("4-Listado de clientes que han enviado pedidos.");
+		System.out.println("5-Listado de artículos con las cantidades sumadas de todos los pedidos.");
+		System.out.println("6-Listado de unidades pedidas por pedido.");
+		System.out.println("7-Media de artículos por pedido recibidos.");
 
 		Scanner scanner = new Scanner(System.in);
 
@@ -70,7 +75,7 @@ public class main {
 			// Mostrar los resultados
 			System.out.println("Listado de artículos diferentes recibidos:");
 			while (values.hasNext()) {
-				
+
 				ObjectValues ObjectValues = (ObjectValues) values.next();
 
 				System.out.println("\tArtículo: " + ObjectValues.getByAlias("codigo") + " - Pedidos: "
@@ -79,20 +84,20 @@ public class main {
 
 			odb3.close();
 			break;
-			
-		//Listado de clientes que han enviado pedidos. (incluir el número de pedidos)
-	
+
+		// Listado de clientes que han enviado pedidos. (incluir el número de pedidos)
+
 		case 4:
-			
+
 			ODB odb4 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
 
 			IValuesQuery query2 = new ValuesCriteriaQuery(Pedido.class).count("numeroPedido").field("numeroCliente")
 					.groupBy("numeroCliente");
 			Values values2 = odb4.getValues(query2);
-			
+
 			System.out.println("Listado de clientes con Pedidos:");
 			while (values2.hasNext()) {
-				
+
 				ObjectValues ObjectValues = (ObjectValues) values2.next();
 
 				System.out.println("\tCliente: " + ObjectValues.getByAlias("numeroCliente") + " - Pedidos: "
@@ -101,93 +106,72 @@ public class main {
 
 			odb4.close();
 			break;
-			
-			//Listado de artículos con las cantidades sumadas de todos los pedidos.
-			
-			case 5:
-			
+
+		// Listado de artículos con las cantidades sumadas de todos los pedidos.
+
+		case 5:
+
 			ODB odb5 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
 
 			IValuesQuery query3 = new ValuesCriteriaQuery(LineaPedido.class).sum("cantidad").field("codigo")
 					.groupBy("codigo");
 			Values values3 = odb5.getValues(query3);
-			
+
 			System.out.println("Listado de artículos con las cantidades sumadas de todos los pedidos:");
 			while (values3.hasNext()) {
-				
+
 				ObjectValues ObjectValues = (ObjectValues) values3.next();
 				System.out.println("\tArticulo: " + ObjectValues.getByAlias("codigo") + " - Cantidad Total: "
 						+ ObjectValues.getByAlias("cantidad"));
-				
 
 			}
 
 			odb5.close();
-			break; 
-			
-			//Listado de unidades pedidas por pedido (independientemente del código)
+			break;
 
-			case 6:
-				
-				ODB odb6 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
+		// Listado de unidades pedidas por pedido (independientemente del código)
 
-				IValuesQuery query4 = new ValuesCriteriaQuery(LineaPedido.class).sum("cantidad").field("numeroPedido")
-						.groupBy("numeroPedido");
-				Values values4 = odb6.getValues(query4);
-				
-				System.out.println("Listado de unidades pedidas por pedido (independientemente del código):");
-				while (values4.hasNext()) {
-					
-					ObjectValues ObjectValues = (ObjectValues) values4.next();
-					System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido") + " - Cantidad Total articulos: "
-							+ ObjectValues.getByAlias("cantidad"));
-					
+		case 6:
 
-				}
+			ODB odb6 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
 
-				odb6.close();
-				break; 
-				
-				//Media de artículos por pedido recibidos.
+			IValuesQuery query4 = new ValuesCriteriaQuery(LineaPedido.class).sum("cantidad").field("numeroPedido")
+					.groupBy("numeroPedido");
+			Values values4 = odb6.getValues(query4);
 
-				case 7: 
-			
-					ODB odb7 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
+			System.out.println("Listado de unidades pedidas por pedido (independientemente del código):");
+			while (values4.hasNext()) {
 
-					IValuesQuery query5 = new ValuesCriteriaQuery(LineaPedido.class).avg("cantidad").field("numeroPedido")
-							.groupBy("numeroPedido");
-					Values values5 = odb7.getValues(query5);
-					
-					System.out.println("Media de artículos por pedido recibidos : ");
-					while (values5.hasNext()) {
-						
-						ObjectValues ObjectValues = (ObjectValues) values5.next();
-						System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido") + " - Cantidad media de articulos: "
-								+ ObjectValues.getByAlias("cantidad"));
-						
-						
-					/*
-					 * IValuesQuery queryMediaArticulosPorPedido = new ValuesCriteriaQuery(LineaPedido.class)
-                                                    .avg("cantidad");
+				ObjectValues ObjectValues = (ObjectValues) values4.next();
+				System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido")
+						+ " - Cantidad Total articulos: " + ObjectValues.getByAlias("cantidad"));
 
-    Values valuesMediaArticulosPorPedido = odb7.getValues(queryMediaArticulosPorPedido);
-    
-    double mediaArticulos = (Double) valuesMediaArticulosPorPedido.next().getByAlias("$1");
-    
-    System.out.println("Media de artículos por pedido recibidos en general: " + mediaArticulos);
-						
-*/
-					}
-					odb7.close();
-					break; 
+			}
 
-			
-		
+			odb6.close();
+			break;
 
-		} 
-		
-			
-			
+		// Media de artículos por pedido recibidos.
+
+		case 7:
+
+			ODB odb7 = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");
+
+			IValuesQuery query5 = new ValuesCriteriaQuery(LineaPedido.class).avg("cantidad").field("numeroPedido")
+					.groupBy("numeroPedido");
+			Values values5 = odb7.getValues(query5);
+
+			System.out.println("Media de artículos por pedido recibidos : ");
+			while (values5.hasNext()) {
+
+				ObjectValues ObjectValues = (ObjectValues) values5.next();
+				System.out.println("\tPedido: " + ObjectValues.getByAlias("numeroPedido")
+						+ " - Cantidad media de articulos: " + ObjectValues.getByAlias("cantidad"));
+
+			}
+
+		}
+
 	}
 
 	private static void traspasoDatos() throws SQLException {

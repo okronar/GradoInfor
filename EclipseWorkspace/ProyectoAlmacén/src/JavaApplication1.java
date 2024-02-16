@@ -1,9 +1,15 @@
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import javax.xml.parsers.*;
@@ -31,7 +37,7 @@ public class JavaApplication1 {
 			// AQUI VA LA BASE DE DATOS
 			Connection connection = DriverManager.getConnection("jdbc:sqlite:D:/Sergio/proyectoAlmacen.db");
 			// llamo a la clase para crear
-			
+
 			// CrearTablas.borrar();
 			CrearTablas.Tablas();
 
@@ -40,24 +46,49 @@ public class JavaApplication1 {
 			// DOM
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
-			// AQUI VA EL FICHERO XML
-			Document document = builder.parse(new File("Pedidos_Tiendas2.xml"));
-			document.getDocumentElement().normalize();
-			System.out.println("Elemento raiz: " + document.getDocumentElement().getNodeName());
+			File directorio = new File("xml");
+			File[] archivos = directorio.listFiles((dir, name) -> name.toLowerCase().endsWith(".xml"));
 
-			// lista con todos los nodos pedidos
-			NodeList pedidos = document.getElementsByTagName("pedido");
-			System.out.println("Nodos pedido a recorrer : " + pedidos.getLength());
+			if (archivos != null && archivos.length > 0) {
+				for (File archivo : archivos) {
 
-			// metodo principal que engloba los demas, se le pasan los nodos padre y empieza
-			// la marcha
-			recorrerNodosEInsertar(statement, pedidos);
-			connection.close();
+					// AQUI VA EL FICHERO XML
+
+					Document document = builder.parse(new File("xml/Pedidos_Tiendas2.xml"));
+					document.getDocumentElement().normalize();
+
+					System.out.println("Elemento raiz: " + document.getDocumentElement().getNodeName());
+
+					// lista con todos los nodos pedidos
+					NodeList pedidos = document.getElementsByTagName("pedido");
+					System.out.println("Nodos pedido a recorrer : " + pedidos.getLength());
+
+					// metodo principal que engloba los demas, se le pasan los nodos padre y empieza
+					// la marcha
+					recorrerNodosEInsertar(statement, pedidos);
+				}
+				connection.close();
+			} else {
+
+				System.out.println("no hay archivos para leer");
+			}
+			moverXmlRegistrados();
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
+	}
+
+	private static void moverXmlRegistrados() throws IOException {
+		Path origenDirectorio = Paths.get("xml");
+		Path destinoDirectorio = Paths.get("xml.completados");
+		try (DirectoryStream<Path> stream = Files.newDirectoryStream(origenDirectorio, "*.xml")) {
+			for (Path archivo : stream) {
+				Path destinoArchivo = destinoDirectorio.resolve(archivo.getFileName());
+				Files.move(archivo, destinoArchivo);
+			}
+		}
 	}
 
 	private static void recorrerNodosEInsertar(java.sql.Statement statement, NodeList pedidos) throws SQLException {
@@ -69,13 +100,14 @@ public class JavaApplication1 {
 			if (pedi.getNodeType() == Node.ELEMENT_NODE) {// tipo de nodo
 				// obtener los elementos del nodo
 				Element elemento = (Element) pedi;
-				//almaceno las variables para luego hacer las inserciones
+				// almaceno las variables para luego hacer las inserciones
 				String numClienteString = getNodo("numero-cliente", elemento);
 
 				String numPedidoString = getNodo("numero-pedido", elemento);
 
 				String fecha = getNodo("fecha", elemento);
-				//metodo para insertar el pedido usando las variables y comprobando diferentes escenarios
+				// metodo para insertar el pedido usando las variables y comprobando diferentes
+				// escenarios
 				insertarPedido(statement, numClienteString, numPedidoString, fecha);
 
 				System.out.println("  Numero de cliente:" + getNodo("numero-cliente", elemento));
@@ -83,7 +115,8 @@ public class JavaApplication1 {
 
 				// lista con todos los nodos articulos
 				NodeList articulos = elemento.getElementsByTagName("articulo");
-				//Por cada uno de los nodos articulos vamos extrayendo articulo del xml y creamos las variables
+				// Por cada uno de los nodos articulos vamos extrayendo articulo del xml y
+				// creamos las variables
 				for (int j = 0; j < articulos.getLength(); j++) {
 					Node articulo = articulos.item(j); // Obtener un nodo articulo
 					System.out.println("  Artículo " + (j + 1));
@@ -95,10 +128,11 @@ public class JavaApplication1 {
 						String codigoString = getNodo("codigo", elementoArticulo);
 
 						String cantidadString = getNodo("cantidad", elementoArticulo);
-						//usamos las variables creadas para hacer la inserción haciendo antes las comprobaciones
-						
+						// usamos las variables creadas para hacer la inserción haciendo antes las
+						// comprobaciones
+
 						insertarArticulosPedido(statement, numPedidoString, codigoString, cantidadString);
-						//con esto compruebo si hay stock o no y se imprime el mensaje dedicado
+						// con esto compruebo si hay stock o no y se imprime el mensaje dedicado
 						printearStock(codigoString, cantidadString);
 
 						System.out.println("  Numero de pedido:" + numPedidoString);
@@ -111,8 +145,8 @@ public class JavaApplication1 {
 
 		}
 	}
-	
-	//con esto compruebo si hay stock o no y se imprime el mensaje dedicado
+
+	// con esto compruebo si hay stock o no y se imprime el mensaje dedicado
 
 	private static void printearStock(String codigoString, String cantidadString) {
 		if (ComprobarExiste.ComprobarStock(codigoString, cantidadString)) {
