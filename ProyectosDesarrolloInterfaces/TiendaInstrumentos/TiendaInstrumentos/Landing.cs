@@ -12,17 +12,30 @@ namespace TiendaInstrumentos
 {
     public partial class Landing : Form
     {
-        Form1 form1;
-        public Landing( )
+
+        public Landing()
         {
             InitializeComponent();
-            this.form1 = form1;
+
         }
 
         private void botonGO_Click(object sender, EventArgs e)
+
         {
+            Form1 form1 = new Form1(this);
             form1.Show();
             this.Hide();
+        }
+
+        private void Landing_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void botonLogin_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
         }
     }
 }

@@ -8,9 +8,11 @@ namespace TiendaInstrumentos
     {
 
         string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-        public Form1()
+        Landing land;
+        public Form1(Landing land)
         {
             InitializeComponent();
+            this.land = land;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -119,6 +121,11 @@ namespace TiendaInstrumentos
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            land.Dispose();
         }
     }
 }

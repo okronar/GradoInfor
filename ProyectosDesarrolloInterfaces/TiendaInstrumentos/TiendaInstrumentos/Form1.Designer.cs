@@ -32,24 +32,16 @@
             buttonVisualizarProductos = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            botonInsertar = new Button();
-            labelNombre = new Label();
-            labelCodigo = new Label();
-            txboxNombre = new TextBox();
-            txboxCodigo = new TextBox();
-            tabPage2 = new TabPage();
-            botonVisualizarClientes = new Button();
-            dataGridView2 = new DataGridView();
-            tabPage3 = new TabPage();
-            botonVisualizarFacturas = new Button();
-            dataGridView3 = new DataGridView();
-            tabPage4 = new TabPage();
-            botonVisualizarDetallesFacturas = new Button();
-            dataGridView4 = new DataGridView();
             InsertarProducto = new TabControl();
             tabPage5 = new TabPage();
+            labelCodigo = new Label();
+            botonInsertar = new Button();
+            txboxCodigo = new TextBox();
+            labelNombre = new Label();
+            txboxNombre = new TextBox();
             tabPage6 = new TabPage();
             tabPage7 = new TabPage();
+            tabPage2 = new TabPage();
             tabControl2 = new TabControl();
             tabPage8 = new TabPage();
             label1 = new Label();
@@ -59,19 +51,27 @@
             textBox4 = new TextBox();
             tabPage9 = new TabPage();
             tabPage10 = new TabPage();
+            botonVisualizarClientes = new Button();
+            dataGridView2 = new DataGridView();
+            tabPage3 = new TabPage();
+            botonVisualizarFacturas = new Button();
+            dataGridView3 = new DataGridView();
+            tabPage4 = new TabPage();
+            botonVisualizarDetallesFacturas = new Button();
+            dataGridView4 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            InsertarProducto.SuspendLayout();
+            tabPage5.SuspendLayout();
             tabPage2.SuspendLayout();
+            tabControl2.SuspendLayout();
+            tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
-            InsertarProducto.SuspendLayout();
-            tabPage5.SuspendLayout();
-            tabControl2.SuspendLayout();
-            tabPage8.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
@@ -117,135 +117,6 @@
             tabPage1.Text = "Productos";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // botonInsertar
-            // 
-            botonInsertar.Location = new Point(425, 26);
-            botonInsertar.Name = "botonInsertar";
-            botonInsertar.Size = new Size(75, 23);
-            botonInsertar.TabIndex = 4;
-            botonInsertar.Text = "Insertar";
-            botonInsertar.UseVisualStyleBackColor = true;
-            botonInsertar.Click += botonInsertar_Click;
-            // 
-            // labelNombre
-            // 
-            labelNombre.AutoSize = true;
-            labelNombre.Location = new Point(0, 78);
-            labelNombre.Name = "labelNombre";
-            labelNombre.Size = new Size(51, 15);
-            labelNombre.TabIndex = 3;
-            labelNombre.Text = "Nombre";
-            // 
-            // labelCodigo
-            // 
-            labelCodigo.AutoSize = true;
-            labelCodigo.Location = new Point(0, 23);
-            labelCodigo.Name = "labelCodigo";
-            labelCodigo.Size = new Size(46, 15);
-            labelCodigo.TabIndex = 2;
-            labelCodigo.Text = "Codigo";
-            // 
-            // txboxNombre
-            // 
-            txboxNombre.Location = new Point(97, 70);
-            txboxNombre.Name = "txboxNombre";
-            txboxNombre.Size = new Size(300, 23);
-            txboxNombre.TabIndex = 1;
-            // 
-            // txboxCodigo
-            // 
-            txboxCodigo.Location = new Point(97, 26);
-            txboxCodigo.Name = "txboxCodigo";
-            txboxCodigo.Size = new Size(300, 23);
-            txboxCodigo.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(tabControl2);
-            tabPage2.Controls.Add(botonVisualizarClientes);
-            tabPage2.Controls.Add(dataGridView2);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(976, 588);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Clientes";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // botonVisualizarClientes
-            // 
-            botonVisualizarClientes.Location = new Point(0, 321);
-            botonVisualizarClientes.Name = "botonVisualizarClientes";
-            botonVisualizarClientes.Size = new Size(976, 23);
-            botonVisualizarClientes.TabIndex = 8;
-            botonVisualizarClientes.Text = "Visualizar";
-            botonVisualizarClientes.UseVisualStyleBackColor = true;
-            botonVisualizarClientes.Click += button2_Click;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(-3, 340);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(976, 252);
-            dataGridView2.TabIndex = 6;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Controls.Add(botonVisualizarFacturas);
-            tabPage3.Controls.Add(dataGridView3);
-            tabPage3.Location = new Point(4, 24);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(976, 588);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Facturas";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // botonVisualizarFacturas
-            // 
-            botonVisualizarFacturas.Location = new Point(0, 270);
-            botonVisualizarFacturas.Name = "botonVisualizarFacturas";
-            botonVisualizarFacturas.Size = new Size(976, 23);
-            botonVisualizarFacturas.TabIndex = 8;
-            botonVisualizarFacturas.Text = "Visualizar";
-            botonVisualizarFacturas.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(0, 299);
-            dataGridView3.Name = "dataGridView3";
-            dataGridView3.Size = new Size(976, 252);
-            dataGridView3.TabIndex = 6;
-            // 
-            // tabPage4
-            // 
-            tabPage4.Controls.Add(botonVisualizarDetallesFacturas);
-            tabPage4.Controls.Add(dataGridView4);
-            tabPage4.Location = new Point(4, 24);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(976, 588);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "DetallesFactura";
-            tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // botonVisualizarDetallesFacturas
-            // 
-            botonVisualizarDetallesFacturas.Location = new Point(0, 270);
-            botonVisualizarDetallesFacturas.Name = "botonVisualizarDetallesFacturas";
-            botonVisualizarDetallesFacturas.Size = new Size(976, 23);
-            botonVisualizarDetallesFacturas.TabIndex = 8;
-            botonVisualizarDetallesFacturas.Text = "Visualizar";
-            botonVisualizarDetallesFacturas.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView4
-            // 
-            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView4.Location = new Point(0, 299);
-            dataGridView4.Name = "dataGridView4";
-            dataGridView4.Size = new Size(976, 252);
-            dataGridView4.TabIndex = 6;
-            // 
             // InsertarProducto
             // 
             InsertarProducto.Controls.Add(tabPage5);
@@ -272,6 +143,48 @@
             tabPage5.Text = "Insertar";
             tabPage5.UseVisualStyleBackColor = true;
             // 
+            // labelCodigo
+            // 
+            labelCodigo.AutoSize = true;
+            labelCodigo.Location = new Point(0, 23);
+            labelCodigo.Name = "labelCodigo";
+            labelCodigo.Size = new Size(46, 15);
+            labelCodigo.TabIndex = 2;
+            labelCodigo.Text = "Codigo";
+            // 
+            // botonInsertar
+            // 
+            botonInsertar.Location = new Point(425, 26);
+            botonInsertar.Name = "botonInsertar";
+            botonInsertar.Size = new Size(75, 23);
+            botonInsertar.TabIndex = 4;
+            botonInsertar.Text = "Insertar";
+            botonInsertar.UseVisualStyleBackColor = true;
+            botonInsertar.Click += botonInsertar_Click;
+            // 
+            // txboxCodigo
+            // 
+            txboxCodigo.Location = new Point(97, 26);
+            txboxCodigo.Name = "txboxCodigo";
+            txboxCodigo.Size = new Size(300, 23);
+            txboxCodigo.TabIndex = 0;
+            // 
+            // labelNombre
+            // 
+            labelNombre.AutoSize = true;
+            labelNombre.Location = new Point(0, 78);
+            labelNombre.Name = "labelNombre";
+            labelNombre.Size = new Size(51, 15);
+            labelNombre.TabIndex = 3;
+            labelNombre.Text = "Nombre";
+            // 
+            // txboxNombre
+            // 
+            txboxNombre.Location = new Point(97, 70);
+            txboxNombre.Name = "txboxNombre";
+            txboxNombre.Size = new Size(300, 23);
+            txboxNombre.TabIndex = 1;
+            // 
             // tabPage6
             // 
             tabPage6.Location = new Point(4, 24);
@@ -290,6 +203,19 @@
             tabPage7.TabIndex = 2;
             tabPage7.Text = "Update";
             tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(tabControl2);
+            tabPage2.Controls.Add(botonVisualizarClientes);
+            tabPage2.Controls.Add(dataGridView2);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(976, 588);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Clientes";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -377,6 +303,80 @@
             tabPage10.Text = "Update";
             tabPage10.UseVisualStyleBackColor = true;
             // 
+            // botonVisualizarClientes
+            // 
+            botonVisualizarClientes.Location = new Point(0, 321);
+            botonVisualizarClientes.Name = "botonVisualizarClientes";
+            botonVisualizarClientes.Size = new Size(976, 23);
+            botonVisualizarClientes.TabIndex = 8;
+            botonVisualizarClientes.Text = "Visualizar";
+            botonVisualizarClientes.UseVisualStyleBackColor = true;
+            botonVisualizarClientes.Click += button2_Click;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(-3, 340);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(976, 252);
+            dataGridView2.TabIndex = 6;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(botonVisualizarFacturas);
+            tabPage3.Controls.Add(dataGridView3);
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Size = new Size(976, 588);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Facturas";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // botonVisualizarFacturas
+            // 
+            botonVisualizarFacturas.Location = new Point(0, 270);
+            botonVisualizarFacturas.Name = "botonVisualizarFacturas";
+            botonVisualizarFacturas.Size = new Size(976, 23);
+            botonVisualizarFacturas.TabIndex = 8;
+            botonVisualizarFacturas.Text = "Visualizar";
+            botonVisualizarFacturas.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new Point(0, 299);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.Size = new Size(976, 252);
+            dataGridView3.TabIndex = 6;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(botonVisualizarDetallesFacturas);
+            tabPage4.Controls.Add(dataGridView4);
+            tabPage4.Location = new Point(4, 24);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(976, 588);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "DetallesFactura";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // botonVisualizarDetallesFacturas
+            // 
+            botonVisualizarDetallesFacturas.Location = new Point(0, 270);
+            botonVisualizarDetallesFacturas.Name = "botonVisualizarDetallesFacturas";
+            botonVisualizarDetallesFacturas.Size = new Size(976, 23);
+            botonVisualizarDetallesFacturas.TabIndex = 8;
+            botonVisualizarDetallesFacturas.Text = "Visualizar";
+            botonVisualizarDetallesFacturas.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView4.Location = new Point(0, 299);
+            dataGridView4.Name = "dataGridView4";
+            dataGridView4.Size = new Size(976, 252);
+            dataGridView4.TabIndex = 6;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -385,21 +385,22 @@
             Controls.Add(tabControl1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            InsertarProducto.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
+            tabPage5.PerformLayout();
             tabPage2.ResumeLayout(false);
+            tabControl2.ResumeLayout(false);
+            tabPage8.ResumeLayout(false);
+            tabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
-            InsertarProducto.ResumeLayout(false);
-            tabPage5.ResumeLayout(false);
-            tabPage5.PerformLayout();
-            tabControl2.ResumeLayout(false);
-            tabPage8.ResumeLayout(false);
-            tabPage8.PerformLayout();
             ResumeLayout(false);
         }
 

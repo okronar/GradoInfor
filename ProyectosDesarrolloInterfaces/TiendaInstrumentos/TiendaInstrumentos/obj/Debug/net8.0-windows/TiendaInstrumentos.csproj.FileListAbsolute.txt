@@ -53,3 +53,5 @@ D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\ob
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\bin\Debug\net8.0-windows\TiendaInstrumentos.dll.config
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Landing.resources
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Properties.Resources.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Login.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Registrar.resources

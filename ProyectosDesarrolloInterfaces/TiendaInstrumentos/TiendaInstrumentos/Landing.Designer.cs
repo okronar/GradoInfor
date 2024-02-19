@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Landing));
             botonGO = new Button();
+            botonLogin = new Button();
             SuspendLayout();
             // 
             // botonGO
@@ -44,20 +45,33 @@
             botonGO.UseVisualStyleBackColor = true;
             botonGO.Click += botonGO_Click;
             // 
+            // botonLogin
+            // 
+            botonLogin.Location = new Point(162, 514);
+            botonLogin.Name = "botonLogin";
+            botonLogin.Size = new Size(182, 40);
+            botonLogin.TabIndex = 1;
+            botonLogin.Text = "login";
+            botonLogin.UseVisualStyleBackColor = true;
+            botonLogin.Click += botonLogin_Click;
+            // 
             // Landing
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(507, 611);
+            Controls.Add(botonLogin);
             Controls.Add(botonGO);
             Name = "Landing";
             Text = "Landing";
+            FormClosing += Landing_FormClosing;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button botonGO;
+        private Button botonLogin;
     }
 }
