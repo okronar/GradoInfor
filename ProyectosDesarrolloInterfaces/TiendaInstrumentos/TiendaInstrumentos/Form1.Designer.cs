@@ -37,10 +37,12 @@
             labelCodigo = new Label();
             botonInsertar = new Button();
             txboxCodigo = new TextBox();
-            labelNombre = new Label();
             txboxNombre = new TextBox();
+            labelNombre = new Label();
             tabPage6 = new TabPage();
-            tabPage7 = new TabPage();
+            label3 = new Label();
+            botonBorrar = new Button();
+            textBox1 = new TextBox();
             tabPage2 = new TabPage();
             tabControl2 = new TabControl();
             tabPage8 = new TabPage();
@@ -50,7 +52,6 @@
             label2 = new Label();
             textBox4 = new TextBox();
             tabPage9 = new TabPage();
-            tabPage10 = new TabPage();
             botonVisualizarClientes = new Button();
             dataGridView2 = new DataGridView();
             tabPage3 = new TabPage();
@@ -64,6 +65,7 @@
             tabPage1.SuspendLayout();
             InsertarProducto.SuspendLayout();
             tabPage5.SuspendLayout();
+            tabPage6.SuspendLayout();
             tabPage2.SuspendLayout();
             tabControl2.SuspendLayout();
             tabPage8.SuspendLayout();
@@ -121,7 +123,6 @@
             // 
             InsertarProducto.Controls.Add(tabPage5);
             InsertarProducto.Controls.Add(tabPage6);
-            InsertarProducto.Controls.Add(tabPage7);
             InsertarProducto.Location = new Point(15, 79);
             InsertarProducto.Name = "InsertarProducto";
             InsertarProducto.SelectedIndex = 0;
@@ -133,8 +134,8 @@
             tabPage5.Controls.Add(labelCodigo);
             tabPage5.Controls.Add(botonInsertar);
             tabPage5.Controls.Add(txboxCodigo);
-            tabPage5.Controls.Add(labelNombre);
             tabPage5.Controls.Add(txboxNombre);
+            tabPage5.Controls.Add(labelNombre);
             tabPage5.Location = new Point(4, 24);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
@@ -169,6 +170,13 @@
             txboxCodigo.Size = new Size(300, 23);
             txboxCodigo.TabIndex = 0;
             // 
+            // txboxNombre
+            // 
+            txboxNombre.Location = new Point(97, 70);
+            txboxNombre.Name = "txboxNombre";
+            txboxNombre.Size = new Size(300, 23);
+            txboxNombre.TabIndex = 1;
+            // 
             // labelNombre
             // 
             labelNombre.AutoSize = true;
@@ -178,15 +186,11 @@
             labelNombre.TabIndex = 3;
             labelNombre.Text = "Nombre";
             // 
-            // txboxNombre
-            // 
-            txboxNombre.Location = new Point(97, 70);
-            txboxNombre.Name = "txboxNombre";
-            txboxNombre.Size = new Size(300, 23);
-            txboxNombre.TabIndex = 1;
-            // 
             // tabPage6
             // 
+            tabPage6.Controls.Add(label3);
+            tabPage6.Controls.Add(botonBorrar);
+            tabPage6.Controls.Add(textBox1);
             tabPage6.Location = new Point(4, 24);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
@@ -195,14 +199,30 @@
             tabPage6.Text = "Borrar";
             tabPage6.UseVisualStyleBackColor = true;
             // 
-            // tabPage7
+            // label3
             // 
-            tabPage7.Location = new Point(4, 24);
-            tabPage7.Name = "tabPage7";
-            tabPage7.Size = new Size(587, 182);
-            tabPage7.TabIndex = 2;
-            tabPage7.Text = "Update";
-            tabPage7.UseVisualStyleBackColor = true;
+            label3.AutoSize = true;
+            label3.Location = new Point(43, 78);
+            label3.Name = "label3";
+            label3.Size = new Size(46, 15);
+            label3.TabIndex = 6;
+            label3.Text = "Codigo";
+            // 
+            // botonBorrar
+            // 
+            botonBorrar.Location = new Point(468, 81);
+            botonBorrar.Name = "botonBorrar";
+            botonBorrar.Size = new Size(75, 23);
+            botonBorrar.TabIndex = 7;
+            botonBorrar.Text = "Borrar";
+            botonBorrar.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(140, 81);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(300, 23);
+            textBox1.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -221,8 +241,7 @@
             // 
             tabControl2.Controls.Add(tabPage8);
             tabControl2.Controls.Add(tabPage9);
-            tabControl2.Controls.Add(tabPage10);
-            tabControl2.Location = new Point(49, 39);
+            tabControl2.Location = new Point(17, 76);
             tabControl2.Name = "tabControl2";
             tabControl2.SelectedIndex = 0;
             tabControl2.Size = new Size(595, 210);
@@ -293,15 +312,6 @@
             tabPage9.TabIndex = 1;
             tabPage9.Text = "Borrar";
             tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            tabPage10.Location = new Point(4, 24);
-            tabPage10.Name = "tabPage10";
-            tabPage10.Size = new Size(587, 182);
-            tabPage10.TabIndex = 2;
-            tabPage10.Text = "Update";
-            tabPage10.UseVisualStyleBackColor = true;
             // 
             // botonVisualizarClientes
             // 
@@ -384,7 +394,7 @@
             ClientSize = new Size(1054, 640);
             Controls.Add(tabControl1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Admin";
             FormClosing += Form1_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabControl1.ResumeLayout(false);
@@ -392,6 +402,8 @@
             InsertarProducto.ResumeLayout(false);
             tabPage5.ResumeLayout(false);
             tabPage5.PerformLayout();
+            tabPage6.ResumeLayout(false);
+            tabPage6.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabControl2.ResumeLayout(false);
             tabPage8.ResumeLayout(false);
@@ -411,23 +423,14 @@
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
-        private TextBox txboxNombre;
-        private TextBox txboxCodigo;
         private TabPage tabPage3;
         private TabPage tabPage4;
-        private Button botonInsertar;
-        private Label labelNombre;
-        private Label labelCodigo;
         private Button botonVisualizarClientes;
         private DataGridView dataGridView2;
         private Button botonVisualizarFacturas;
         private DataGridView dataGridView3;
         private Button botonVisualizarDetallesFacturas;
         private DataGridView dataGridView4;
-        private TabControl InsertarProducto;
-        private TabPage tabPage5;
-        private TabPage tabPage6;
-        private TabPage tabPage7;
         private TabControl tabControl2;
         private TabPage tabPage8;
         private Label label1;
@@ -436,6 +439,16 @@
         private Label label2;
         private TextBox textBox4;
         private TabPage tabPage9;
-        private TabPage tabPage10;
+        private TabControl InsertarProducto;
+        private TabPage tabPage5;
+        private Label labelCodigo;
+        private Button botonInsertar;
+        private TextBox txboxCodigo;
+        private TextBox txboxNombre;
+        private Label labelNombre;
+        private TabPage tabPage6;
+        private Label label3;
+        private Button botonBorrar;
+        private TextBox textBox1;
     }
 }

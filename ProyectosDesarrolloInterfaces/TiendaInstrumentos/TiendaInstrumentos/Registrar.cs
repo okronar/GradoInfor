@@ -21,14 +21,20 @@ namespace TiendaInstrumentos
         private void buttonRegistrarReg_Click(object sender, EventArgs e)
         {
             //registro 
-
+            String usuarioExiste = txUsernameReg.Text;
             if (txUsernameReg.Text.Length < 3 || txPasswordReg.Text.Length < 5)
             {
                 MessageBox.Show("Username or password no valido , muy corto");
 
             }
             else if (txPasswordReg.Text == txRepetir.Text)
-            {
+            { 
+                if (Directory.Exists("data\\" + usuarioExiste)){
+
+                    MessageBox.Show("El usuario ya existe");
+
+                }
+                else { 
                 //creacion del directorio que contendra el fichero
                 string dir = txUsernameReg.Text;
                 Directory.CreateDirectory("data\\" + dir);
@@ -47,7 +53,7 @@ namespace TiendaInstrumentos
                 MessageBox.Show("Usuario creado correctamente");
                 this.Close();
 
-
+            }
 
 
             }

@@ -32,16 +32,18 @@ namespace TiendaInstrumentos
                 MessageBox.Show("Username or password no valido , muy corto");
 
             }
-            else { 
-            
-            string dir = txUsername.Text;
+            else
+            {
+
+                string dir = txUsername.Text;
                 //verificacion de usuario registrado 
-                if (!Directory.Exists("data\\" + dir)) { 
-                    MessageBox.Show("usuario no registrado"); 
+                if (!Directory.Exists("data\\" + dir))
+                {
+                    MessageBox.Show("usuario no registrado");
                 }
                 else
                 {
-                    var sr = new StreamReader("data\\" +dir+"\\data.ls" );
+                    var sr = new StreamReader("data\\" + dir + "\\data.ls");
 
                     string encusr = sr.ReadLine();
                     string encpss = sr.ReadLine();
@@ -50,11 +52,19 @@ namespace TiendaInstrumentos
                     string decusr = AesCryp.Decrypt(encusr);
                     string decpss = AesCryp.Decrypt(encpss);
 
-                    if (decusr == txUsername.Text && decpss == txPassword.Text)
+                    if (decusr == txUsername.Text && decpss == txPassword.Text && txUsername.Text != "admin")
                     {
                         MessageBox.Show("Bienvenido");
                     }
-                    else {
+                    if (decusr == txUsername.Text && decpss == txPassword.Text && txUsername.Text == "admin")
+                    {
+                        MessageBox.Show("Bienvenido administrador");
+                        Form1 form1 = new Form1();
+                        form1.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
                         MessageBox.Show("Error en el password");
                     }
 
@@ -66,6 +76,11 @@ namespace TiendaInstrumentos
                 }
 
             }
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+          
         }
     }
 }

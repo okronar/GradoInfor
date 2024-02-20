@@ -10,11 +10,11 @@ import com.sergio.tarea3sergio.database.entities.RecyclerEntity
 @Dao
 interface RecyclerDao {
     @Query("SELECT * FROM Recycler_table WHERE name LIKE :query")
-    suspend fun getAllRecycles(query:String):List<RecyclerEntity>
+    suspend fun getRecyclersByname(query:String):List<RecyclerEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(quotes:List<RecyclerEntity>)
+    suspend fun insertAllRecyclers(quotes:List<RecyclerEntity>)
 
     @Query("DELETE FROM recycler_table")
-    suspend fun deleteAllRecycles()
+    suspend fun deleteAllRecyclers()
 }

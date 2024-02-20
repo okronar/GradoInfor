@@ -2,8 +2,13 @@ package com.sergio.tarea3sergio
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
 import android.view.View
+import androidx.core.view.isVisible
+import androidx.room.Room
+import com.sergio.tarea3sergio.database.SuperheroDatabase
+import com.sergio.tarea3sergio.database.entities.toDatabase
 
 import com.sergio.tarea3sergio.databinding.ActivityDetailSuperheroBinding
 
@@ -12,15 +17,20 @@ import com.squareup.picasso.Picasso
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import kotlin.math.roundToInt
 
 class DetailSuperheroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailSuperheroBinding
+    private lateinit var room : SuperheroDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailSuperheroBinding.inflate(layoutInflater)
+        room = Room.databaseBuilder(this,
+            SuperheroDatabase::class.java, "superheroes").build()
+
         setContentView(binding.root)
         val id: String = intent.getStringExtra(EXTRA_ID).orEmpty()
         getSuperheroInformation(id)
@@ -79,6 +89,9 @@ class DetailSuperheroActivity : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
+
+
 
 
 

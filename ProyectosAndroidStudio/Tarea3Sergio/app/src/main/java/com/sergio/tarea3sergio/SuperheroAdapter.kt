@@ -4,10 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.sergio.aplicacionpmdm.superheroAPI.SuperheroViewHolder
+import com.sergio.tarea3sergio.database.entities.RecyclerEntity
 
-class SuperheroAdapter(var superheroList: List<SuperheroItemResponse> = emptyList(), private val navigateToDetailActivity: (String) -> Unit) : RecyclerView.Adapter<SuperheroViewHolder>() {
+class SuperheroAdapter(var superheroList: List<RecyclerEntity> = emptyList(), private val navigateToDetailActivity: (Int) -> Unit) : RecyclerView.Adapter<SuperheroViewHolder>() {
 
-    fun updateList(list: List<SuperheroItemResponse>) {
+    fun updateList(list: List<RecyclerEntity>) {
         superheroList = list
         notifyDataSetChanged()
     }

@@ -39,7 +39,7 @@
             // 
             // txPasswordReg
             // 
-            txPasswordReg.Location = new Point(273, 182);
+            txPasswordReg.Location = new Point(179, 85);
             txPasswordReg.Name = "txPasswordReg";
             txPasswordReg.Size = new Size(320, 23);
             txPasswordReg.TabIndex = 7;
@@ -47,7 +47,7 @@
             // 
             // txUsernameReg
             // 
-            txUsernameReg.Location = new Point(273, 127);
+            txUsernameReg.Location = new Point(179, 37);
             txUsernameReg.Name = "txUsernameReg";
             txUsernameReg.Size = new Size(320, 23);
             txUsernameReg.TabIndex = 6;
@@ -55,7 +55,7 @@
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(116, 190);
+            labelPassword.Location = new Point(35, 93);
             labelPassword.Name = "labelPassword";
             labelPassword.Size = new Size(57, 15);
             labelPassword.TabIndex = 5;
@@ -64,7 +64,7 @@
             // labelUser
             // 
             labelUser.AutoSize = true;
-            labelUser.Location = new Point(116, 127);
+            labelUser.Location = new Point(35, 45);
             labelUser.Name = "labelUser";
             labelUser.Size = new Size(60, 15);
             labelUser.TabIndex = 4;
@@ -72,7 +72,7 @@
             // 
             // buttonRegistrarReg
             // 
-            buttonRegistrarReg.Location = new Point(331, 307);
+            buttonRegistrarReg.Location = new Point(331, 361);
             buttonRegistrarReg.Name = "buttonRegistrarReg";
             buttonRegistrarReg.Size = new Size(168, 43);
             buttonRegistrarReg.TabIndex = 8;
@@ -83,7 +83,7 @@
             // PasswordRep
             // 
             PasswordRep.AutoSize = true;
-            PasswordRep.Location = new Point(99, 249);
+            PasswordRep.Location = new Point(12, 142);
             PasswordRep.Name = "PasswordRep";
             PasswordRep.Size = new Size(97, 15);
             PasswordRep.TabIndex = 9;
@@ -91,7 +91,7 @@
             // 
             // txRepetir
             // 
-            txRepetir.Location = new Point(273, 242);
+            txRepetir.Location = new Point(179, 134);
             txRepetir.Name = "txRepetir";
             txRepetir.Size = new Size(320, 23);
             txRepetir.TabIndex = 10;

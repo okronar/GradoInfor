@@ -3,9 +3,13 @@ package com.sergio.tarea3sergio
 import com.google.gson.annotations.SerializedName
 
 
+    data class SuperHeroDetailResponse(
+        @SerializedName("lista") val superheroesDetails: List<SuperHeroDetailItem>
 
 
-     data class SuperHeroDetailResponse(
+    )
+
+     data class SuperHeroDetailItem(
         // @SerializedName("name") val name: String,
          @SerializedName("powerstats") val powerstats: PowerStatsResponse,
       //   @SerializedName("image") val image: SuperheroImageDetailResponse,

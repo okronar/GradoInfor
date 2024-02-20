@@ -55,3 +55,5 @@ D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\ob
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Properties.Resources.resources
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Login.resources
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Registrar.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.formNoUsuario.resources
+D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.formUsuariocs.resources

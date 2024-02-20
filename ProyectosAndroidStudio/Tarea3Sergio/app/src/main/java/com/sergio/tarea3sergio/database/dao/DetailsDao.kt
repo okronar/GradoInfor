@@ -12,7 +12,7 @@ interface DetailsDao {
     suspend fun getAllDetails(query:Int):List<DetailsEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(quotes:List<DetailsEntity>)
+    suspend fun insertAllDetails(quotes:List<DetailsEntity>)
 
     @Query("DELETE FROM details_table")
     suspend fun deleteAllDetails()

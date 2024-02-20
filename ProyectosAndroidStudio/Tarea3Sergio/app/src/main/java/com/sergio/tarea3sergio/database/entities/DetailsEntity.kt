@@ -4,6 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.sergio.tarea3sergio.DetailSuperheroActivity
+import com.sergio.tarea3sergio.SuperHeroDetailItem
 import com.sergio.tarea3sergio.SuperHeroDetailResponse
 import com.sergio.tarea3sergio.SuperheroItemResponse
 
@@ -22,6 +23,6 @@ data class DetailsEntity(
 )
 
 // Hay que especificarle los campos porque también existe el campo "id"
-fun SuperHeroDetailResponse.toDatabase() = DetailsEntity(intelligence = powerstats.intelligence, strength = powerstats.strength,
+fun SuperHeroDetailItem.toDatabase() = DetailsEntity(intelligence = powerstats.intelligence, strength = powerstats.strength,
     speed = powerstats.speed, durability = powerstats.durability, power = powerstats.power, combat = powerstats.combat, fullName = biography.fullName,
     publisher = biography.publisher)

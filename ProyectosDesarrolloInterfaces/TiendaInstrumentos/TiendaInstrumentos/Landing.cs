@@ -22,13 +22,12 @@ namespace TiendaInstrumentos
         private void botonGO_Click(object sender, EventArgs e)
 
         {
-            Form1 form1 = new Form1(this);
-            form1.Show();
-            this.Hide();
+            
         }
 
         private void Landing_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
             this.Dispose();
         }
 

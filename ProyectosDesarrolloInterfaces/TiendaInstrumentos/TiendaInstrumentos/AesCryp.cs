@@ -11,7 +11,7 @@ namespace AesEncDet
     internal class AesCryp
     {
         //creacion de clase 
-        //entregar un initialization vector distinto hacde que un mismo password termine teniendo  otra encriptacion en el texto cifrado final
+        //entregar un initialization vector distinto hace que un mismo password termine teniendo  otra encriptacion en el texto cifrado final
         public static string IV = "aldoej45f8r564gh"; // 16 chars = 128 bits
         public static string key = "aldoej45f8r564ghaldoej45f8r564gh"; // 32 chars
 
