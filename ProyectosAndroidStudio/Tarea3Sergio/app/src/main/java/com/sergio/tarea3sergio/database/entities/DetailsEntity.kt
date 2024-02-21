@@ -11,6 +11,7 @@ import com.sergio.tarea3sergio.SuperheroItemResponse
 @Entity(tableName = "Details_table")
 data class DetailsEntity(
     @PrimaryKey(autoGenerate = true)
+
     @ColumnInfo(name = "id") val id: Int = 0,
     @ColumnInfo(name = "intelligence") val intelligence: String,
     @ColumnInfo(name = "strength") val strength: String,
@@ -19,7 +20,8 @@ data class DetailsEntity(
     @ColumnInfo(name = "power") val power: String,
     @ColumnInfo(name = "combat") val combat: String,
     @ColumnInfo(name = "fullName") val fullName: String,
-    @ColumnInfo(name = "publisher") val publisher: String
+    @ColumnInfo(name = "publisher") val publisher: String,
+
 )
 
 // Hay que especificarle los campos porque también existe el campo "id"

@@ -10,9 +10,9 @@ import com.google.gson.annotations.SerializedName
     )
 
      data class SuperHeroDetailItem(
-        // @SerializedName("name") val name: String,
+         @SerializedName("name") val name: String,
          @SerializedName("powerstats") val powerstats: PowerStatsResponse,
-      //   @SerializedName("image") val image: SuperheroImageDetailResponse,
+         @SerializedName("image") val image: SuperheroImageDetailResponse,
          @SerializedName("biography") val biography: Biography
      )
      data class PowerStatsResponse(

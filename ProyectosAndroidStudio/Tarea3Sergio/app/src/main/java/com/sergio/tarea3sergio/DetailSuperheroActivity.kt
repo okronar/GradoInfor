@@ -2,22 +2,20 @@ package com.sergio.tarea3sergio
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.util.TypedValue
 import android.view.View
-import androidx.core.view.isVisible
 import androidx.room.Room
+import com.sergio.tarea3sergio.SuperheroListActivity.Companion.EXTRA_ID
 import com.sergio.tarea3sergio.database.SuperheroDatabase
-import com.sergio.tarea3sergio.database.entities.toDatabase
+import com.sergio.tarea3sergio.database.entities.DetailsEntity
+import com.sergio.tarea3sergio.database.entities.RecyclerEntity
 
 import com.sergio.tarea3sergio.databinding.ActivityDetailSuperheroBinding
 
-import com.sergio.tarea3sergio.superheroListActivity.Companion.EXTRA_ID
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import kotlin.math.roundToInt
@@ -32,33 +30,36 @@ class DetailSuperheroActivity : AppCompatActivity() {
             SuperheroDatabase::class.java, "superheroes").build()
 
         setContentView(binding.root)
-        val id: String = intent.getStringExtra(EXTRA_ID).orEmpty()
+        val id: Int = intent.getStringExtra(EXTRA_ID).orEmpty().toInt()
         getSuperheroInformation(id)
+
 
 
 
     }
 
-    private fun getSuperheroInformation(id: String) {
+    private fun getSuperheroInformation(id: Int) {
         CoroutineScope(Dispatchers.IO).launch {
             val superheroDetail =
-                getRetrofit().create(ApiService::class.java).getSuperheroDetail(id)
-            if(superheroDetail.body() != null){
+                room.getDetailsDao().getAllDetails(id)
+            val superheroRecycler = room.getRecyclerDao().getRecyclersByid(id)
+
+            if(superheroDetail != null){
                 //con el !! marcas que estas seguro que no es nulo sino dara problemas
-                runOnUiThread { createUI(superheroDetail.body()!!) }
+                runOnUiThread { createUI(superheroDetail,superheroRecycler) }
             }
 
 
         }
     }
-    private fun createUI(superhero: SuperHeroDetailResponse) {
-        Picasso.get().load(superhero.image.url).into(binding.ivSuperhero)
-        binding.tvSuperheroName.text = superhero.name
-        binding.tvSuperheroRealName.text = superhero.biography.fullName
-        binding.tvPublisher.text = superhero.biography.publisher
-        prepareStats(superhero.powerstats)
+    private fun createUI(details: DetailsEntity, superheroRecycler: RecyclerEntity) {
+        Picasso.get().load(superheroRecycler.image).into(binding.ivSuperhero)
+        binding.tvSuperheroName.text = superheroRecycler.name
+        binding.tvSuperheroRealName.text = details.fullName
+        binding.tvPublisher.text = details.publisher
+        prepareStats(details)
     }
-    private fun prepareStats(powerstats: PowerStatsResponse) {
+    private fun prepareStats(powerstats: DetailsEntity) {
         updateHeight(binding.viewIntelligence, powerstats.intelligence)
         updateHeight(binding.viewStrength, powerstats.strength)
         updateHeight(binding.viewSpeed, powerstats.speed)
