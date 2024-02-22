@@ -46,6 +46,7 @@
             botonMicros.TabIndex = 12;
             botonMicros.Text = "Micrófonos";
             botonMicros.UseVisualStyleBackColor = true;
+            botonMicros.Click += botonMicros_Click;
             // 
             // botonBaterias
             // 
@@ -55,6 +56,7 @@
             botonBaterias.TabIndex = 11;
             botonBaterias.Text = "Baterías";
             botonBaterias.UseVisualStyleBackColor = true;
+            botonBaterias.Click += botonBaterias_Click;
             // 
             // botonTeclados
             // 
@@ -64,6 +66,7 @@
             botonTeclados.TabIndex = 10;
             botonTeclados.Text = "Teclados";
             botonTeclados.UseVisualStyleBackColor = true;
+            botonTeclados.Click += botonTeclados_Click;
             // 
             // botonBajo
             // 
@@ -73,6 +76,7 @@
             botonBajo.TabIndex = 9;
             botonBajo.Text = "Bajos";
             botonBajo.UseVisualStyleBackColor = true;
+            botonBajo.Click += botonBajo_Click;
             // 
             // botonGuitarras
             // 

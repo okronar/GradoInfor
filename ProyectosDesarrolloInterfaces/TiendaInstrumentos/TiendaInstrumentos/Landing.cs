@@ -29,12 +29,14 @@ namespace TiendaInstrumentos
         {
             
             this.Dispose();
+            
         }
 
         private void botonLogin_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
+            this.Close();
         }
     }
 }

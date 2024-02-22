@@ -20,7 +20,7 @@ public class main {
 
 		System.out.println("elige opcion");
 		System.out.println("1-Número de pedidos recibidos y procesados correctamente.");
-		System.out.println("2-Número de líneas de pedido recibidas..");
+		System.out.println("2-Número de líneas de pedido recibidas.");
 		System.out.println("3-Listado de artículos diferentes recibidos.");
 		System.out.println("4-Listado de clientes que han enviado pedidos.");
 		System.out.println("5-Listado de artículos con las cantidades sumadas de todos los pedidos.");
@@ -40,7 +40,7 @@ public class main {
 			int cuenta = 0;
 			while (objects.hasNext()) {
 				Pedido pedido1 = objects.next();
-				System.out.println("\t: " + pedido1.getNumeroCliente() + " " + pedido1.getNumeroPedido() + " "
+				System.out.println("\t cliente - " + pedido1.getNumeroCliente() + " : numero  de pedido - " + pedido1.getNumeroPedido() + " "
 						+ pedido1.getFecha());
 				cuenta++;
 			}
@@ -55,7 +55,7 @@ public class main {
 			int cuenta2 = 0;
 			while (lineasPedido.hasNext()) {
 				LineaPedido lineaPedido = lineasPedido.next();
-				System.out.println("\t: " + lineaPedido.getNumeroPedido() + " " + lineaPedido.getCodigo() + " "
+				System.out.println("\t Pedido - " + lineaPedido.getNumeroPedido() + " : codigo - " + lineaPedido.getCodigo() + " cantidad - "
 						+ lineaPedido.getCantidad());
 				cuenta2++;
 			}
@@ -169,11 +169,20 @@ public class main {
 						+ " - Cantidad media de articulos: " + ObjectValues.getByAlias("cantidad"));
 
 			}
+			
+			default:
+				System.out.println("No se ha detectado una opcion correcta");
 
 		}
+		
+		
 
 	}
 
+	/**traspasar datos
+	 * @throws SQLException
+	 * mete los datos de la base sql a la base neodatis
+	 */
 	private static void traspasoDatos() throws SQLException {
 		Connection connection = DriverManager.getConnection("jdbc:sqlite:D:/Sergio/proyectoAlmacen.db");
 		ODB odb = ODBFactory.open("D:/Sergio/Base_datos_O1/proyectoAlmacenObjetos.odb");

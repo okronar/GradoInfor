@@ -61,9 +61,11 @@ class SuperheroListActivity : AppCompatActivity() {
     }
 
     private fun searchByName(query: String) {
+
         binding.progressBar.isVisible = true
         CoroutineScope(Dispatchers.IO).launch {
-            val superHeroEntityList :List<RecyclerEntity> = room.getRecyclerDao().getRecyclersByname(query)
+            val peticion : String = "%${query}%"
+            val superHeroEntityList :List<RecyclerEntity> = room.getRecyclerDao().getRecyclersByname(peticion)
             runOnUiThread {
                 adapter.updateList(superHeroEntityList)
                 binding.progressBar.isVisible = false

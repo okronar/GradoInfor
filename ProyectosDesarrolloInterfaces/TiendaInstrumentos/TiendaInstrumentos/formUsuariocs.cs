@@ -19,10 +19,10 @@ namespace TiendaInstrumentos
         public formUsuariocs()
         {
             InitializeComponent();
-            
-            Landing lnd =new Landing(); ;
+
+            Landing lnd = new Landing(); ;
             lnd.Show();
-            
+
         }
 
         private void botonGuitarras_Click(object sender, EventArgs e)
@@ -52,6 +52,123 @@ namespace TiendaInstrumentos
 
 
             }
+        }
+
+        private void botonBajo_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'bass' ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridViewUsu.DataSource = dt;
+
+                MessageBox.Show("Exito");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+
+        private void botonTeclados_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'keyboards' ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridViewUsu.DataSource = dt;
+
+                MessageBox.Show("Exito");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+
+        private void botonBaterias_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'drums' ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridViewUsu.DataSource = dt;
+
+                MessageBox.Show("Exito");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+
+        private void botonMicros_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'microphones' ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridViewUsu.DataSource = dt;
+
+                MessageBox.Show("Exito");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+
         }
     }
 }

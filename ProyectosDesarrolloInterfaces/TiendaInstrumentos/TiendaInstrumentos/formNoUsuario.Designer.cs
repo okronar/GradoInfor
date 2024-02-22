@@ -53,6 +53,7 @@
             botonGuitarras.TabIndex = 2;
             botonGuitarras.Text = "Guitarras";
             botonGuitarras.UseVisualStyleBackColor = true;
+            botonGuitarras.Click += botonGuitarras_Click;
             // 
             // botonBajo
             // 
