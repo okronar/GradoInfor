@@ -1,7 +1,6 @@
 package com.sergio.tarea3sergio
 
-import com.sergio.tarea3sergio.SuperHeroDataResponse
-import com.sergio.tarea3sergio.SuperHeroDetailResponse
+
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -18,6 +18,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 class SuperheroListActivity : AppCompatActivity() {
     private lateinit var room: SuperheroDatabase
@@ -36,10 +37,11 @@ class SuperheroListActivity : AppCompatActivity() {
         setContentView(binding.root)
         room = Room.databaseBuilder(
             this,
-            SuperheroDatabase::class.java, "superheroes"
+            SuperheroDatabase::class.java, "superheroes3"
         ).build()
 
         retrofit = getRetrofit()
+        Log.i("a",retrofit.toString())
         fillDatabase()
         fillDatabaseDetails()
         initUI()
@@ -47,6 +49,7 @@ class SuperheroListActivity : AppCompatActivity() {
 
     private fun initUI() {
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+
             override fun onQueryTextSubmit(query: String?): Boolean {
                 searchByName(query.orEmpty())
                 return false
@@ -54,6 +57,7 @@ class SuperheroListActivity : AppCompatActivity() {
 
             override fun onQueryTextChange(newText: String?) = false
         })
+
         adapter = SuperheroAdapter { superheroId -> navigateToDetail(superheroId) }
         binding.rvSuperhero.setHasFixedSize(true)
         binding.rvSuperhero.layoutManager = LinearLayoutManager(this)
@@ -62,26 +66,31 @@ class SuperheroListActivity : AppCompatActivity() {
 
     private fun searchByName(query: String) {
 
-        binding.progressBar.isVisible = true
+
         CoroutineScope(Dispatchers.IO).launch {
-            val peticion : String = "%${query}%"
+
+            val peticion : String = "%".plus(query).plus("%")
             val superHeroEntityList :List<RecyclerEntity> = room.getRecyclerDao().getRecyclersByname(peticion)
             runOnUiThread {
                 adapter.updateList(superHeroEntityList)
-                binding.progressBar.isVisible = false
+
             }
+
+
         }
+
+
     }
 
     private fun getRetrofit(): Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("https://superheroapi.com/api/122099224400128532/")
+            .baseUrl("https://superheroapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
-    private fun navigateToDetail(id: Int) {
+    private fun navigateToDetail(id: String) {
         val intent = Intent(this, DetailSuperheroActivity::class.java)
         intent.putExtra(EXTRA_ID, id)
         startActivity(intent)
@@ -91,6 +100,7 @@ class SuperheroListActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
             val myResponse: Response<SuperHeroDataResponse> =
                 retrofit.create(ApiService::class.java).getSuperheroes()
+            Log.i("a",myResponse.toString())
             if (myResponse.isSuccessful) {
                 Log.i("Consulta", "Funciona :)")
                 val response: SuperHeroDataResponse? = myResponse.body()
@@ -98,6 +108,7 @@ class SuperheroListActivity : AppCompatActivity() {
                     val lista = response.superheroes.map {
                         it.toDatabase()
                     }
+                    Log.i("todo bien",lista.toString())
                     room.getRecyclerDao().deleteAllRecyclers()
                     room.getRecyclerDao().insertAllRecyclers(lista)
                     runOnUiThread {

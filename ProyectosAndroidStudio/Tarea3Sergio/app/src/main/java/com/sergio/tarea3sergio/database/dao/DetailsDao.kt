@@ -8,12 +8,12 @@ import com.sergio.tarea3sergio.database.entities.DetailsEntity
 
 @Dao
 interface DetailsDao {
-    @Query("SELECT * FROM Details_table WHERE id LIKE :query")
+    @Query("SELECT * FROM Details_table WHERE id = :query")
     suspend fun getAllDetails(query:Int):DetailsEntity
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAllDetails(quotes:List<DetailsEntity>)
 
-    @Query("DELETE FROM details_table")
+    @Query("DELETE FROM Details_table")
     suspend fun deleteAllDetails()
 }

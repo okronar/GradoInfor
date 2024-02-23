@@ -1,11 +1,11 @@
-package com.sergio.tarea3sergio
+package com.ruben.repaso2ev
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.sergio.tarea3sergio.database.entities.RecyclerEntity
+import com.ruben.repaso2ev.databinding.ItemLayoutBinding
+import com.squareup.picasso.Picasso
 
-class SuperheroAdapter(var superheroList: List<RecyclerEntity> = emptyList(), private val navigateToDetailActivity: (String) -> Unit) : RecyclerView.Adapter<SuperheroViewHolder>() {
+class MoviesAdapter {
 
     fun updateList(list: List<RecyclerEntity>) {
         superheroList = list
@@ -20,6 +20,7 @@ class SuperheroAdapter(var superheroList: List<RecyclerEntity> = emptyList(), pr
     override fun onBindViewHolder(holder: SuperheroViewHolder, position: Int) {
         holder.bind(superheroList[position],navigateToDetailActivity)
     }
-    override fun getItemCount() = superheroList.size
+
+
 
 }

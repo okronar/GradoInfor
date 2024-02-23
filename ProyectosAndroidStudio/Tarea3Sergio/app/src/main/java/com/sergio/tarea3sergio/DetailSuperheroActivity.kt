@@ -2,6 +2,7 @@ package com.sergio.tarea3sergio
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
 import android.view.View
 import androidx.room.Room
@@ -27,11 +28,13 @@ class DetailSuperheroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailSuperheroBinding.inflate(layoutInflater)
         room = Room.databaseBuilder(this,
-            SuperheroDatabase::class.java, "superheroes").build()
+            SuperheroDatabase::class.java, "superheroes3").build()
 
         setContentView(binding.root)
-        val id: Int = intent.getStringExtra(EXTRA_ID).orEmpty().toInt()
-        getSuperheroInformation(id)
+        val id: String = intent.getStringExtra(EXTRA_ID).toString()
+        val idInt : Int = id.toInt()
+        Log.i("id",id.toString())
+        getSuperheroInformation(idInt)
 
 
 
@@ -40,13 +43,15 @@ class DetailSuperheroActivity : AppCompatActivity() {
 
     private fun getSuperheroInformation(id: Int) {
         CoroutineScope(Dispatchers.IO).launch {
-            val superheroDetail =
-                room.getDetailsDao().getAllDetails(id)
+
             val superheroRecycler = room.getRecyclerDao().getRecyclersByid(id)
+            val superheroDetail = room.getDetailsDao().getAllDetails(id)
 
             if(superheroDetail != null){
                 //con el !! marcas que estas seguro que no es nulo sino dara problemas
-                runOnUiThread { createUI(superheroDetail,superheroRecycler) }
+                runOnUiThread {
+                    createUI(superheroDetail,superheroRecycler)
+                }
             }
 
 
