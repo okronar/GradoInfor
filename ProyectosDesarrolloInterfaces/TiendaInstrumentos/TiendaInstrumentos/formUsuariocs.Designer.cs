@@ -120,6 +120,7 @@
             Name = "formUsuariocs";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Usuario";
+            FormClosing += formUsuariocs_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsu).EndInit();
             ResumeLayout(false);
         }

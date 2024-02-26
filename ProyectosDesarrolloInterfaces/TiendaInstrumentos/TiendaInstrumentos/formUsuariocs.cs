@@ -20,9 +20,6 @@ namespace TiendaInstrumentos
         {
             InitializeComponent();
 
-            Landing lnd = new Landing(); ;
-            lnd.Show();
-
         }
 
         private void botonGuitarras_Click(object sender, EventArgs e)
@@ -169,6 +166,11 @@ namespace TiendaInstrumentos
 
             }
 
+        }
+
+        private void formUsuariocs_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.land.Dispose();
         }
     }
 }

@@ -22,7 +22,9 @@ namespace TiendaInstrumentos
         private void botonGO_Click(object sender, EventArgs e)
 
         {
-            
+            formNoUsuario formNo = new formNoUsuario();
+            formNo.Show();
+            this.Hide();    
         }
 
         private void Landing_FormClosing(object sender, FormClosingEventArgs e)
@@ -36,7 +38,7 @@ namespace TiendaInstrumentos
         {
             Login login = new Login();
             login.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

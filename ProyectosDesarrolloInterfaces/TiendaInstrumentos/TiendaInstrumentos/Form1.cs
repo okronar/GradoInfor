@@ -8,11 +8,11 @@ namespace TiendaInstrumentos
     {
 
         string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-        
+
         public Form1()
         {
             InitializeComponent();
-           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -87,6 +87,7 @@ namespace TiendaInstrumentos
             //    MessageBox.Show("Fallo");
             //    throw;
             //}
+            //Ahora lo hacemos con prcedures guardados de sql
             try
             {
                 SqlConnection connection = new SqlConnection(connectionString);
@@ -125,7 +126,12 @@ namespace TiendaInstrumentos
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            Program.land.Dispose();
+        }
+
+        private void botonBorrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

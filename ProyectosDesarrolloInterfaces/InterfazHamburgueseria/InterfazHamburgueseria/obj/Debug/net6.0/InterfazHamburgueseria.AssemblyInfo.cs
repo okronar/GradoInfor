@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InterfazHamburgueseria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bfb9b30b75db85a3902629a78cb3c1db0af513d")]
 [assembly: System.Reflection.AssemblyProductAttribute("InterfazHamburgueseria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InterfazHamburgueseria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

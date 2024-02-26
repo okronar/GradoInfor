@@ -55,18 +55,21 @@ namespace TiendaInstrumentos
                     if (decusr == txUsername.Text && decpss == txPassword.Text && txUsername.Text != "admin")
                     {
                         MessageBox.Show("Bienvenido");
+                        formUsuariocs formUsu = new formUsuariocs();
+                        formUsu.Show(); 
+                        this.Hide();
                     }
-                    if (decusr == txUsername.Text && decpss == txPassword.Text && txUsername.Text == "admin")
+                                        else if (decusr == txUsername.Text && decpss == txPassword.Text && txUsername.Text == "admin")
                     {
                         MessageBox.Show("Bienvenido administrador");
                         Form1 form1 = new Form1();
                         form1.Show();
                         this.Hide();
                     }
-                    else
-                    {
-                        MessageBox.Show("Error en el password");
+                    else {
+                        MessageBox.Show("error");
                     }
+                   
 
 
 
@@ -80,7 +83,7 @@ namespace TiendaInstrumentos
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-          
+            Program.land.Dispose();
         }
     }
 }

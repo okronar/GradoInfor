@@ -111,6 +111,7 @@
             Controls.Add(labelUser);
             Name = "Registrar";
             Text = "Registrar";
+            FormClosing += Registrar_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

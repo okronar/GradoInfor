@@ -216,6 +216,7 @@
             botonBorrar.TabIndex = 7;
             botonBorrar.Text = "Borrar";
             botonBorrar.UseVisualStyleBackColor = true;
+            botonBorrar.Click += botonBorrar_Click;
             // 
             // textBox1
             // 

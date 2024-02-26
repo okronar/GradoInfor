@@ -68,6 +68,7 @@
             txPassword.Name = "txPassword";
             txPassword.Size = new Size(320, 23);
             txPassword.TabIndex = 3;
+            txPassword.UseSystemPasswordChar = true;
             // 
             // buttonClear
             // 

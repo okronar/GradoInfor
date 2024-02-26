@@ -28,38 +28,46 @@ namespace TiendaInstrumentos
 
             }
             else if (txPasswordReg.Text == txRepetir.Text)
-            { 
-                if (Directory.Exists("data\\" + usuarioExiste)){
+            {
+                if (Directory.Exists("data\\" + usuarioExiste))
+                {
 
                     MessageBox.Show("El usuario ya existe");
 
                 }
-                else { 
-                //creacion del directorio que contendra el fichero
-                string dir = txUsernameReg.Text;
-                Directory.CreateDirectory("data\\" + dir);
-                var sw = new StreamWriter("data\\" + dir + "\\data.ls");
-                //creamos las string del encriptado en nuestra clase AesCrypt
-                string encusr = AesCryp.Encrypt(txUsernameReg.Text);
-                string encpss = AesCryp.Encrypt(txPasswordReg.Text);
+                else
+                {
+                    //creacion del directorio que contendra el fichero
+                    string dir = txUsernameReg.Text;
+                    Directory.CreateDirectory("data\\" + dir);
+                    var sw = new StreamWriter("data\\" + dir + "\\data.ls");
+                    //creamos las string del encriptado en nuestra clase AesCrypt
+                    string encusr = AesCryp.Encrypt(txUsernameReg.Text);
+                    string encpss = AesCryp.Encrypt(txPasswordReg.Text);
 
-                // una vez llamadas a los metodos estaticos para encriptar, escribimos en el fichero 
-                sw.WriteLine(encusr);
-                sw.WriteLine(encpss);
-                sw.Close();
+                    // una vez llamadas a los metodos estaticos para encriptar, escribimos en el fichero 
+                    sw.WriteLine(encusr);
+                    sw.WriteLine(encpss);
+                    sw.Close();
 
 
-                //
-                MessageBox.Show("Usuario creado correctamente");
-                this.Close();
+                    //
+                    MessageBox.Show("Usuario creado correctamente");
+                    this.Close();
+
+                }
+
 
             }
-
-
-            }
-            else {
+            else
+            {
                 MessageBox.Show("Las contraseñas no coinciden");
             }
+        }
+
+        private void Registrar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.land.Dispose();
         }
     }
 }
