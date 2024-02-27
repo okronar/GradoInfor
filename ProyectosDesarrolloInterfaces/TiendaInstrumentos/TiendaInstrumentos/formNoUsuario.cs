@@ -165,5 +165,10 @@ namespace TiendaInstrumentos
             }
 
         }
+
+        private void formNoUsuario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.land.Dispose();
+        }
     }
 }

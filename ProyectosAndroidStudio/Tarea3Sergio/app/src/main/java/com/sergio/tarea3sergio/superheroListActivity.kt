@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.widget.SearchView
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.sergio.tarea3sergio.database.SuperheroDatabase
@@ -18,7 +17,6 @@ import kotlinx.coroutines.launch
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 class SuperheroListActivity : AppCompatActivity() {
     private lateinit var room: SuperheroDatabase
@@ -37,7 +35,7 @@ class SuperheroListActivity : AppCompatActivity() {
         setContentView(binding.root)
         room = Room.databaseBuilder(
             this,
-            SuperheroDatabase::class.java, "superheroes3"
+            SuperheroDatabase::class.java, "superheroes4"
         ).build()
 
         retrofit = getRetrofit()
@@ -109,6 +107,7 @@ class SuperheroListActivity : AppCompatActivity() {
                         it.toDatabase()
                     }
                     Log.i("todo bien",lista.toString())
+
                     room.getRecyclerDao().deleteAllRecyclers()
                     room.getRecyclerDao().insertAllRecyclers(lista)
                     runOnUiThread {
@@ -124,7 +123,7 @@ class SuperheroListActivity : AppCompatActivity() {
     private fun fillDatabaseDetails() {
         CoroutineScope(Dispatchers.IO).launch {
             val myResponse: Response<SuperHeroDetailResponse> =
-                getRetrofit().create(ApiService::class.java).getSuperheroDetail()
+                retrofit.create(ApiService::class.java).getSuperheroDetail()
             val response: SuperHeroDetailResponse? = myResponse.body()
             if (response != null) {
                 val lista = response.superheroesDetails.map {

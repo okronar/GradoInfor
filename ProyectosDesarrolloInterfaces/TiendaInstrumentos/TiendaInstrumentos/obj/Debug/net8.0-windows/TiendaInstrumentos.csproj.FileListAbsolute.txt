@@ -57,3 +57,4 @@ D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\ob
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.formNoUsuario.resources
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.formUsuariocs.resources
 D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaIn.B9BFD5F3.Up2Date
+D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\obj\Debug\net8.0-windows\TiendaInstrumentos.Cesta.resources

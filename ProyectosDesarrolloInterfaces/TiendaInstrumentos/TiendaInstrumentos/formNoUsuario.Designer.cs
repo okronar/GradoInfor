@@ -63,6 +63,7 @@
             botonBajo.TabIndex = 3;
             botonBajo.Text = "Bajos";
             botonBajo.UseVisualStyleBackColor = true;
+            botonBajo.Click += botonBajo_Click;
             // 
             // botonTeclados
             // 
@@ -72,6 +73,7 @@
             botonTeclados.TabIndex = 4;
             botonTeclados.Text = "Teclados";
             botonTeclados.UseVisualStyleBackColor = true;
+            botonTeclados.Click += botonTeclados_Click;
             // 
             // botonBaterias
             // 
@@ -81,6 +83,7 @@
             botonBaterias.TabIndex = 5;
             botonBaterias.Text = "Baterías";
             botonBaterias.UseVisualStyleBackColor = true;
+            botonBaterias.Click += botonBaterias_Click;
             // 
             // botonMicros
             // 
@@ -90,6 +93,7 @@
             botonMicros.TabIndex = 6;
             botonMicros.Text = "Micrófonos";
             botonMicros.UseVisualStyleBackColor = true;
+            botonMicros.Click += botonMicros_Click;
             // 
             // formNoUsuario
             // 
@@ -104,6 +108,7 @@
             Controls.Add(dataGridViewNoUsu);
             Name = "formNoUsuario";
             Text = "Visitante";
+            FormClosing += formNoUsuario_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridViewNoUsu).EndInit();
             ResumeLayout(false);
         }

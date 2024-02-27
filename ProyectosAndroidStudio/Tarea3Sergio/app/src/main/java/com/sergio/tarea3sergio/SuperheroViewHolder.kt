@@ -1,5 +1,6 @@
 package com.sergio.tarea3sergio
 
+import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.sergio.tarea3sergio.databinding.ItemSuperheroBinding
@@ -12,6 +13,7 @@ class SuperheroViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(superheroRecycler: RecyclerEntity, navigateToDetailActivity: (String) -> Unit) {
         binding.tvSuperheroName.text = superheroRecycler.name
         Picasso.get().load(superheroRecycler.image).into(binding.ivSuperhero)
+        Log.i("id",superheroRecycler.id.toString())
         binding.root.setOnClickListener {
             navigateToDetailActivity(superheroRecycler.id.toString())
         }

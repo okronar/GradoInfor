@@ -67,7 +67,12 @@ namespace TiendaInstrumentos
 
         private void Registrar_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Program.land.Dispose();
+            this.Dispose();
+        }
+
+        private void buttonVolver_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

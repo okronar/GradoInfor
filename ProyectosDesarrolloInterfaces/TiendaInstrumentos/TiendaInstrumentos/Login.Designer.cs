@@ -35,6 +35,7 @@
             buttonClear = new Button();
             buttonRegistrar = new Button();
             buttonLogin = new Button();
+            buttonVolver = new Button();
             SuspendLayout();
             // 
             // labelUser
@@ -78,6 +79,7 @@
             buttonClear.TabIndex = 4;
             buttonClear.Text = "Clear";
             buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
             // 
             // buttonRegistrar
             // 
@@ -99,11 +101,22 @@
             buttonLogin.UseVisualStyleBackColor = true;
             buttonLogin.Click += buttonLogin_Click;
             // 
+            // buttonVolver
+            // 
+            buttonVolver.Location = new Point(309, 391);
+            buttonVolver.Name = "buttonVolver";
+            buttonVolver.Size = new Size(172, 47);
+            buttonVolver.TabIndex = 7;
+            buttonVolver.Text = "Volver";
+            buttonVolver.UseVisualStyleBackColor = true;
+            buttonVolver.Click += buttonVolver_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonVolver);
             Controls.Add(buttonLogin);
             Controls.Add(buttonRegistrar);
             Controls.Add(buttonClear);
@@ -127,5 +140,6 @@
         private Button buttonClear;
         private Button buttonRegistrar;
         private Button buttonLogin;
+        private Button buttonVolver;
     }
 }

@@ -35,6 +35,7 @@
             buttonRegistrarReg = new Button();
             PasswordRep = new Label();
             txRepetir = new TextBox();
+            buttonVolver = new Button();
             SuspendLayout();
             // 
             // txPasswordReg
@@ -97,11 +98,22 @@
             txRepetir.TabIndex = 10;
             txRepetir.UseSystemPasswordChar = true;
             // 
+            // buttonVolver
+            // 
+            buttonVolver.Location = new Point(599, 361);
+            buttonVolver.Name = "buttonVolver";
+            buttonVolver.Size = new Size(158, 43);
+            buttonVolver.TabIndex = 11;
+            buttonVolver.Text = "Volver";
+            buttonVolver.UseVisualStyleBackColor = true;
+            buttonVolver.Click += buttonVolver_Click;
+            // 
             // Registrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonVolver);
             Controls.Add(txRepetir);
             Controls.Add(PasswordRep);
             Controls.Add(buttonRegistrarReg);
@@ -125,5 +137,6 @@
         private Button buttonRegistrarReg;
         private Label PasswordRep;
         private TextBox txRepetir;
+        private Button buttonVolver;
     }
 }

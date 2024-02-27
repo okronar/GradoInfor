@@ -28,7 +28,7 @@ class DetailSuperheroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailSuperheroBinding.inflate(layoutInflater)
         room = Room.databaseBuilder(this,
-            SuperheroDatabase::class.java, "superheroes3").build()
+            SuperheroDatabase::class.java, "superheroes4").build()
 
         setContentView(binding.root)
         val id: String = intent.getStringExtra(EXTRA_ID).toString()

@@ -28,21 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dataGridProductos = new DataGridView();
             buttonVisualizarProductos = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             InsertarProducto = new TabControl();
             tabPage5 = new TabPage();
+            txboxPrecio = new TextBox();
+            txboxMarca = new TextBox();
+            txboxFamilia = new TextBox();
+            labelprecio = new Label();
+            labelMarca = new Label();
+            labelfamilia = new Label();
             labelCodigo = new Label();
-            botonInsertar = new Button();
+            botonInsert = new Button();
             txboxCodigo = new TextBox();
             txboxNombre = new TextBox();
             labelNombre = new Label();
             tabPage6 = new TabPage();
             label3 = new Label();
             botonBorrar = new Button();
-            textBox1 = new TextBox();
+            txboxCodigoBorrar = new TextBox();
+            tabPage4 = new TabPage();
+            txboxPrecioUpd = new TextBox();
+            txboxMarcaUpd = new TextBox();
+            txboxFamiliaupd = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            buttonUpdate = new Button();
+            txboxCodigoUpd = new TextBox();
+            txboxNombreUpd = new TextBox();
+            label8 = new Label();
             tabPage2 = new TabPage();
             tabControl2 = new TabControl();
             tabPage8 = new TabPage();
@@ -53,36 +71,32 @@
             textBox4 = new TextBox();
             tabPage9 = new TabPage();
             botonVisualizarClientes = new Button();
-            dataGridView2 = new DataGridView();
+            dataGridClientes = new DataGridView();
             tabPage3 = new TabPage();
             botonVisualizarFacturas = new Button();
-            dataGridView3 = new DataGridView();
-            tabPage4 = new TabPage();
-            botonVisualizarDetallesFacturas = new Button();
-            dataGridView4 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dataGridFacturas = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridProductos).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             InsertarProducto.SuspendLayout();
             tabPage5.SuspendLayout();
             tabPage6.SuspendLayout();
+            tabPage4.SuspendLayout();
             tabPage2.SuspendLayout();
             tabControl2.SuspendLayout();
             tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridClientes).BeginInit();
             tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
-            tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridFacturas).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridProductos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 336);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(976, 252);
-            dataGridView1.TabIndex = 0;
+            dataGridProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridProductos.Location = new Point(0, 336);
+            dataGridProductos.Name = "dataGridProductos";
+            dataGridProductos.Size = new Size(976, 252);
+            dataGridProductos.TabIndex = 0;
             // 
             // buttonVisualizarProductos
             // 
@@ -99,7 +113,6 @@
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
-            tabControl1.Controls.Add(tabPage4);
             tabControl1.Location = new Point(27, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
@@ -110,7 +123,7 @@
             // 
             tabPage1.Controls.Add(InsertarProducto);
             tabPage1.Controls.Add(buttonVisualizarProductos);
-            tabPage1.Controls.Add(dataGridView1);
+            tabPage1.Controls.Add(dataGridProductos);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -123,56 +136,111 @@
             // 
             InsertarProducto.Controls.Add(tabPage5);
             InsertarProducto.Controls.Add(tabPage6);
-            InsertarProducto.Location = new Point(15, 79);
+            InsertarProducto.Controls.Add(tabPage4);
+            InsertarProducto.Location = new Point(15, 19);
             InsertarProducto.Name = "InsertarProducto";
             InsertarProducto.SelectedIndex = 0;
-            InsertarProducto.Size = new Size(595, 210);
+            InsertarProducto.Size = new Size(925, 270);
             InsertarProducto.TabIndex = 5;
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(txboxPrecio);
+            tabPage5.Controls.Add(txboxMarca);
+            tabPage5.Controls.Add(txboxFamilia);
+            tabPage5.Controls.Add(labelprecio);
+            tabPage5.Controls.Add(labelMarca);
+            tabPage5.Controls.Add(labelfamilia);
             tabPage5.Controls.Add(labelCodigo);
-            tabPage5.Controls.Add(botonInsertar);
+            tabPage5.Controls.Add(botonInsert);
             tabPage5.Controls.Add(txboxCodigo);
             tabPage5.Controls.Add(txboxNombre);
             tabPage5.Controls.Add(labelNombre);
             tabPage5.Location = new Point(4, 24);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(587, 182);
+            tabPage5.Size = new Size(917, 242);
             tabPage5.TabIndex = 0;
             tabPage5.Text = "Insertar";
             tabPage5.UseVisualStyleBackColor = true;
             // 
+            // txboxPrecio
+            // 
+            txboxPrecio.Location = new Point(87, 129);
+            txboxPrecio.Name = "txboxPrecio";
+            txboxPrecio.Size = new Size(300, 23);
+            txboxPrecio.TabIndex = 10;
+            // 
+            // txboxMarca
+            // 
+            txboxMarca.Location = new Point(87, 100);
+            txboxMarca.Name = "txboxMarca";
+            txboxMarca.Size = new Size(300, 23);
+            txboxMarca.TabIndex = 9;
+            // 
+            // txboxFamilia
+            // 
+            txboxFamilia.Location = new Point(87, 71);
+            txboxFamilia.Name = "txboxFamilia";
+            txboxFamilia.Size = new Size(300, 23);
+            txboxFamilia.TabIndex = 8;
+            // 
+            // labelprecio
+            // 
+            labelprecio.AutoSize = true;
+            labelprecio.Location = new Point(13, 137);
+            labelprecio.Name = "labelprecio";
+            labelprecio.Size = new Size(40, 15);
+            labelprecio.TabIndex = 7;
+            labelprecio.Text = "Precio";
+            // 
+            // labelMarca
+            // 
+            labelMarca.AutoSize = true;
+            labelMarca.Location = new Point(11, 108);
+            labelMarca.Name = "labelMarca";
+            labelMarca.Size = new Size(40, 15);
+            labelMarca.TabIndex = 6;
+            labelMarca.Text = "Marca";
+            // 
+            // labelfamilia
+            // 
+            labelfamilia.AutoSize = true;
+            labelfamilia.Location = new Point(10, 79);
+            labelfamilia.Name = "labelfamilia";
+            labelfamilia.Size = new Size(45, 15);
+            labelfamilia.TabIndex = 5;
+            labelfamilia.Text = "Familia";
+            // 
             // labelCodigo
             // 
             labelCodigo.AutoSize = true;
-            labelCodigo.Location = new Point(0, 23);
+            labelCodigo.Location = new Point(454, 87);
             labelCodigo.Name = "labelCodigo";
             labelCodigo.Size = new Size(46, 15);
             labelCodigo.TabIndex = 2;
             labelCodigo.Text = "Codigo";
             // 
-            // botonInsertar
+            // botonInsert
             // 
-            botonInsertar.Location = new Point(425, 26);
-            botonInsertar.Name = "botonInsertar";
-            botonInsertar.Size = new Size(75, 23);
-            botonInsertar.TabIndex = 4;
-            botonInsertar.Text = "Insertar";
-            botonInsertar.UseVisualStyleBackColor = true;
-            botonInsertar.Click += botonInsertar_Click;
+            botonInsert.Location = new Point(633, 133);
+            botonInsert.Name = "botonInsert";
+            botonInsert.Size = new Size(75, 23);
+            botonInsert.TabIndex = 4;
+            botonInsert.Text = "Insert";
+            botonInsert.UseVisualStyleBackColor = true;
+            botonInsert.Click += botonInsertar_Click;
             // 
             // txboxCodigo
             // 
-            txboxCodigo.Location = new Point(97, 26);
+            txboxCodigo.Location = new Point(527, 84);
             txboxCodigo.Name = "txboxCodigo";
             txboxCodigo.Size = new Size(300, 23);
             txboxCodigo.TabIndex = 0;
             // 
             // txboxNombre
             // 
-            txboxNombre.Location = new Point(97, 70);
+            txboxNombre.Location = new Point(87, 42);
             txboxNombre.Name = "txboxNombre";
             txboxNombre.Size = new Size(300, 23);
             txboxNombre.TabIndex = 1;
@@ -180,7 +248,7 @@
             // labelNombre
             // 
             labelNombre.AutoSize = true;
-            labelNombre.Location = new Point(0, 78);
+            labelNombre.Location = new Point(11, 50);
             labelNombre.Name = "labelNombre";
             labelNombre.Size = new Size(51, 15);
             labelNombre.TabIndex = 3;
@@ -190,11 +258,11 @@
             // 
             tabPage6.Controls.Add(label3);
             tabPage6.Controls.Add(botonBorrar);
-            tabPage6.Controls.Add(textBox1);
+            tabPage6.Controls.Add(txboxCodigoBorrar);
             tabPage6.Location = new Point(4, 24);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(587, 182);
+            tabPage6.Size = new Size(917, 242);
             tabPage6.TabIndex = 1;
             tabPage6.Text = "Borrar";
             tabPage6.UseVisualStyleBackColor = true;
@@ -218,18 +286,128 @@
             botonBorrar.UseVisualStyleBackColor = true;
             botonBorrar.Click += botonBorrar_Click;
             // 
-            // textBox1
+            // txboxCodigoBorrar
             // 
-            textBox1.Location = new Point(140, 81);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(300, 23);
-            textBox1.TabIndex = 5;
+            txboxCodigoBorrar.Location = new Point(140, 81);
+            txboxCodigoBorrar.Name = "txboxCodigoBorrar";
+            txboxCodigoBorrar.Size = new Size(300, 23);
+            txboxCodigoBorrar.TabIndex = 5;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(txboxPrecioUpd);
+            tabPage4.Controls.Add(txboxMarcaUpd);
+            tabPage4.Controls.Add(txboxFamiliaupd);
+            tabPage4.Controls.Add(label4);
+            tabPage4.Controls.Add(label5);
+            tabPage4.Controls.Add(label6);
+            tabPage4.Controls.Add(label7);
+            tabPage4.Controls.Add(buttonUpdate);
+            tabPage4.Controls.Add(txboxCodigoUpd);
+            tabPage4.Controls.Add(txboxNombreUpd);
+            tabPage4.Controls.Add(label8);
+            tabPage4.Location = new Point(4, 24);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(917, 242);
+            tabPage4.TabIndex = 2;
+            tabPage4.Text = "Update";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // txboxPrecioUpd
+            // 
+            txboxPrecioUpd.Location = new Point(127, 151);
+            txboxPrecioUpd.Name = "txboxPrecioUpd";
+            txboxPrecioUpd.Size = new Size(300, 23);
+            txboxPrecioUpd.TabIndex = 21;
+            // 
+            // txboxMarcaUpd
+            // 
+            txboxMarcaUpd.Location = new Point(127, 122);
+            txboxMarcaUpd.Name = "txboxMarcaUpd";
+            txboxMarcaUpd.Size = new Size(300, 23);
+            txboxMarcaUpd.TabIndex = 20;
+            // 
+            // txboxFamiliaupd
+            // 
+            txboxFamiliaupd.Location = new Point(127, 93);
+            txboxFamiliaupd.Name = "txboxFamiliaupd";
+            txboxFamiliaupd.Size = new Size(300, 23);
+            txboxFamiliaupd.TabIndex = 19;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(53, 159);
+            label4.Name = "label4";
+            label4.Size = new Size(40, 15);
+            label4.TabIndex = 18;
+            label4.Text = "Precio";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(51, 130);
+            label5.Name = "label5";
+            label5.Size = new Size(40, 15);
+            label5.TabIndex = 17;
+            label5.Text = "Marca";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(50, 101);
+            label6.Name = "label6";
+            label6.Size = new Size(45, 15);
+            label6.TabIndex = 16;
+            label6.Text = "Familia";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(494, 109);
+            label7.Name = "label7";
+            label7.Size = new Size(46, 15);
+            label7.TabIndex = 13;
+            label7.Text = "Codigo";
+            // 
+            // buttonUpdate
+            // 
+            buttonUpdate.Location = new Point(673, 155);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(75, 23);
+            buttonUpdate.TabIndex = 15;
+            buttonUpdate.Text = "Update";
+            buttonUpdate.UseVisualStyleBackColor = true;
+            buttonUpdate.Click += buttonUpdate_Click;
+            // 
+            // txboxCodigoUpd
+            // 
+            txboxCodigoUpd.Location = new Point(567, 106);
+            txboxCodigoUpd.Name = "txboxCodigoUpd";
+            txboxCodigoUpd.Size = new Size(300, 23);
+            txboxCodigoUpd.TabIndex = 11;
+            // 
+            // txboxNombreUpd
+            // 
+            txboxNombreUpd.Location = new Point(127, 64);
+            txboxNombreUpd.Name = "txboxNombreUpd";
+            txboxNombreUpd.Size = new Size(300, 23);
+            txboxNombreUpd.TabIndex = 12;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(51, 72);
+            label8.Name = "label8";
+            label8.Size = new Size(51, 15);
+            label8.TabIndex = 14;
+            label8.Text = "Nombre";
             // 
             // tabPage2
             // 
             tabPage2.Controls.Add(tabControl2);
             tabPage2.Controls.Add(botonVisualizarClientes);
-            tabPage2.Controls.Add(dataGridView2);
+            tabPage2.Controls.Add(dataGridClientes);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -322,20 +500,20 @@
             botonVisualizarClientes.TabIndex = 8;
             botonVisualizarClientes.Text = "Visualizar";
             botonVisualizarClientes.UseVisualStyleBackColor = true;
-            botonVisualizarClientes.Click += button2_Click;
+            botonVisualizarClientes.Click += botonVisualizarClientes_Click;
             // 
-            // dataGridView2
+            // dataGridClientes
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(-3, 340);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(976, 252);
-            dataGridView2.TabIndex = 6;
+            dataGridClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridClientes.Location = new Point(-3, 340);
+            dataGridClientes.Name = "dataGridClientes";
+            dataGridClientes.Size = new Size(976, 252);
+            dataGridClientes.TabIndex = 6;
             // 
             // tabPage3
             // 
             tabPage3.Controls.Add(botonVisualizarFacturas);
-            tabPage3.Controls.Add(dataGridView3);
+            tabPage3.Controls.Add(dataGridFacturas);
             tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new Size(976, 588);
@@ -351,42 +529,15 @@
             botonVisualizarFacturas.TabIndex = 8;
             botonVisualizarFacturas.Text = "Visualizar";
             botonVisualizarFacturas.UseVisualStyleBackColor = true;
+            botonVisualizarFacturas.Click += botonVisualizarFacturas_Click;
             // 
-            // dataGridView3
+            // dataGridFacturas
             // 
-            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(0, 299);
-            dataGridView3.Name = "dataGridView3";
-            dataGridView3.Size = new Size(976, 252);
-            dataGridView3.TabIndex = 6;
-            // 
-            // tabPage4
-            // 
-            tabPage4.Controls.Add(botonVisualizarDetallesFacturas);
-            tabPage4.Controls.Add(dataGridView4);
-            tabPage4.Location = new Point(4, 24);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(976, 588);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "DetallesFactura";
-            tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // botonVisualizarDetallesFacturas
-            // 
-            botonVisualizarDetallesFacturas.Location = new Point(0, 270);
-            botonVisualizarDetallesFacturas.Name = "botonVisualizarDetallesFacturas";
-            botonVisualizarDetallesFacturas.Size = new Size(976, 23);
-            botonVisualizarDetallesFacturas.TabIndex = 8;
-            botonVisualizarDetallesFacturas.Text = "Visualizar";
-            botonVisualizarDetallesFacturas.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView4
-            // 
-            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView4.Location = new Point(0, 299);
-            dataGridView4.Name = "dataGridView4";
-            dataGridView4.Size = new Size(976, 252);
-            dataGridView4.TabIndex = 6;
+            dataGridFacturas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridFacturas.Location = new Point(0, 299);
+            dataGridFacturas.Name = "dataGridFacturas";
+            dataGridFacturas.Size = new Size(976, 252);
+            dataGridFacturas.TabIndex = 6;
             // 
             // Form1
             // 
@@ -397,7 +548,7 @@
             Name = "Form1";
             Text = "Admin";
             FormClosing += Form1_FormClosing;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridProductos).EndInit();
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             InsertarProducto.ResumeLayout(false);
@@ -405,33 +556,30 @@
             tabPage5.PerformLayout();
             tabPage6.ResumeLayout(false);
             tabPage6.PerformLayout();
+            tabPage4.ResumeLayout(false);
+            tabPage4.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabControl2.ResumeLayout(false);
             tabPage8.ResumeLayout(false);
             tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();
             tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
-            tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridFacturas).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataGridProductos;
         private Button buttonVisualizarProductos;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
-        private TabPage tabPage4;
         private Button botonVisualizarClientes;
-        private DataGridView dataGridView2;
+        private DataGridView dataGridClientes;
         private Button botonVisualizarFacturas;
-        private DataGridView dataGridView3;
-        private Button botonVisualizarDetallesFacturas;
-        private DataGridView dataGridView4;
+        private DataGridView dataGridFacturas;
         private TabControl tabControl2;
         private TabPage tabPage8;
         private Label label1;
@@ -443,13 +591,31 @@
         private TabControl InsertarProducto;
         private TabPage tabPage5;
         private Label labelCodigo;
-        private Button botonInsertar;
+        private Button botonInsert;
         private TextBox txboxCodigo;
         private TextBox txboxNombre;
         private Label labelNombre;
         private TabPage tabPage6;
         private Label label3;
         private Button botonBorrar;
-        private TextBox textBox1;
+        private TextBox txboxCodigoBorrar;
+        private Label labelprecio;
+        private Label labelMarca;
+        private Label labelfamilia;
+        private TextBox txboxPrecio;
+        private TextBox txboxMarca;
+        private TextBox txboxFamilia;
+        private TabPage tabPage4;
+        private TextBox txboxPrecioUpd;
+        private TextBox txboxMarcaUpd;
+        private TextBox txboxFamiliaupd;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Button buttonUpdate;
+        private TextBox txboxCodigoUpd;
+        private TextBox txboxNombreUpd;
+        private Label label8;
     }
 }

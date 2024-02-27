@@ -11,7 +11,7 @@ interface ApiService {
     @GET("/api/122099224400128532/search/sp")
     suspend fun getSuperheroes(): Response<SuperHeroDataResponse>
 
-    @GET("{/api/122099224400128532/search/sp}")
+    @GET("/api/122099224400128532/search/sp")
    suspend fun getSuperheroDetail():Response<SuperHeroDetailResponse>
 
 
