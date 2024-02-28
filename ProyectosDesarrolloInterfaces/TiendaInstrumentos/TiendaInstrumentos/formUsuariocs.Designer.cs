@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formUsuariocs));
             botonMicros = new Button();
             botonBaterias = new Button();
             botonTeclados = new Button();
@@ -35,7 +36,9 @@
             botonGuitarras = new Button();
             dataGridViewUsu = new DataGridView();
             botonCesta = new Button();
+            picbox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picbox2).BeginInit();
             SuspendLayout();
             // 
             // botonMicros
@@ -98,18 +101,28 @@
             // 
             // botonCesta
             // 
-            botonCesta.Location = new Point(889, 12);
+            botonCesta.Location = new Point(889, 316);
             botonCesta.Name = "botonCesta";
-            botonCesta.Size = new Size(150, 75);
+            botonCesta.Size = new Size(150, 38);
             botonCesta.TabIndex = 13;
             botonCesta.Text = "Cesta";
             botonCesta.UseVisualStyleBackColor = true;
+            // 
+            // picbox2
+            // 
+            picbox2.BackgroundImage = (Image)resources.GetObject("picbox2.BackgroundImage");
+            picbox2.Location = new Point(0, 0);
+            picbox2.Name = "picbox2";
+            picbox2.Size = new Size(1092, 310);
+            picbox2.TabIndex = 14;
+            picbox2.TabStop = false;
             // 
             // formUsuariocs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1071, 629);
+            Controls.Add(picbox2);
             Controls.Add(botonCesta);
             Controls.Add(botonMicros);
             Controls.Add(botonBaterias);
@@ -122,6 +135,7 @@
             Text = "Usuario";
             FormClosing += formUsuariocs_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picbox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -134,5 +148,6 @@
         private Button botonGuitarras;
         private DataGridView dataGridViewUsu;
         private Button botonCesta;
+        private PictureBox picbox2;
     }
 }

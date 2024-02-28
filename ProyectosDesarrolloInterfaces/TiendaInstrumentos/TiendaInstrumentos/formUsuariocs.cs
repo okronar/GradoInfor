@@ -39,7 +39,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                MessageBox.Show("Exito");
+                
             }
             catch (Exception)
             {
@@ -68,7 +68,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                MessageBox.Show("Exito");
+               
             }
             catch (Exception)
             {
@@ -97,7 +97,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                MessageBox.Show("Exito");
+                
             }
             catch (Exception)
             {
@@ -126,7 +126,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                MessageBox.Show("Exito");
+                
             }
             catch (Exception)
             {
@@ -155,7 +155,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                MessageBox.Show("Exito");
+               
             }
             catch (Exception)
             {

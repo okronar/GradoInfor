@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formNoUsuario));
             dataGridViewNoUsu = new DataGridView();
             botonGuitarras = new Button();
             botonBajo = new Button();
             botonTeclados = new Button();
             botonBaterias = new Button();
             botonMicros = new Button();
+            picBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewNoUsu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewNoUsu
@@ -95,11 +98,21 @@
             botonMicros.UseVisualStyleBackColor = true;
             botonMicros.Click += botonMicros_Click;
             // 
+            // picBox1
+            // 
+            picBox1.Image = (Image)resources.GetObject("picBox1.Image");
+            picBox1.Location = new Point(12, 3);
+            picBox1.Name = "picBox1";
+            picBox1.Size = new Size(1049, 299);
+            picBox1.TabIndex = 7;
+            picBox1.TabStop = false;
+            // 
             // formNoUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1051, 613);
+            Controls.Add(picBox1);
             Controls.Add(botonMicros);
             Controls.Add(botonBaterias);
             Controls.Add(botonTeclados);
@@ -110,6 +123,7 @@
             Text = "Visitante";
             FormClosing += formNoUsuario_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridViewNoUsu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -121,5 +135,6 @@
         private Button botonTeclados;
         private Button botonBaterias;
         private Button botonMicros;
+        private PictureBox picBox1;
     }
 }
