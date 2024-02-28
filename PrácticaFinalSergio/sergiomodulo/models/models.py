@@ -2,15 +2,24 @@
 
 from odoo import models, fields, api
 
-class webinar_DAMDSRT(models.Models):
+class curso(models.Model):
 
-    _name = 'webinarCurso'
+    _name = 'sergiomodulo.curso'
     
-    Nombre  = fields.Char(string = 'Nombre',required=True,help = "Nombre de Curso")
+    name = fields.Char(string = 'Nombre',required=True,help = "Nombre de Curso")
     Descripcion = fields.Text(string = "Descripcion")
     Horas =  fields.Integer(string="Horas")
     Fecha = fields.Date(string = "Fecha")
-    Lugar  = fields.Char(string = "Lugar")
+    Lugar = fields.Char(string = "Lugar")
+
+class alumno(models.Model):
+
+    _name = 'sergiomodulo.alumno'
+    
+    name = fields.Char(string = 'Nombre',required=True,help = "Nombre de alumno")
+    Descripcion = fields.Text(string = "Descripcion")
+    
+    
 # class sergiomodulo(models.Model):
 #     _name = 'sergiomodulo.sergiomodulo'
 #     _description = 'sergiomodulo.sergiomodulo'
