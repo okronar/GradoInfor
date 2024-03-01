@@ -31,21 +31,22 @@
             labelProducto = new Label();
             labelCodigo = new Label();
             labelResultado = new Label();
+            buttonVolver = new Button();
             SuspendLayout();
             // 
             // labelProducto
             // 
             labelProducto.AutoSize = true;
-            labelProducto.Location = new Point(172, 89);
+            labelProducto.Location = new Point(46, 27);
             labelProducto.Name = "labelProducto";
-            labelProducto.Size = new Size(56, 15);
+            labelProducto.Size = new Size(59, 15);
             labelProducto.TabIndex = 0;
-            labelProducto.Text = "Producto";
+            labelProducto.Text = "Producto:";
             // 
             // labelCodigo
             // 
             labelCodigo.AutoSize = true;
-            labelCodigo.Location = new Point(176, 140);
+            labelCodigo.Location = new Point(50, 78);
             labelCodigo.Name = "labelCodigo";
             labelCodigo.Size = new Size(52, 15);
             labelCodigo.TabIndex = 2;
@@ -54,16 +55,27 @@
             // labelResultado
             // 
             labelResultado.AutoSize = true;
-            labelResultado.Location = new Point(311, 89);
+            labelResultado.Location = new Point(185, 27);
             labelResultado.Name = "labelResultado";
             labelResultado.Size = new Size(0, 15);
             labelResultado.TabIndex = 3;
+            // 
+            // buttonVolver
+            // 
+            buttonVolver.Location = new Point(787, 457);
+            buttonVolver.Name = "buttonVolver";
+            buttonVolver.Size = new Size(75, 23);
+            buttonVolver.TabIndex = 4;
+            buttonVolver.Text = "Volver";
+            buttonVolver.UseVisualStyleBackColor = true;
+            buttonVolver.Click += buttonVolver_Click;
             // 
             // Cesta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(874, 492);
+            Controls.Add(buttonVolver);
             Controls.Add(labelResultado);
             Controls.Add(labelCodigo);
             Controls.Add(labelProducto);
@@ -78,5 +90,6 @@
         private Label labelProducto;
         private Label labelCodigo;
         private Label labelResultado;
+        private Button buttonVolver;
     }
 }

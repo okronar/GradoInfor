@@ -37,6 +37,7 @@
             dataGridViewUsu = new DataGridView();
             botonCesta = new Button();
             picbox2 = new PictureBox();
+            buttonVolver = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picbox2).BeginInit();
             SuspendLayout();
@@ -107,6 +108,7 @@
             botonCesta.TabIndex = 13;
             botonCesta.Text = "Cesta";
             botonCesta.UseVisualStyleBackColor = true;
+            botonCesta.Click += botonCesta_Click;
             // 
             // picbox2
             // 
@@ -117,11 +119,22 @@
             picbox2.TabIndex = 14;
             picbox2.TabStop = false;
             // 
+            // buttonVolver
+            // 
+            buttonVolver.Location = new Point(570, 316);
+            buttonVolver.Name = "buttonVolver";
+            buttonVolver.Size = new Size(156, 38);
+            buttonVolver.TabIndex = 15;
+            buttonVolver.Text = "Volver";
+            buttonVolver.UseVisualStyleBackColor = true;
+            buttonVolver.Click += buttonVolver_Click;
+            // 
             // formUsuariocs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1071, 629);
+            Controls.Add(buttonVolver);
             Controls.Add(picbox2);
             Controls.Add(botonCesta);
             Controls.Add(botonMicros);
@@ -149,5 +162,6 @@
         private DataGridView dataGridViewUsu;
         private Button botonCesta;
         private PictureBox picbox2;
+        private Button buttonVolver;
     }
 }

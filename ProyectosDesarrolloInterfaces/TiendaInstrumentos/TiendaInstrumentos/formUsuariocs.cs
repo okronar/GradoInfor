@@ -39,7 +39,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                
+
             }
             catch (Exception)
             {
@@ -68,7 +68,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-               
+
             }
             catch (Exception)
             {
@@ -97,7 +97,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                
+
             }
             catch (Exception)
             {
@@ -126,7 +126,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-                
+
             }
             catch (Exception)
             {
@@ -155,7 +155,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewUsu.DataSource = dt;
 
-               
+
             }
             catch (Exception)
             {
@@ -171,6 +171,20 @@ namespace TiendaInstrumentos
         private void formUsuariocs_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.land.Dispose();
+        }
+
+        private void buttonVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void botonCesta_Click(object sender, EventArgs e)
+        {
+            Cesta cesta = new Cesta();  
+            cesta.Show();
+            this.Hide();
         }
     }
 }

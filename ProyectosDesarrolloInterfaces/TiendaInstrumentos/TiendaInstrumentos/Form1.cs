@@ -265,5 +265,10 @@ namespace TiendaInstrumentos
             }
 
         }
+
+        private void buttonInsertClie_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

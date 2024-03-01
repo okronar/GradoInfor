@@ -16,5 +16,12 @@ namespace TiendaInstrumentos
         {
             InitializeComponent();
         }
+
+        private void buttonVolver_Click(object sender, EventArgs e)
+        {
+            formUsuariocs formUsu = new formUsuariocs();
+            formUsu.Show();
+            this.Hide();
+        }
     }
 }

@@ -62,19 +62,33 @@
             txboxNombreUpd = new TextBox();
             label8 = new Label();
             tabPage2 = new TabPage();
-            tabControl2 = new TabControl();
+            update = new TabControl();
             tabPage8 = new TabPage();
-            label1 = new Label();
-            button2 = new Button();
-            textBox3 = new TextBox();
-            label2 = new Label();
-            textBox4 = new TextBox();
             tabPage9 = new TabPage();
             botonVisualizarClientes = new Button();
             dataGridClientes = new DataGridView();
             tabPage3 = new TabPage();
             botonVisualizarFacturas = new Button();
             dataGridFacturas = new DataGridView();
+            tabPage7 = new TabPage();
+            txboxEmailUpd = new TextBox();
+            txboxApellidoUpd = new TextBox();
+            EmailUpd = new Label();
+            apellidoUpd = new Label();
+            ClienteIdUpd = new Label();
+            buttonUpdateCliente = new Button();
+            txboxClienteUpd = new TextBox();
+            txboxNombreCliUpd = new TextBox();
+            NombreClienteUpd = new Label();
+            txboxEmailInser = new TextBox();
+            txboxApeInsert = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label9 = new Label();
+            buttonInsertClie = new Button();
+            txboxInsertCli = new TextBox();
+            txboxNombreCliInsert = new TextBox();
+            label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridProductos).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -83,11 +97,12 @@
             tabPage6.SuspendLayout();
             tabPage4.SuspendLayout();
             tabPage2.SuspendLayout();
-            tabControl2.SuspendLayout();
+            update.SuspendLayout();
             tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).BeginInit();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridFacturas).BeginInit();
+            tabPage7.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridProductos
@@ -405,7 +420,7 @@
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(tabControl2);
+            tabPage2.Controls.Add(update);
             tabPage2.Controls.Add(botonVisualizarClientes);
             tabPage2.Controls.Add(dataGridClientes);
             tabPage2.Location = new Point(4, 24);
@@ -416,78 +431,42 @@
             tabPage2.Text = "Clientes";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabControl2
+            // update
             // 
-            tabControl2.Controls.Add(tabPage8);
-            tabControl2.Controls.Add(tabPage9);
-            tabControl2.Location = new Point(17, 76);
-            tabControl2.Name = "tabControl2";
-            tabControl2.SelectedIndex = 0;
-            tabControl2.Size = new Size(595, 210);
-            tabControl2.TabIndex = 12;
+            update.Controls.Add(tabPage8);
+            update.Controls.Add(tabPage9);
+            update.Controls.Add(tabPage7);
+            update.Location = new Point(17, 6);
+            update.Name = "update";
+            update.SelectedIndex = 0;
+            update.Size = new Size(953, 309);
+            update.TabIndex = 12;
             // 
             // tabPage8
             // 
+            tabPage8.Controls.Add(txboxEmailInser);
+            tabPage8.Controls.Add(txboxApeInsert);
             tabPage8.Controls.Add(label1);
-            tabPage8.Controls.Add(button2);
-            tabPage8.Controls.Add(textBox3);
             tabPage8.Controls.Add(label2);
-            tabPage8.Controls.Add(textBox4);
+            tabPage8.Controls.Add(label9);
+            tabPage8.Controls.Add(buttonInsertClie);
+            tabPage8.Controls.Add(txboxInsertCli);
+            tabPage8.Controls.Add(txboxNombreCliInsert);
+            tabPage8.Controls.Add(label10);
             tabPage8.Location = new Point(4, 24);
             tabPage8.Name = "tabPage8";
             tabPage8.Padding = new Padding(3);
-            tabPage8.Size = new Size(587, 182);
+            tabPage8.Size = new Size(945, 281);
             tabPage8.TabIndex = 0;
             tabPage8.Text = "Insertar";
             tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 26);
-            label1.Name = "label1";
-            label1.Size = new Size(55, 15);
-            label1.TabIndex = 2;
-            label1.Text = "ClienteID";
-            // 
-            // button2
-            // 
-            button2.Location = new Point(425, 26);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 4;
-            button2.Text = "Insertar";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(97, 26);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(300, 23);
-            textBox3.TabIndex = 0;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(3, 81);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Nombre";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(97, 70);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(300, 23);
-            textBox4.TabIndex = 1;
             // 
             // tabPage9
             // 
             tabPage9.Location = new Point(4, 24);
             tabPage9.Name = "tabPage9";
             tabPage9.Padding = new Padding(3);
-            tabPage9.Size = new Size(587, 182);
+            tabPage9.Size = new Size(945, 281);
             tabPage9.TabIndex = 1;
             tabPage9.Text = "Borrar";
             tabPage9.UseVisualStyleBackColor = true;
@@ -539,6 +518,172 @@
             dataGridFacturas.Size = new Size(976, 252);
             dataGridFacturas.TabIndex = 6;
             // 
+            // tabPage7
+            // 
+            tabPage7.Controls.Add(txboxEmailUpd);
+            tabPage7.Controls.Add(txboxApellidoUpd);
+            tabPage7.Controls.Add(EmailUpd);
+            tabPage7.Controls.Add(apellidoUpd);
+            tabPage7.Controls.Add(ClienteIdUpd);
+            tabPage7.Controls.Add(buttonUpdateCliente);
+            tabPage7.Controls.Add(txboxClienteUpd);
+            tabPage7.Controls.Add(txboxNombreCliUpd);
+            tabPage7.Controls.Add(NombreClienteUpd);
+            tabPage7.Location = new Point(4, 24);
+            tabPage7.Name = "tabPage7";
+            tabPage7.Padding = new Padding(3);
+            tabPage7.Size = new Size(945, 281);
+            tabPage7.TabIndex = 2;
+            tabPage7.Text = "Update";
+            tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // txboxEmailUpd
+            // 
+            txboxEmailUpd.Location = new Point(141, 141);
+            txboxEmailUpd.Name = "txboxEmailUpd";
+            txboxEmailUpd.Size = new Size(300, 23);
+            txboxEmailUpd.TabIndex = 31;
+            // 
+            // txboxApellidoUpd
+            // 
+            txboxApellidoUpd.Location = new Point(141, 112);
+            txboxApellidoUpd.Name = "txboxApellidoUpd";
+            txboxApellidoUpd.Size = new Size(300, 23);
+            txboxApellidoUpd.TabIndex = 30;
+            // 
+            // EmailUpd
+            // 
+            EmailUpd.AutoSize = true;
+            EmailUpd.Location = new Point(65, 149);
+            EmailUpd.Name = "EmailUpd";
+            EmailUpd.Size = new Size(36, 15);
+            EmailUpd.TabIndex = 28;
+            EmailUpd.Text = "Email";
+            // 
+            // apellidoUpd
+            // 
+            apellidoUpd.AutoSize = true;
+            apellidoUpd.Location = new Point(64, 120);
+            apellidoUpd.Name = "apellidoUpd";
+            apellidoUpd.Size = new Size(51, 15);
+            apellidoUpd.TabIndex = 27;
+            apellidoUpd.Text = "Apellido";
+            // 
+            // ClienteIdUpd
+            // 
+            ClienteIdUpd.AutoSize = true;
+            ClienteIdUpd.Location = new Point(508, 128);
+            ClienteIdUpd.Name = "ClienteIdUpd";
+            ClienteIdUpd.Size = new Size(54, 15);
+            ClienteIdUpd.TabIndex = 24;
+            ClienteIdUpd.Text = "ClienteId";
+            // 
+            // buttonUpdateCliente
+            // 
+            buttonUpdateCliente.Location = new Point(687, 174);
+            buttonUpdateCliente.Name = "buttonUpdateCliente";
+            buttonUpdateCliente.Size = new Size(75, 23);
+            buttonUpdateCliente.TabIndex = 26;
+            buttonUpdateCliente.Text = "Update";
+            buttonUpdateCliente.UseVisualStyleBackColor = true;
+            // 
+            // txboxClienteUpd
+            // 
+            txboxClienteUpd.Location = new Point(581, 125);
+            txboxClienteUpd.Name = "txboxClienteUpd";
+            txboxClienteUpd.Size = new Size(300, 23);
+            txboxClienteUpd.TabIndex = 22;
+            // 
+            // txboxNombreCliUpd
+            // 
+            txboxNombreCliUpd.Location = new Point(141, 83);
+            txboxNombreCliUpd.Name = "txboxNombreCliUpd";
+            txboxNombreCliUpd.Size = new Size(300, 23);
+            txboxNombreCliUpd.TabIndex = 23;
+            // 
+            // NombreClienteUpd
+            // 
+            NombreClienteUpd.AutoSize = true;
+            NombreClienteUpd.Location = new Point(65, 91);
+            NombreClienteUpd.Name = "NombreClienteUpd";
+            NombreClienteUpd.Size = new Size(51, 15);
+            NombreClienteUpd.TabIndex = 25;
+            NombreClienteUpd.Text = "Nombre";
+            // 
+            // txboxEmailInser
+            // 
+            txboxEmailInser.Location = new Point(141, 141);
+            txboxEmailInser.Name = "txboxEmailInser";
+            txboxEmailInser.Size = new Size(300, 23);
+            txboxEmailInser.TabIndex = 40;
+            // 
+            // txboxApeInsert
+            // 
+            txboxApeInsert.Location = new Point(141, 112);
+            txboxApeInsert.Name = "txboxApeInsert";
+            txboxApeInsert.Size = new Size(300, 23);
+            txboxApeInsert.TabIndex = 39;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(65, 149);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 38;
+            label1.Text = "Email";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(64, 120);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 15);
+            label2.TabIndex = 37;
+            label2.Text = "Apellido";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(508, 128);
+            label9.Name = "label9";
+            label9.Size = new Size(54, 15);
+            label9.TabIndex = 34;
+            label9.Text = "ClienteId";
+            // 
+            // buttonInsertClie
+            // 
+            buttonInsertClie.Location = new Point(687, 174);
+            buttonInsertClie.Name = "buttonInsertClie";
+            buttonInsertClie.Size = new Size(75, 23);
+            buttonInsertClie.TabIndex = 36;
+            buttonInsertClie.Text = "Insertar";
+            buttonInsertClie.UseVisualStyleBackColor = true;
+            buttonInsertClie.Click += buttonInsertClie_Click;
+            // 
+            // txboxInsertCli
+            // 
+            txboxInsertCli.Location = new Point(581, 125);
+            txboxInsertCli.Name = "txboxInsertCli";
+            txboxInsertCli.Size = new Size(300, 23);
+            txboxInsertCli.TabIndex = 32;
+            // 
+            // txboxNombreCliInsert
+            // 
+            txboxNombreCliInsert.Location = new Point(141, 83);
+            txboxNombreCliInsert.Name = "txboxNombreCliInsert";
+            txboxNombreCliInsert.Size = new Size(300, 23);
+            txboxNombreCliInsert.TabIndex = 33;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(65, 91);
+            label10.Name = "label10";
+            label10.Size = new Size(51, 15);
+            label10.TabIndex = 35;
+            label10.Text = "Nombre";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -559,12 +704,14 @@
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
             tabPage2.ResumeLayout(false);
-            tabControl2.ResumeLayout(false);
+            update.ResumeLayout(false);
             tabPage8.ResumeLayout(false);
             tabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();
             tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridFacturas).EndInit();
+            tabPage7.ResumeLayout(false);
+            tabPage7.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -580,13 +727,8 @@
         private DataGridView dataGridClientes;
         private Button botonVisualizarFacturas;
         private DataGridView dataGridFacturas;
-        private TabControl tabControl2;
+        private TabControl update;
         private TabPage tabPage8;
-        private Label label1;
-        private Button button2;
-        private TextBox textBox3;
-        private Label label2;
-        private TextBox textBox4;
         private TabPage tabPage9;
         private TabControl InsertarProducto;
         private TabPage tabPage5;
@@ -617,5 +759,24 @@
         private TextBox txboxCodigoUpd;
         private TextBox txboxNombreUpd;
         private Label label8;
+        private TabPage tabPage7;
+        private TextBox txboxEmailInser;
+        private TextBox txboxApeInsert;
+        private Label label1;
+        private Label label2;
+        private Label label9;
+        private Button buttonInsertClie;
+        private TextBox txboxInsertCli;
+        private TextBox txboxNombreCliInsert;
+        private Label label10;
+        private TextBox txboxEmailUpd;
+        private TextBox txboxApellidoUpd;
+        private Label EmailUpd;
+        private Label apellidoUpd;
+        private Label ClienteIdUpd;
+        private Button buttonUpdateCliente;
+        private TextBox txboxClienteUpd;
+        private TextBox txboxNombreCliUpd;
+        private Label NombreClienteUpd;
     }
 }

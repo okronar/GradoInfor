@@ -37,7 +37,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewNoUsu.DataSource = dt;
 
-              
+
             }
             catch (Exception)
             {
@@ -66,7 +66,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewNoUsu.DataSource = dt;
 
-             
+
             }
             catch (Exception)
             {
@@ -95,7 +95,7 @@ namespace TiendaInstrumentos
 
                 dataGridViewNoUsu.DataSource = dt;
 
-               
+
             }
             catch (Exception)
             {
@@ -167,6 +167,13 @@ namespace TiendaInstrumentos
         private void formNoUsuario_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.land.Dispose();
+        }
+
+        private void buttonVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.land.Show();
+
         }
     }
 }

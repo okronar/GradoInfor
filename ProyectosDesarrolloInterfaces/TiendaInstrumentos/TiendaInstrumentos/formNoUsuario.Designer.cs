@@ -36,6 +36,7 @@
             botonBaterias = new Button();
             botonMicros = new Button();
             picBox1 = new PictureBox();
+            buttonVolver = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewNoUsu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             SuspendLayout();
@@ -107,11 +108,22 @@
             picBox1.TabIndex = 7;
             picBox1.TabStop = false;
             // 
+            // buttonVolver
+            // 
+            buttonVolver.Location = new Point(886, 310);
+            buttonVolver.Name = "buttonVolver";
+            buttonVolver.Size = new Size(153, 23);
+            buttonVolver.TabIndex = 8;
+            buttonVolver.Text = "Volver";
+            buttonVolver.UseVisualStyleBackColor = true;
+            buttonVolver.Click += buttonVolver_Click;
+            // 
             // formNoUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1051, 613);
+            Controls.Add(buttonVolver);
             Controls.Add(picBox1);
             Controls.Add(botonMicros);
             Controls.Add(botonBaterias);
@@ -136,5 +148,6 @@
         private Button botonBaterias;
         private Button botonMicros;
         private PictureBox picBox1;
+        private Button buttonVolver;
     }
 }
