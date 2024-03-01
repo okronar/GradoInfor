@@ -66,6 +66,7 @@ public class ExamenMain {
                     venta.setProducto(eElement.getElementsByTagName("producto").item(0).getTextContent());
                     venta.setTalla(eElement.getElementsByTagName("talla").item(0).getTextContent());
                     venta.setColor(eElement.getElementsByTagName("color").item(0).getTextContent());
+                    
                     venta.setPrecio(Integer.parseInt(eElement.getElementsByTagName("precio").item(0).getTextContent()));
                     venta.setCantidad(Integer.parseInt(eElement.getElementsByTagName("cantidad").item(0).getTextContent()));
 
