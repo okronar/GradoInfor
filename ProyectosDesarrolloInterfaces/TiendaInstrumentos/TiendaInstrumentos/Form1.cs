@@ -1,6 +1,7 @@
 using Microsoft.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using AesEncDet;
 
 namespace TiendaInstrumentos
 {
@@ -268,7 +269,99 @@ namespace TiendaInstrumentos
 
         private void buttonInsertClie_Click(object sender, EventArgs e)
         {
+            try
+            {
+               
 
+                //insercion en usuarios
+                String usuarioExiste = txboxInsertCliId.Text;
+                if (txboxInsertCliId.Text.Length < 3 || txboxInsertCliId.Text.Length < 5)
+                {
+                    MessageBox.Show("Username or password no valido , muy corto");
+
+                }
+                else if (textBoxPasswordInsert.Text == RepetirPassInsert.Text)
+                {
+                    if (Directory.Exists("data\\" + usuarioExiste))
+                    {
+
+                        MessageBox.Show("El Id de usuario ya existe");
+
+                    }
+                    else
+                    {
+                        //creacion del directorio que contendra el fichero
+                        string dir = txboxInsertCliId.Text;
+                        Directory.CreateDirectory("data\\" + dir);
+                        var sw = new StreamWriter("data\\" + dir + "\\data.ls");
+                        //creamos las string del encriptado en nuestra clase AesCrypt
+                        string encusr = AesCryp.Encrypt(txboxInsertCliId.Text);
+                        string encpss = AesCryp.Encrypt(textBoxPasswordInsert.Text);
+
+                        // una vez llamadas a los metodos estaticos para encriptar, escribimos en el fichero 
+                        sw.WriteLine(encusr);
+                        sw.WriteLine(encpss);
+                        sw.Close();
+                        //IMPORTANTE
+                        insertarClienteDB();
+
+                        //
+                        MessageBox.Show("Usuario creado correctamente");
+                        
+
+
+
+
+
+
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Las contraseñas no coinciden");
+                }
+
+
+
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Fallo, revise si el cliente ya existe");
+
+                throw;
+            }
+
+        }
+
+        private void insertarClienteDB()
+        {
+            //insercion en database
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            SqlCommand cmd = new SqlCommand("SaveClient", connection);
+
+            //esto es para especificar que es un procedimiento 
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            String nombreCliente = txboxNombreCliInsert.Text;
+            String apellidoCliente = txboxApeInsert.Text;
+            String emailCliente = txboxEmailInser.Text;
+            String clienteId = txboxInsertCliId.Text;
+
+            cmd.Parameters.Add(new SqlParameter("@nombreCliente", nombreCliente));
+            cmd.Parameters.Add(new SqlParameter("@apellidoCliente", apellidoCliente));
+            cmd.Parameters.Add(new SqlParameter("@emailCliente", emailCliente));
+            cmd.Parameters.Add(new SqlParameter("@clienteId", clienteId));
+
+            cmd.ExecuteNonQuery();
+
+            connection.Close();
         }
     }
 }

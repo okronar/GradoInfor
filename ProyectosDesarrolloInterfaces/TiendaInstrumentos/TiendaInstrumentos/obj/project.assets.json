@@ -2219,23 +2219,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alumno\\.nuget\\packages\\": {},
+    "C:\\Users\\okron\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\TiendaInstrumentos.csproj",
+      "projectUniqueName": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\TiendaInstrumentos.csproj",
       "projectName": "TiendaInstrumentos",
-      "projectPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\TiendaInstrumentos.csproj",
-      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\obj\\",
+      "projectPath": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\TiendaInstrumentos.csproj",
+      "packagesPath": "C:\\Users\\okron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\okron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

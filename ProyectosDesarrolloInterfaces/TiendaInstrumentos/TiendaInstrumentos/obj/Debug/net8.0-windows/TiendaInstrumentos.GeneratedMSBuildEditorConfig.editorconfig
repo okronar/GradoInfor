@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TiendaInstrumentos
-build_property.ProjectDir = D:\Sergio\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\
+build_property.ProjectDir = C:\Users\okron\DAMD\GradoInfor\ProyectosDesarrolloInterfaces\TiendaInstrumentos\TiendaInstrumentos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
