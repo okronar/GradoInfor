@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "U3m3VWHTbHWCUmM/pGgPXOsyUieDpSaWMhVUnIGGaRhpehl964o06wewPQ3WoPmjsiAgeFLrQ66orCptAhZO1A==",
+  "dgSpecHash": "QBu7r47xbokdOGaiqcAkJ6AriG/0Ni8u5ghBtAHJW4CHLoOTCF47AA9sBZ4ktzMpE1ohLV07iL/4gZExCce6rQ==",
   "success": true,
-  "projectFilePath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\okron\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
   "logs": []
 }

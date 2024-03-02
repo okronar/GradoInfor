@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\",
+  "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|d:\\sergio\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\elegirbebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\elegirbebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\cestaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\cestaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\cestaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\cestaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\elegirbebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\elegirbebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\elegirpatatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\elegirpatatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\elegirpatatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\elegirhamburguesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\elegirhamburguesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\elegirhamburguesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\hamburgueseriaquehamburguesea\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\hamburgueseriaquehamburguesea\\hamburgueseriaquehamburguesea\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D244B3EA-3A46-4E00-A7C7-B003BA28F604}|HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea.csproj|solutionrelative:hamburgueseriaquehamburguesea\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,33 +42,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "CestaForm.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\CestaForm.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\CestaForm.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\CestaForm.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\CestaForm.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\CestaForm.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\CestaForm.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEkAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-02-13T16:01:48.624Z"
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwD0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:01:48.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ElegirBebida.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirBebida.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirBebida.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\ElegirBebida.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirBebida.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirBebida.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\ElegirBebida.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAACKAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T16:01:48.629Z",
               "EditorCaption": ""
@@ -77,70 +74,71 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ElegirHamburguesa.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirHamburguesa.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirHamburguesa.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\ElegirHamburguesa.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirHamburguesa.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\ElegirHamburguesa.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\ElegirHamburguesa.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAIAxwA4AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T16:01:48.633Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "elegirPatatas.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\elegirPatatas.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\elegirPatatas.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\elegirPatatas.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\elegirPatatas.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\elegirPatatas.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\elegirPatatas.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAuwBAAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T16:01:48.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form2.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\Form2.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form2.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form2.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\Form2.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-02-13T16:01:48.643Z"
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:01:48.643Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\Form1.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T16:01:48.647Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "UserControl1.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\UserControl1.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\UserControl1.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\UserControl1.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\UserControl1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\UserControl1.cs",
               "RelativeToolTip": "HamburgueseriaQueHamburguesea\\UserControl1.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T16:01:48.651Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
               "RelativeDocumentMoniker": "HamburgueseriaQueHamburguesea\\Form1.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "HamburgueseriaQueHamburguesea\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\HamburgueseriaQueHamburguesea\\HamburgueseriaQueHamburguesea\\Form1.cs",
+              "RelativeToolTip": "HamburgueseriaQueHamburguesea\\Form1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T16:01:48.654Z"
             }
           ]

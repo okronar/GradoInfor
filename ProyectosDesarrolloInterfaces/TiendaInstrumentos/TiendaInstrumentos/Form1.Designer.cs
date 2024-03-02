@@ -64,6 +64,8 @@
             tabPage2 = new TabPage();
             update = new TabControl();
             tabPage8 = new TabPage();
+            RepetirPassInsert = new TextBox();
+            laberRepetir = new Label();
             labelPsswd = new Label();
             textBoxPasswordInsert = new TextBox();
             txboxEmailInser = new TextBox();
@@ -76,6 +78,9 @@
             txboxNombreCliInsert = new TextBox();
             label10 = new Label();
             tabPage9 = new TabPage();
+            labelBorrarCli = new Label();
+            buttonBorrarCli = new Button();
+            txboxClientBorrar = new TextBox();
             tabPage7 = new TabPage();
             txboxEmailUpd = new TextBox();
             txboxApellidoUpd = new TextBox();
@@ -89,10 +94,14 @@
             botonVisualizarClientes = new Button();
             dataGridClientes = new DataGridView();
             tabPage3 = new TabPage();
+            buttonFactura = new Button();
+            txboxFechaFact = new TextBox();
+            txboxclienteFactu = new TextBox();
+            labelfecha = new Label();
+            labelClienteFactura = new Label();
             botonVisualizarFacturas = new Button();
             dataGridFacturas = new DataGridView();
-            laberRepetir = new Label();
-            RepetirPassInsert = new TextBox();
+            buttonVolver = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridProductos).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -103,6 +112,7 @@
             tabPage2.SuspendLayout();
             update.SuspendLayout();
             tabPage8.SuspendLayout();
+            tabPage9.SuspendLayout();
             tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).BeginInit();
             tabPage3.SuspendLayout();
@@ -111,9 +121,14 @@
             // 
             // dataGridProductos
             // 
+            dataGridProductos.AllowUserToAddRows = false;
+            dataGridProductos.AllowUserToDeleteRows = false;
+            dataGridProductos.AllowUserToResizeColumns = false;
+            dataGridProductos.AllowUserToResizeRows = false;
             dataGridProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridProductos.Location = new Point(0, 336);
             dataGridProductos.Name = "dataGridProductos";
+            dataGridProductos.ReadOnly = true;
             dataGridProductos.Size = new Size(976, 252);
             dataGridProductos.TabIndex = 0;
             // 
@@ -132,10 +147,10 @@
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
-            tabControl1.Location = new Point(27, 12);
+            tabControl1.Location = new Point(27, 31);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(984, 616);
+            tabControl1.Size = new Size(984, 597);
             tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -146,7 +161,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(976, 588);
+            tabPage1.Size = new Size(976, 569);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Productos";
             tabPage1.UseVisualStyleBackColor = true;
@@ -469,6 +484,22 @@
             tabPage8.Text = "Insertar";
             tabPage8.UseVisualStyleBackColor = true;
             // 
+            // RepetirPassInsert
+            // 
+            RepetirPassInsert.Location = new Point(581, 131);
+            RepetirPassInsert.Name = "RepetirPassInsert";
+            RepetirPassInsert.Size = new Size(300, 23);
+            RepetirPassInsert.TabIndex = 44;
+            // 
+            // laberRepetir
+            // 
+            laberRepetir.AutoSize = true;
+            laberRepetir.Location = new Point(470, 132);
+            laberRepetir.Name = "laberRepetir";
+            laberRepetir.Size = new Size(105, 15);
+            laberRepetir.TabIndex = 43;
+            laberRepetir.Text = "Repetir contraseña";
+            // 
             // labelPsswd
             // 
             labelPsswd.AutoSize = true;
@@ -561,6 +592,9 @@
             // 
             // tabPage9
             // 
+            tabPage9.Controls.Add(labelBorrarCli);
+            tabPage9.Controls.Add(buttonBorrarCli);
+            tabPage9.Controls.Add(txboxClientBorrar);
             tabPage9.Location = new Point(4, 24);
             tabPage9.Name = "tabPage9";
             tabPage9.Padding = new Padding(3);
@@ -568,6 +602,32 @@
             tabPage9.TabIndex = 1;
             tabPage9.Text = "Borrar";
             tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // labelBorrarCli
+            // 
+            labelBorrarCli.AutoSize = true;
+            labelBorrarCli.Location = new Point(167, 109);
+            labelBorrarCli.Name = "labelBorrarCli";
+            labelBorrarCli.Size = new Size(54, 15);
+            labelBorrarCli.TabIndex = 9;
+            labelBorrarCli.Text = "ClienteId";
+            // 
+            // buttonBorrarCli
+            // 
+            buttonBorrarCli.Location = new Point(592, 112);
+            buttonBorrarCli.Name = "buttonBorrarCli";
+            buttonBorrarCli.Size = new Size(75, 23);
+            buttonBorrarCli.TabIndex = 10;
+            buttonBorrarCli.Text = "Eliminar";
+            buttonBorrarCli.UseVisualStyleBackColor = true;
+            buttonBorrarCli.Click += buttonBorrarCli_Click;
+            // 
+            // txboxClientBorrar
+            // 
+            txboxClientBorrar.Location = new Point(264, 112);
+            txboxClientBorrar.Name = "txboxClientBorrar";
+            txboxClientBorrar.Size = new Size(300, 23);
+            txboxClientBorrar.TabIndex = 8;
             // 
             // tabPage7
             // 
@@ -637,6 +697,7 @@
             buttonUpdateCliente.TabIndex = 26;
             buttonUpdateCliente.Text = "Update";
             buttonUpdateCliente.UseVisualStyleBackColor = true;
+            buttonUpdateCliente.Click += buttonUpdateCliente_Click;
             // 
             // txboxClienteUpd
             // 
@@ -673,14 +734,24 @@
             // 
             // dataGridClientes
             // 
+            dataGridClientes.AllowUserToAddRows = false;
+            dataGridClientes.AllowUserToDeleteRows = false;
+            dataGridClientes.AllowUserToResizeColumns = false;
+            dataGridClientes.AllowUserToResizeRows = false;
             dataGridClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridClientes.Location = new Point(-3, 340);
             dataGridClientes.Name = "dataGridClientes";
+            dataGridClientes.ReadOnly = true;
             dataGridClientes.Size = new Size(976, 252);
             dataGridClientes.TabIndex = 6;
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(buttonFactura);
+            tabPage3.Controls.Add(txboxFechaFact);
+            tabPage3.Controls.Add(txboxclienteFactu);
+            tabPage3.Controls.Add(labelfecha);
+            tabPage3.Controls.Add(labelClienteFactura);
             tabPage3.Controls.Add(botonVisualizarFacturas);
             tabPage3.Controls.Add(dataGridFacturas);
             tabPage3.Location = new Point(4, 24);
@@ -689,6 +760,48 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Facturas";
             tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // buttonFactura
+            // 
+            buttonFactura.Location = new Point(336, 205);
+            buttonFactura.Name = "buttonFactura";
+            buttonFactura.Size = new Size(272, 23);
+            buttonFactura.TabIndex = 13;
+            buttonFactura.Text = "Facturar";
+            buttonFactura.UseVisualStyleBackColor = true;
+            buttonFactura.Click += buttonFactura_Click;
+            // 
+            // txboxFechaFact
+            // 
+            txboxFechaFact.Location = new Point(336, 130);
+            txboxFechaFact.Name = "txboxFechaFact";
+            txboxFechaFact.Size = new Size(272, 23);
+            txboxFechaFact.TabIndex = 12;
+            // 
+            // txboxclienteFactu
+            // 
+            txboxclienteFactu.Location = new Point(336, 76);
+            txboxclienteFactu.Name = "txboxclienteFactu";
+            txboxclienteFactu.Size = new Size(272, 23);
+            txboxclienteFactu.TabIndex = 11;
+            // 
+            // labelfecha
+            // 
+            labelfecha.AutoSize = true;
+            labelfecha.Location = new Point(198, 138);
+            labelfecha.Name = "labelfecha";
+            labelfecha.Size = new Size(38, 15);
+            labelfecha.TabIndex = 10;
+            labelfecha.Text = "Fecha";
+            // 
+            // labelClienteFactura
+            // 
+            labelClienteFactura.AutoSize = true;
+            labelClienteFactura.Location = new Point(198, 84);
+            labelClienteFactura.Name = "labelClienteFactura";
+            labelClienteFactura.Size = new Size(54, 15);
+            labelClienteFactura.TabIndex = 9;
+            labelClienteFactura.Text = "ClienteId";
             // 
             // botonVisualizarFacturas
             // 
@@ -702,33 +815,33 @@
             // 
             // dataGridFacturas
             // 
+            dataGridFacturas.AllowUserToAddRows = false;
+            dataGridFacturas.AllowUserToDeleteRows = false;
+            dataGridFacturas.AllowUserToResizeColumns = false;
+            dataGridFacturas.AllowUserToResizeRows = false;
             dataGridFacturas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridFacturas.Location = new Point(0, 299);
             dataGridFacturas.Name = "dataGridFacturas";
+            dataGridFacturas.ReadOnly = true;
             dataGridFacturas.Size = new Size(976, 252);
             dataGridFacturas.TabIndex = 6;
             // 
-            // laberRepetir
+            // buttonVolver
             // 
-            laberRepetir.AutoSize = true;
-            laberRepetir.Location = new Point(470, 132);
-            laberRepetir.Name = "laberRepetir";
-            laberRepetir.Size = new Size(105, 15);
-            laberRepetir.TabIndex = 43;
-            laberRepetir.Text = "Repetir contraseña";
-            // 
-            // RepetirPassInsert
-            // 
-            RepetirPassInsert.Location = new Point(581, 131);
-            RepetirPassInsert.Name = "RepetirPassInsert";
-            RepetirPassInsert.Size = new Size(300, 23);
-            RepetirPassInsert.TabIndex = 44;
+            buttonVolver.Location = new Point(420, 2);
+            buttonVolver.Name = "buttonVolver";
+            buttonVolver.Size = new Size(200, 23);
+            buttonVolver.TabIndex = 3;
+            buttonVolver.Text = "Volver";
+            buttonVolver.UseVisualStyleBackColor = true;
+            buttonVolver.Click += buttonVolver_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1054, 640);
+            Controls.Add(buttonVolver);
             Controls.Add(tabControl1);
             Name = "Form1";
             Text = "Admin";
@@ -747,10 +860,13 @@
             update.ResumeLayout(false);
             tabPage8.ResumeLayout(false);
             tabPage8.PerformLayout();
+            tabPage9.ResumeLayout(false);
+            tabPage9.PerformLayout();
             tabPage7.ResumeLayout(false);
             tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();
             tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridFacturas).EndInit();
             ResumeLayout(false);
         }
@@ -822,5 +938,14 @@
         private TextBox textBoxPasswordInsert;
         private TextBox RepetirPassInsert;
         private Label laberRepetir;
+        private Label labelBorrarCli;
+        private Button buttonBorrarCli;
+        private TextBox txboxClientBorrar;
+        private Button buttonFactura;
+        private TextBox txboxFechaFact;
+        private TextBox txboxclienteFactu;
+        private Label labelfecha;
+        private Label labelClienteFactura;
+        private Button buttonVolver;
     }
 }

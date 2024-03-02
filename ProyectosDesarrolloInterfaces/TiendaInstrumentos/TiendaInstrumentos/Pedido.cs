@@ -7,23 +7,14 @@ using System;
 using System.Collections.Generic;
 namespace TiendaInstrumentos
 {
+   public class Pedido
+   {
+        // Propiedad de instancia para almacenar los productos en el pedido actual
+        public List<Producto> Productos { get; set; }
 
-    using System;
-    using System.Collections.Generic;
-
-    public class Pedido
-    {
-        // Lista estática para almacenar todos los pedidos
-        private static List<Pedido> pedidos = new List<Pedido>();
-
-        // Propiedades de instancia
-        public DateTime FechaPedido { get; private set; }
-        public List<Producto> Productos { get; private set; }
-
-        // Constructor para inicializar el pedido con la fecha actual
+        // Constructor para inicializar el pedido con una lista de productos vacía
         public Pedido()
         {
-            FechaPedido = DateTime.Now;
             Productos = new List<Producto>();
         }
 
@@ -33,18 +24,20 @@ namespace TiendaInstrumentos
             Productos.Add(producto);
         }
 
-        // Método estático para agregar un pedido a la lista de pedidos
-        public static void AgregarPedido(Pedido pedido)
+        // Método para borrar el último producto añadido al pedido
+        public void BorrarUltimoProducto()
         {
-            pedidos.Add(pedido);
+            if (Productos.Count > 0)
+            {
+                Productos.RemoveAt(Productos.Count - 1);
+            }
         }
+        public int getCount() { return Productos.Count; }
 
-        // Método estático para obtener todos los pedidos
-        public static List<Pedido> ObtenerPedidos()
-        {
-            return pedidos;
-        }
+       public List <Producto> getList() { return Productos; }
+
+        
     }
-
-
 }
+
+

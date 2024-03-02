@@ -36,6 +36,12 @@
             PasswordRep = new Label();
             txRepetir = new TextBox();
             buttonVolver = new Button();
+            txboxEmailReg = new TextBox();
+            txboxApellidoReg = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            txboxNombreReg = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // txPasswordReg
@@ -108,11 +114,65 @@
             buttonVolver.UseVisualStyleBackColor = true;
             buttonVolver.Click += buttonVolver_Click;
             // 
+            // txboxEmailReg
+            // 
+            txboxEmailReg.Location = new Point(179, 265);
+            txboxEmailReg.Name = "txboxEmailReg";
+            txboxEmailReg.Size = new Size(320, 23);
+            txboxEmailReg.TabIndex = 46;
+            // 
+            // txboxApellidoReg
+            // 
+            txboxApellidoReg.Location = new Point(179, 221);
+            txboxApellidoReg.Name = "txboxApellidoReg";
+            txboxApellidoReg.Size = new Size(320, 23);
+            txboxApellidoReg.TabIndex = 45;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(50, 273);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 44;
+            label1.Text = "Email";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(35, 229);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 15);
+            label2.TabIndex = 43;
+            label2.Text = "Apellido";
+            // 
+            // txboxNombreReg
+            // 
+            txboxNombreReg.Location = new Point(179, 175);
+            txboxNombreReg.Name = "txboxNombreReg";
+            txboxNombreReg.Size = new Size(320, 23);
+            txboxNombreReg.TabIndex = 41;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(35, 183);
+            label10.Name = "label10";
+            label10.Size = new Size(51, 15);
+            label10.TabIndex = 42;
+            label10.Text = "Nombre";
+            // 
             // Registrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txboxEmailReg);
+            Controls.Add(txboxApellidoReg);
+            Controls.Add(label1);
+            Controls.Add(label2);
+            Controls.Add(txboxNombreReg);
+            Controls.Add(label10);
             Controls.Add(buttonVolver);
             Controls.Add(txRepetir);
             Controls.Add(PasswordRep);
@@ -138,5 +198,11 @@
         private Label PasswordRep;
         private TextBox txRepetir;
         private Button buttonVolver;
+        private TextBox txboxEmailReg;
+        private TextBox txboxApellidoReg;
+        private Label label1;
+        private Label label2;
+        private TextBox txboxNombreReg;
+        private Label label10;
     }
 }

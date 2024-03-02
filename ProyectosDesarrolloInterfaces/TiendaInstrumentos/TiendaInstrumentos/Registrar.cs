@@ -1,7 +1,9 @@
 ﻿using AesEncDet;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -13,6 +15,7 @@ namespace TiendaInstrumentos
 {
     public partial class Registrar : Form
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
         public Registrar()
         {
             InitializeComponent();
@@ -49,6 +52,8 @@ namespace TiendaInstrumentos
                     sw.WriteLine(encusr);
                     sw.WriteLine(encpss);
                     sw.Close();
+                    //IMPORTANTE
+                    insertarClienteDB();
 
 
                     //
@@ -65,6 +70,33 @@ namespace TiendaInstrumentos
             }
         }
 
+        private void insertarClienteDB()
+        {
+            //insercion en database
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            SqlCommand cmd = new SqlCommand("SaveClient", connection);
+
+            //esto es para especificar que es un procedimiento 
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            String nombreCliente = txboxNombreReg.Text;
+            String apellidoCliente = txboxApellidoReg.Text;
+            String emailCliente = txboxEmailReg.Text;
+            String clienteId = txUsernameReg.Text;
+
+            cmd.Parameters.Add(new SqlParameter("@nombreCliente", nombreCliente));
+            cmd.Parameters.Add(new SqlParameter("@apellidoCliente", apellidoCliente));
+            cmd.Parameters.Add(new SqlParameter("@emailCliente", emailCliente));
+            cmd.Parameters.Add(new SqlParameter("@clienteId", clienteId));
+
+            cmd.ExecuteNonQuery();
+
+            connection.Close();
+
+
+        }
         private void Registrar_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Dispose();
