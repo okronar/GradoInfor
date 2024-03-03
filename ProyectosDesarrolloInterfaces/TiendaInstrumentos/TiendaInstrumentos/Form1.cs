@@ -114,7 +114,7 @@ namespace TiendaInstrumentos
                 cmd.ExecuteNonQuery();
 
                 connection.Close();
-                MessageBox.Show("Exito insertando");
+                MessageBox.Show("Exito insertando Producto");
 
 
             }

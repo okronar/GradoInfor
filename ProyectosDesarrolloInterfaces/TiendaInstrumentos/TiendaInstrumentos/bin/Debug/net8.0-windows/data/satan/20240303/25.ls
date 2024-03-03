@@ -1,0 +1,4 @@
+-----------SU PEDIDO-------------
+- player plus - 750€
+- player plus - 750€
+- Fender Stratocaster - 1299,99€

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cesta));
             labelCodigo = new Label();
             buttonVolver = new Button();
             buttonAñadir = new Button();
@@ -36,21 +37,23 @@
             txboxCodProdAñadir = new TextBox();
             dataGridProductosDisp = new DataGridView();
             buttonBorrarUltimo = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridProductosDisp).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // labelCodigo
             // 
-            labelCodigo.AutoSize = true;
-            labelCodigo.Location = new Point(758, 346);
+            labelCodigo.Location = new Point(838, 625);
             labelCodigo.Name = "labelCodigo";
-            labelCodigo.Size = new Size(52, 15);
+            labelCodigo.Size = new Size(112, 35);
             labelCodigo.TabIndex = 2;
             labelCodigo.Text = "Codigo :";
+            labelCodigo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // buttonVolver
             // 
-            buttonVolver.Location = new Point(1548, 793);
+            buttonVolver.Location = new Point(1559, 793);
             buttonVolver.Name = "buttonVolver";
             buttonVolver.Size = new Size(176, 40);
             buttonVolver.TabIndex = 4;
@@ -60,9 +63,9 @@
             // 
             // buttonAñadir
             // 
-            buttonAñadir.Location = new Point(910, 405);
+            buttonAñadir.Location = new Point(1006, 669);
             buttonAñadir.Name = "buttonAñadir";
-            buttonAñadir.Size = new Size(75, 23);
+            buttonAñadir.Size = new Size(161, 63);
             buttonAñadir.TabIndex = 5;
             buttonAñadir.Text = "Añadir";
             buttonAñadir.UseVisualStyleBackColor = true;
@@ -70,26 +73,28 @@
             // 
             // buttonComprar
             // 
-            buttonComprar.Location = new Point(1316, 793);
+            buttonComprar.Location = new Point(1350, 793);
             buttonComprar.Name = "buttonComprar";
             buttonComprar.Size = new Size(177, 40);
             buttonComprar.TabIndex = 6;
             buttonComprar.Text = "Comprar";
             buttonComprar.UseVisualStyleBackColor = true;
+            buttonComprar.Click += buttonComprar_Click;
             // 
             // labelCarro
             // 
-            labelCarro.Location = new Point(1330, 40);
+            labelCarro.Location = new Point(1350, 112);
             labelCarro.Name = "labelCarro";
-            labelCarro.Size = new Size(394, 628);
+            labelCarro.Size = new Size(385, 576);
             labelCarro.TabIndex = 7;
             // 
             // txboxCodProdAñadir
             // 
-            txboxCodProdAñadir.Location = new Point(876, 346);
+            txboxCodProdAñadir.Location = new Point(975, 632);
             txboxCodProdAñadir.Name = "txboxCodProdAñadir";
-            txboxCodProdAñadir.Size = new Size(141, 23);
+            txboxCodProdAñadir.Size = new Size(243, 23);
             txboxCodProdAñadir.TabIndex = 8;
+            txboxCodProdAñadir.TextAlign = HorizontalAlignment.Center;
             // 
             // dataGridProductosDisp
             // 
@@ -101,23 +106,37 @@
             dataGridProductosDisp.Location = new Point(41, 551);
             dataGridProductosDisp.Name = "dataGridProductosDisp";
             dataGridProductosDisp.ReadOnly = true;
-            dataGridProductosDisp.Size = new Size(976, 270);
+            dataGridProductosDisp.Size = new Size(647, 270);
             dataGridProductosDisp.TabIndex = 9;
             // 
             // buttonBorrarUltimo
             // 
-            buttonBorrarUltimo.Location = new Point(1429, 724);
+            buttonBorrarUltimo.Location = new Point(1445, 710);
             buttonBorrarUltimo.Name = "buttonBorrarUltimo";
             buttonBorrarUltimo.Size = new Size(188, 40);
             buttonBorrarUltimo.TabIndex = 10;
             buttonBorrarUltimo.Text = "Borrar último";
             buttonBorrarUltimo.UseVisualStyleBackColor = true;
+            buttonBorrarUltimo.Click += buttonBorrarUltimo_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1350, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(385, 65);
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // Cesta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1764, 857);
+            Controls.Add(pictureBox1);
             Controls.Add(buttonBorrarUltimo);
             Controls.Add(dataGridProductosDisp);
             Controls.Add(txboxCodProdAñadir);
@@ -130,6 +149,7 @@
             Text = "Cesta";
             FormClosing += Cesta_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dataGridProductosDisp).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -143,5 +163,6 @@
         private TextBox txboxCodProdAñadir;
         private DataGridView dataGridProductosDisp;
         private Button buttonBorrarUltimo;
+        private PictureBox pictureBox1;
     }
 }

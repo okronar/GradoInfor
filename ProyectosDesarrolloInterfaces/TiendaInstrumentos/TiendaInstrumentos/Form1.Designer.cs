@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             dataGridProductos = new DataGridView();
             buttonVisualizarProductos = new Button();
             tabControl1 = new TabControl();
@@ -155,6 +156,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
             tabPage1.Controls.Add(InsertarProducto);
             tabPage1.Controls.Add(buttonVisualizarProductos);
             tabPage1.Controls.Add(dataGridProductos);
@@ -445,7 +447,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(976, 588);
+            tabPage2.Size = new Size(976, 569);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Clientes";
             tabPage2.UseVisualStyleBackColor = true;
@@ -756,7 +758,7 @@
             tabPage3.Controls.Add(dataGridFacturas);
             tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(976, 588);
+            tabPage3.Size = new Size(976, 569);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Facturas";
             tabPage3.UseVisualStyleBackColor = true;
@@ -840,6 +842,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1054, 640);
             Controls.Add(buttonVolver);
             Controls.Add(tabControl1);
