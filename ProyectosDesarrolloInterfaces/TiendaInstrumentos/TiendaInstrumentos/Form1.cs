@@ -210,46 +210,44 @@ namespace TiendaInstrumentos
 
         }
 
-        //borrar clientes
+        //borrar clientes, borrare tambien los datos de facturas o saltara excepcion por ser relacion foranea
         private void buttonBorrarCli_Click(object sender, EventArgs e)
         {
+                try
+                {
 
-            try
-            {
+                    SqlConnection connection = new SqlConnection(connectionString);
+                    connection.Open();
 
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
+                    SqlCommand cmd = new SqlCommand("DeleteClienteYFactura", connection);
 
-                SqlCommand cmd = new SqlCommand("DeleteCliente", connection);
+                    //esto es para especificar que es un procedimiento 
+                    cmd.CommandType = CommandType.StoredProcedure;
 
-                //esto es para especificar que es un procedimiento 
-                cmd.CommandType = CommandType.StoredProcedure;
+                    String clienteBorrar = txboxClientBorrar.Text;
 
-                String clienteBorrar = txboxClientBorrar.Text;
-
-                cmd.Parameters.Add(new SqlParameter("@ClienteID", clienteBorrar));
+                    cmd.Parameters.Add(new SqlParameter("@ClienteID", clienteBorrar));
 
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
 
-                connection.Close();
+                    connection.Close();
 
-                //borramos directorio tambien
-                EliminarDirectorioCliente(clienteBorrar);
+                    //borramos directorio tambien
+                    EliminarDirectorioCliente(txboxClientBorrar.Text);
 
-                MessageBox.Show("Exito borrando cliente");
+                    MessageBox.Show("Exito borrando cliente e historial");
 
-                txboxClientBorrar.Text = null;
+                    txboxClientBorrar.Text = null;
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Fallo al borrar cliente y su historial");
+                    throw;
+                }
 
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Fallo al borrar cliente");
-                throw;
-            }
-
-
-        }
 
         //select facturas
         private void botonVisualizarFacturas_Click(object sender, EventArgs e)

@@ -21,7 +21,7 @@ namespace TiendaInstrumentos
             InitializeComponent();
 
         }
-
+        //selects 
         private void botonGuitarras_Click(object sender, EventArgs e)
         {
 
@@ -50,7 +50,7 @@ namespace TiendaInstrumentos
 
             }
         }
-
+        //selects 
         private void botonBajo_Click(object sender, EventArgs e)
         {
 
@@ -79,7 +79,7 @@ namespace TiendaInstrumentos
 
             }
         }
-
+        //selects 
         private void botonTeclados_Click(object sender, EventArgs e)
         {
 
@@ -108,7 +108,7 @@ namespace TiendaInstrumentos
 
             }
         }
-
+        //selects 
         private void botonBaterias_Click(object sender, EventArgs e)
         {
 
@@ -137,7 +137,7 @@ namespace TiendaInstrumentos
 
             }
         }
-
+        //selects 
         private void botonMicros_Click(object sender, EventArgs e)
         {
 
@@ -167,19 +167,19 @@ namespace TiendaInstrumentos
             }
 
         }
-
+        //cierra
         private void formUsuariocs_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.land.Dispose();
         }
-
+        //volver
         private void buttonVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
             Login login = new Login();
             login.Show();
         }
-
+        //movemos a cesta
         private void botonCesta_Click(object sender, EventArgs e)
         {
             Cesta cesta = new Cesta();  

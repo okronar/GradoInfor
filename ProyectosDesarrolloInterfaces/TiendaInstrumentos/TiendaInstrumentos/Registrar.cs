@@ -20,7 +20,7 @@ namespace TiendaInstrumentos
         {
             InitializeComponent();
         }
-
+        //registra el cliente y lo inserta en la db
         private void buttonRegistrarReg_Click(object sender, EventArgs e)
         {
             //registro 
@@ -70,6 +70,7 @@ namespace TiendaInstrumentos
             }
         }
 
+        //inserta
         private void insertarClienteDB()
         {
             //insercion en database
@@ -97,11 +98,12 @@ namespace TiendaInstrumentos
 
 
         }
+        //cerrar
         private void Registrar_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Dispose();
         }
-
+        //volver
         private void buttonVolver_Click(object sender, EventArgs e)
         {
             this.Dispose();

@@ -38,6 +38,12 @@
             dataGridProductosDisp = new DataGridView();
             buttonBorrarUltimo = new Button();
             pictureBox1 = new PictureBox();
+            labelInstrucciones = new Label();
+            botonMicros = new Button();
+            botonBaterias = new Button();
+            botonTeclados = new Button();
+            botonBajo = new Button();
+            botonGuitarras = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridProductosDisp).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -129,6 +135,65 @@
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
+            // labelInstrucciones
+            // 
+            labelInstrucciones.Location = new Point(888, 569);
+            labelInstrucciones.Name = "labelInstrucciones";
+            labelInstrucciones.Size = new Size(353, 31);
+            labelInstrucciones.TabIndex = 12;
+            labelInstrucciones.Text = "Escriba el código debajo y clique en añadir para sumar al carro";
+            labelInstrucciones.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // botonMicros
+            // 
+            botonMicros.Location = new Point(367, 522);
+            botonMicros.Name = "botonMicros";
+            botonMicros.Size = new Size(85, 23);
+            botonMicros.TabIndex = 17;
+            botonMicros.Text = "Micrófonos";
+            botonMicros.UseVisualStyleBackColor = true;
+            botonMicros.Click += botonMicros_Click;
+            // 
+            // botonBaterias
+            // 
+            botonBaterias.Location = new Point(286, 522);
+            botonBaterias.Name = "botonBaterias";
+            botonBaterias.Size = new Size(75, 23);
+            botonBaterias.TabIndex = 16;
+            botonBaterias.Text = "Baterías";
+            botonBaterias.UseVisualStyleBackColor = true;
+            botonBaterias.Click += botonBaterias_Click;
+            // 
+            // botonTeclados
+            // 
+            botonTeclados.Location = new Point(205, 522);
+            botonTeclados.Name = "botonTeclados";
+            botonTeclados.Size = new Size(75, 23);
+            botonTeclados.TabIndex = 15;
+            botonTeclados.Text = "Teclados";
+            botonTeclados.UseVisualStyleBackColor = true;
+            botonTeclados.Click += botonTeclados_Click;
+            // 
+            // botonBajo
+            // 
+            botonBajo.Location = new Point(124, 522);
+            botonBajo.Name = "botonBajo";
+            botonBajo.Size = new Size(75, 23);
+            botonBajo.TabIndex = 14;
+            botonBajo.Text = "Bajos";
+            botonBajo.UseVisualStyleBackColor = true;
+            botonBajo.Click += botonBajo_Click;
+            // 
+            // botonGuitarras
+            // 
+            botonGuitarras.Location = new Point(43, 522);
+            botonGuitarras.Name = "botonGuitarras";
+            botonGuitarras.Size = new Size(75, 23);
+            botonGuitarras.TabIndex = 13;
+            botonGuitarras.Text = "Guitarras";
+            botonGuitarras.UseVisualStyleBackColor = true;
+            botonGuitarras.Click += botonGuitarras_Click;
+            // 
             // Cesta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -136,6 +201,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1764, 857);
+            Controls.Add(botonMicros);
+            Controls.Add(botonBaterias);
+            Controls.Add(botonTeclados);
+            Controls.Add(botonBajo);
+            Controls.Add(botonGuitarras);
+            Controls.Add(labelInstrucciones);
             Controls.Add(pictureBox1);
             Controls.Add(buttonBorrarUltimo);
             Controls.Add(dataGridProductosDisp);
@@ -164,5 +235,11 @@
         private DataGridView dataGridProductosDisp;
         private Button buttonBorrarUltimo;
         private PictureBox pictureBox1;
+        private Label labelInstrucciones;
+        private Button botonMicros;
+        private Button botonBaterias;
+        private Button botonTeclados;
+        private Button botonBajo;
+        private Button botonGuitarras;
     }
 }

@@ -227,6 +227,7 @@ namespace TiendaInstrumentos
 
         }
 
+        //coge el id de la ultima factura
         private int obtenerUltimoFacturaID()
         {
             int ultimoFacturaID = 0;
@@ -252,6 +253,153 @@ namespace TiendaInstrumentos
             }
 
             return ultimoFacturaID;
+        }
+
+        //select disponibles
+        private void botonGuitarras_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'guitar' AND disponible = 1 ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridProductosDisp.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+        //select disponibles
+        private void botonBajo_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'bass'  AND disponible = 1 ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridProductosDisp.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+        //select disponibles
+        private void botonTeclados_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'keyboards'  AND disponible = 1 ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridProductosDisp.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+        //select disponibles
+        private void botonBaterias_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'drums'  AND disponible = 1 ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridProductosDisp.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+        //select disponibles
+        private void botonMicros_Click(object sender, EventArgs e)
+        {
+
+            string sqlQuery;
+            sqlQuery = "SELECT * FROM Productos WHERE Familia = 'microphones'  AND disponible = 1 ";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridProductosDisp.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+
         }
 
     }

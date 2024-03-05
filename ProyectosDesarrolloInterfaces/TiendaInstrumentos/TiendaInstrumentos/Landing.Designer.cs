@@ -37,21 +37,21 @@
             // 
             botonGO.FlatAppearance.BorderColor = Color.FromArgb(192, 0, 0);
             botonGO.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 192, 0);
-            botonGO.Location = new Point(162, 435);
+            botonGO.Location = new Point(161, 532);
             botonGO.Name = "botonGO";
-            botonGO.Size = new Size(182, 73);
+            botonGO.Size = new Size(182, 28);
             botonGO.TabIndex = 0;
-            botonGO.Text = "GO";
+            botonGO.Text = "Vista sin login";
             botonGO.UseVisualStyleBackColor = true;
             botonGO.Click += botonGO_Click;
             // 
             // botonLogin
             // 
-            botonLogin.Location = new Point(162, 514);
+            botonLogin.Location = new Point(143, 446);
             botonLogin.Name = "botonLogin";
-            botonLogin.Size = new Size(182, 40);
+            botonLogin.Size = new Size(218, 80);
             botonLogin.TabIndex = 1;
-            botonLogin.Text = "login";
+            botonLogin.Text = "LOGIN";
             botonLogin.UseVisualStyleBackColor = true;
             botonLogin.Click += botonLogin_Click;
             // 

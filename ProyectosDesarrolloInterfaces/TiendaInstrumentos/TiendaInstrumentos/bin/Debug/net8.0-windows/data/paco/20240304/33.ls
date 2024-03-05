@@ -1,0 +1,5 @@
+-----------SU PEDIDO-------------
+- 10 pro - 150€
+- player plus - 750€
+- 10 pro - 150€
+- pandereta - 5000€
