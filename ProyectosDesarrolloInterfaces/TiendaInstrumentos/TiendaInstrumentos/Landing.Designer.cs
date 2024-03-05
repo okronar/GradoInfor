@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Landing));
             botonGO = new Button();
             botonLogin = new Button();
+            toolTip1 = new ToolTip(components);
             SuspendLayout();
             // 
             // botonGO
@@ -42,6 +44,7 @@
             botonGO.Size = new Size(182, 28);
             botonGO.TabIndex = 0;
             botonGO.Text = "Vista sin login";
+            toolTip1.SetToolTip(botonGO, "just see whats there");
             botonGO.UseVisualStyleBackColor = true;
             botonGO.Click += botonGO_Click;
             // 
@@ -52,6 +55,7 @@
             botonLogin.Size = new Size(218, 80);
             botonLogin.TabIndex = 1;
             botonLogin.Text = "LOGIN";
+            toolTip1.SetToolTip(botonLogin, "go to login");
             botonLogin.UseVisualStyleBackColor = true;
             botonLogin.Click += botonLogin_Click;
             // 
@@ -73,5 +77,6 @@
 
         private Button botonGO;
         private Button botonLogin;
+        private ToolTip toolTip1;
     }
 }

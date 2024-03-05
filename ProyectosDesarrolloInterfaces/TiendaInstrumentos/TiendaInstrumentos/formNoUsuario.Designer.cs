@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formNoUsuario));
             dataGridViewNoUsu = new DataGridView();
             botonGuitarras = new Button();
@@ -37,6 +38,7 @@
             botonMicros = new Button();
             picBox1 = new PictureBox();
             buttonVolver = new Button();
+            toolTip1 = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)dataGridViewNoUsu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             SuspendLayout();
@@ -120,6 +122,7 @@
             buttonVolver.Size = new Size(153, 23);
             buttonVolver.TabIndex = 8;
             buttonVolver.Text = "Volver";
+            toolTip1.SetToolTip(buttonVolver, "go back");
             buttonVolver.UseVisualStyleBackColor = true;
             buttonVolver.Click += buttonVolver_Click;
             // 
@@ -154,5 +157,6 @@
         private Button botonMicros;
         private PictureBox picBox1;
         private Button buttonVolver;
+        private ToolTip toolTip1;
     }
 }

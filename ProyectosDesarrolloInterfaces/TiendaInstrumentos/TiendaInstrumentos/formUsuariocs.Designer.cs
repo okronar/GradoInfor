@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formUsuariocs));
             botonMicros = new Button();
             botonBaterias = new Button();
@@ -38,6 +39,7 @@
             botonCesta = new Button();
             picbox2 = new PictureBox();
             buttonVolver = new Button();
+            toolTip1 = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picbox2).BeginInit();
             SuspendLayout();
@@ -49,6 +51,7 @@
             botonMicros.Size = new Size(85, 23);
             botonMicros.TabIndex = 12;
             botonMicros.Text = "Micrófonos";
+            toolTip1.SetToolTip(botonMicros, "see mics");
             botonMicros.UseVisualStyleBackColor = true;
             botonMicros.Click += botonMicros_Click;
             // 
@@ -59,6 +62,7 @@
             botonBaterias.Size = new Size(75, 23);
             botonBaterias.TabIndex = 11;
             botonBaterias.Text = "Baterías";
+            toolTip1.SetToolTip(botonBaterias, "see drums");
             botonBaterias.UseVisualStyleBackColor = true;
             botonBaterias.Click += botonBaterias_Click;
             // 
@@ -69,6 +73,7 @@
             botonTeclados.Size = new Size(75, 23);
             botonTeclados.TabIndex = 10;
             botonTeclados.Text = "Teclados";
+            toolTip1.SetToolTip(botonTeclados, "see keyboards");
             botonTeclados.UseVisualStyleBackColor = true;
             botonTeclados.Click += botonTeclados_Click;
             // 
@@ -79,6 +84,7 @@
             botonBajo.Size = new Size(75, 23);
             botonBajo.TabIndex = 9;
             botonBajo.Text = "Bajos";
+            toolTip1.SetToolTip(botonBajo, "see basses");
             botonBajo.UseVisualStyleBackColor = true;
             botonBajo.Click += botonBajo_Click;
             // 
@@ -89,6 +95,7 @@
             botonGuitarras.Size = new Size(75, 23);
             botonGuitarras.TabIndex = 8;
             botonGuitarras.Text = "Guitarras";
+            toolTip1.SetToolTip(botonGuitarras, "see guitars");
             botonGuitarras.UseVisualStyleBackColor = true;
             botonGuitarras.Click += botonGuitarras_Click;
             // 
@@ -112,6 +119,7 @@
             botonCesta.Size = new Size(150, 38);
             botonCesta.TabIndex = 13;
             botonCesta.Text = "Cesta";
+            toolTip1.SetToolTip(botonCesta, "go to buy ");
             botonCesta.UseVisualStyleBackColor = true;
             botonCesta.Click += botonCesta_Click;
             // 
@@ -131,6 +139,7 @@
             buttonVolver.Size = new Size(156, 38);
             buttonVolver.TabIndex = 15;
             buttonVolver.Text = "Volver";
+            toolTip1.SetToolTip(buttonVolver, "go back");
             buttonVolver.UseVisualStyleBackColor = true;
             buttonVolver.Click += buttonVolver_Click;
             // 
@@ -168,5 +177,6 @@
         private Button botonCesta;
         private PictureBox picbox2;
         private Button buttonVolver;
+        private ToolTip toolTip1;
     }
 }

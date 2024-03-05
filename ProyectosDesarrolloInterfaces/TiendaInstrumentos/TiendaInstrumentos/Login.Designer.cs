@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             labelUser = new Label();
             labelPassword = new Label();
@@ -37,6 +38,7 @@
             buttonRegistrar = new Button();
             buttonLogin = new Button();
             buttonVolver = new Button();
+            toolTip1 = new ToolTip(components);
             SuspendLayout();
             // 
             // labelUser
@@ -63,6 +65,7 @@
             txUsername.Name = "txUsername";
             txUsername.Size = new Size(320, 23);
             txUsername.TabIndex = 2;
+            toolTip1.SetToolTip(txUsername, "your username");
             // 
             // txPassword
             // 
@@ -70,6 +73,7 @@
             txPassword.Name = "txPassword";
             txPassword.Size = new Size(320, 23);
             txPassword.TabIndex = 3;
+            toolTip1.SetToolTip(txPassword, "your password");
             txPassword.UseSystemPasswordChar = true;
             // 
             // buttonClear
@@ -79,6 +83,7 @@
             buttonClear.Size = new Size(154, 43);
             buttonClear.TabIndex = 4;
             buttonClear.Text = "Clear";
+            toolTip1.SetToolTip(buttonClear, "clean the textboxes");
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
             // 
@@ -89,6 +94,7 @@
             buttonRegistrar.Size = new Size(168, 43);
             buttonRegistrar.TabIndex = 5;
             buttonRegistrar.Text = "Registrar";
+            toolTip1.SetToolTip(buttonRegistrar, "go to register");
             buttonRegistrar.UseVisualStyleBackColor = true;
             buttonRegistrar.Click += buttonRegistrar_Click;
             // 
@@ -99,6 +105,7 @@
             buttonLogin.Size = new Size(172, 43);
             buttonLogin.TabIndex = 6;
             buttonLogin.Text = "Login";
+            toolTip1.SetToolTip(buttonLogin, "click to login once completed");
             buttonLogin.UseVisualStyleBackColor = true;
             buttonLogin.Click += buttonLogin_Click;
             // 
@@ -109,6 +116,7 @@
             buttonVolver.Size = new Size(172, 47);
             buttonVolver.TabIndex = 7;
             buttonVolver.Text = "Volver";
+            toolTip1.SetToolTip(buttonVolver, "go back");
             buttonVolver.UseVisualStyleBackColor = true;
             buttonVolver.Click += buttonVolver_Click;
             // 
@@ -144,5 +152,6 @@
         private Button buttonRegistrar;
         private Button buttonLogin;
         private Button buttonVolver;
+        private ToolTip toolTip1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cesta));
             labelCodigo = new Label();
             buttonVolver = new Button();
@@ -44,6 +45,7 @@
             botonTeclados = new Button();
             botonBajo = new Button();
             botonGuitarras = new Button();
+            toolTip1 = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)dataGridProductosDisp).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -64,6 +66,7 @@
             buttonVolver.Size = new Size(176, 40);
             buttonVolver.TabIndex = 4;
             buttonVolver.Text = "Volver";
+            toolTip1.SetToolTip(buttonVolver, "go back ");
             buttonVolver.UseVisualStyleBackColor = true;
             buttonVolver.Click += buttonVolver_Click;
             // 
@@ -84,6 +87,7 @@
             buttonComprar.Size = new Size(177, 40);
             buttonComprar.TabIndex = 6;
             buttonComprar.Text = "Comprar";
+            toolTip1.SetToolTip(buttonComprar, "BUY ");
             buttonComprar.UseVisualStyleBackColor = true;
             buttonComprar.Click += buttonComprar_Click;
             // 
@@ -101,6 +105,7 @@
             txboxCodProdAñadir.Size = new Size(243, 23);
             txboxCodProdAñadir.TabIndex = 8;
             txboxCodProdAñadir.TextAlign = HorizontalAlignment.Center;
+            toolTip1.SetToolTip(txboxCodProdAñadir, "codigo for buying ");
             // 
             // dataGridProductosDisp
             // 
@@ -122,6 +127,7 @@
             buttonBorrarUltimo.Size = new Size(188, 40);
             buttonBorrarUltimo.TabIndex = 10;
             buttonBorrarUltimo.Text = "Borrar último";
+            toolTip1.SetToolTip(buttonBorrarUltimo, "erase last product");
             buttonBorrarUltimo.UseVisualStyleBackColor = true;
             buttonBorrarUltimo.Click += buttonBorrarUltimo_Click;
             // 
@@ -151,6 +157,7 @@
             botonMicros.Size = new Size(85, 23);
             botonMicros.TabIndex = 17;
             botonMicros.Text = "Micrófonos";
+            toolTip1.SetToolTip(botonMicros, "available mics");
             botonMicros.UseVisualStyleBackColor = true;
             botonMicros.Click += botonMicros_Click;
             // 
@@ -161,6 +168,7 @@
             botonBaterias.Size = new Size(75, 23);
             botonBaterias.TabIndex = 16;
             botonBaterias.Text = "Baterías";
+            toolTip1.SetToolTip(botonBaterias, "available drums");
             botonBaterias.UseVisualStyleBackColor = true;
             botonBaterias.Click += botonBaterias_Click;
             // 
@@ -171,6 +179,7 @@
             botonTeclados.Size = new Size(75, 23);
             botonTeclados.TabIndex = 15;
             botonTeclados.Text = "Teclados";
+            toolTip1.SetToolTip(botonTeclados, "available keyboards");
             botonTeclados.UseVisualStyleBackColor = true;
             botonTeclados.Click += botonTeclados_Click;
             // 
@@ -181,6 +190,7 @@
             botonBajo.Size = new Size(75, 23);
             botonBajo.TabIndex = 14;
             botonBajo.Text = "Bajos";
+            toolTip1.SetToolTip(botonBajo, "available basses");
             botonBajo.UseVisualStyleBackColor = true;
             botonBajo.Click += botonBajo_Click;
             // 
@@ -191,6 +201,7 @@
             botonGuitarras.Size = new Size(75, 23);
             botonGuitarras.TabIndex = 13;
             botonGuitarras.Text = "Guitarras";
+            toolTip1.SetToolTip(botonGuitarras, "available guitars");
             botonGuitarras.UseVisualStyleBackColor = true;
             botonGuitarras.Click += botonGuitarras_Click;
             // 
@@ -241,5 +252,6 @@
         private Button botonTeclados;
         private Button botonBajo;
         private Button botonGuitarras;
+        private ToolTip toolTip1;
     }
 }
