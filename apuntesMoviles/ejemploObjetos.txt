@@ -1,0 +1,23 @@
+data class Persona(val nombre: String, val apellido: String)
+
+fun main() {
+    val nombres = listOf("Paco", "María", "Juan")
+    val apellidos = listOf("Porras", "González", "Martínez")
+
+    val personas = mutableListOf<Persona>()
+
+    // Verificar que las listas tengan la misma cantidad de elementos
+    if (nombres.size == apellidos.size) {
+        for (i in nombres.indices) {
+            val persona = Persona(nombres[i], apellidos[i])
+            personas.add(persona)
+        }
+    } else {
+        println("Las listas de nombres y apellidos tienen diferente tamaño.")
+    }
+
+    // Imprimir la lista de personas
+    for (persona in personas) {
+        println("${persona.nombre} ${persona.apellido}")
+    }
+}
