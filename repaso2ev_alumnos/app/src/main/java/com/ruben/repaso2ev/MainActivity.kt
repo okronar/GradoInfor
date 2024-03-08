@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
                     val listMovies = movies.map { it.toDatabase() }
                     room.getMovieDao().insertAllMovies(listMovies)
-                    Log.i("Consulta", "Funciona :)")
+
 
                 }  else {
                 Log.i("Consulta", "No funciona :(")
