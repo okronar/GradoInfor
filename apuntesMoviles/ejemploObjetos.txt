@@ -21,3 +21,26 @@ fun main() {
         println("${persona.nombre} ${persona.apellido}")
     }
 }
+
+
+OTRA MANERA
+
+data class Persona(val nombre: String, val apellido: String)
+
+fun main() {
+    val nombres = listOf("Paco", "María", "Juan")
+    val apellidos = listOf("Porras")
+
+    val personas = mutableListOf<Persona>()
+
+    for (i in nombres.indices) {
+        val apellido = if (i < apellidos.size) apellidos[i] else "Desconocido"
+        val persona = Persona(nombres[i], apellido)
+        personas.add(persona)
+    }
+
+    // Imprimir la lista de personas
+    for (persona in personas) {
+        println("${persona.nombre} ${persona.apellido}")
+    }
+}
