@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|d:\\sergio\\proyectosdesarrollointerfaces\\ejemplofilebase\\ejemplofilebase\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\ejemplofilebase\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\ejemplofilebase\\model\\image_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\model\\image_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\ejemplofilebase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\ejemplofilebase\\model\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\model\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\ejemplofilebase\\service\\counter_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\service\\counter_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\ejemplofilebase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C9F418-CEF6-4DA6-BC50-5F9A76FE430A}|EjemploFileBase\\EjemploFireBase.csproj|solutionrelative:ejemplofilebase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form2.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Form2.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form2.cs",
+              "RelativeToolTip": "EjemploFileBase\\Form2.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAQwG4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Image_model.cs",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Model\\Image_model.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Model\\Image_model.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Model\\Image_model.cs",
+              "RelativeToolTip": "EjemploFileBase\\Model\\Image_model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form1.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Form1.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form1.cs",
+              "RelativeToolTip": "EjemploFileBase\\Form1.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAArwKIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form2.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Form2.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploFileBase\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.867Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form1.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Form1.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploFileBase\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.868Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Counter_class.cs",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Service\\Counter_class.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Service\\Counter_class.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Service\\Counter_class.cs",
+              "RelativeToolTip": "EjemploFileBase\\Service\\Counter_class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Model\\Data.cs",
+              "RelativeDocumentMoniker": "EjemploFileBase\\Model\\Data.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\EjemploFileBase\\EjemploFileBase\\Model\\Data.cs",
+              "RelativeToolTip": "EjemploFileBase\\Model\\Data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:09:48.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

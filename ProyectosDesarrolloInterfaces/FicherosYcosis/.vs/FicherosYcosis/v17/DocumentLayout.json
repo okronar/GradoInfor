@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\FicherosYcosis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC410BFD-B8FD-4248-9005-D8C3696C5938}|FicherosYcosis\\FicherosYcosis.csproj|d:\\sergio\\proyectosdesarrollointerfaces\\ficherosycosis\\ficherosycosis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC410BFD-B8FD-4248-9005-D8C3696C5938}|FicherosYcosis\\FicherosYcosis.csproj|solutionrelative:ficherosycosis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\FicherosYcosis\\FicherosYcosis\\Program.cs",
+              "RelativeDocumentMoniker": "FicherosYcosis\\Program.cs",
+              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\FicherosYcosis\\FicherosYcosis\\Program.cs",
+              "RelativeToolTip": "FicherosYcosis\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-12T15:10:47.757Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

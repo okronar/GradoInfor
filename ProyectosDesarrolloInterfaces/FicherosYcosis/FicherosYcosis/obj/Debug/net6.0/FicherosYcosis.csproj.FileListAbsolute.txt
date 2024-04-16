@@ -12,3 +12,4 @@ D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\
 D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.pdb
 D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.genruntimeconfig.cache
 D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\ref\FicherosYcosis.dll
+D:\Sergio\ProyectosDesarrolloInterfaces\FicherosYcosis\FicherosYcosis\obj\Debug\net6.0\FicherosYcosis.sourcelink.json

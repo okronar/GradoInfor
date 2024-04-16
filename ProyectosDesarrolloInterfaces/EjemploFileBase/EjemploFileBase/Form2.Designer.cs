@@ -84,6 +84,7 @@
             buttonRecuperar.TabIndex = 2;
             buttonRecuperar.Text = "Recuperar";
             buttonRecuperar.UseVisualStyleBackColor = true;
+            buttonRecuperar.Click += buttonRecuperar_Click;
             // 
             // pictureBox1
             // 

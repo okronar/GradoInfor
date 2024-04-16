@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EjemploFireBase
-build_property.ProjectDir = C:\Users\okron\OneDrive\Escritorio\DAMD\GradoInfor\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\
+build_property.ProjectDir = D:\Sergio\ProyectosDesarrolloInterfaces\EjemploFileBase\EjemploFileBase\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

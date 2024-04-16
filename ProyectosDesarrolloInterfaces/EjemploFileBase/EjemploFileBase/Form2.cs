@@ -2,6 +2,7 @@
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using RestSharp.Authenticators.OAuth;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +34,7 @@ namespace EjemploFireBase
         {
             InitializeComponent();
 
-  
+
         }
         private void Form2_Load_1(object sender, EventArgs e)
         {
@@ -41,7 +42,7 @@ namespace EjemploFireBase
         }
 
 
-       
+
 
         private void buttonAbrir_Click(object sender, EventArgs e)
         {
@@ -80,6 +81,50 @@ namespace EjemploFireBase
             pictureBox1.Image = null;
         }
 
+       
 
+
+        //static void insertarSQLImageni(string SQLconnection, Bitmap imagen, PictureBox pb)
+        //{
+
+        //    MemoryStream ms = new MemoryStream();
+        //    pictureBox1.Image.Save(ms, ImageFormat.Png);
+
+        //    byte[] arr = ms.GetBuffer();
+        //    string output = Convert.ToBase64String(arr);
+
+        //    var data = new Image_model
+
+        //    {
+        //        Img = output
+        //    };
+
+        //    SetResponse response = await client.SetTaskAsync("Image/", data);
+        //    Image_model result = response.ResultAs<Image_model>();
+
+        //    MessageBox.Show("Imagen insertada con exito");
+        //    //vacia la imagen una vez hecho 
+
+        //    pictureBox1.Image = null;
+        //}
+
+
+        private void buttonRecuperar_Click(object sender, EventArgs e)
+        {
+            //recuperacion con la base de datosaqui el sql no el firebase 
+            String resultadoSql= "kjhkjh";
+            byte[] arr = Convert.FromBase64String(resultadoSql);
+
+            MemoryStream ms = new MemoryStream();
+            ms.Write(arr, 0, Convert.ToInt32(arr.Length));
+
+            Bitmap bm = new Bitmap(ms,false);
+            ms.Dispose();
+
+            AQUIELNOMBREDELBOX.image = bm;
+
+
+
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace CrearComponentes1
 
             set { redimensionar = value; }
         }
-        protected override void OnMouseEnter(EventArgs e) { 
+       protected override void OnMouseEnter(EventArgs e) { 
             if(redimensionar)
             {
                 //autoreferencia a supropio tamaño
@@ -31,7 +31,7 @@ namespace CrearComponentes1
         }
 
 
-        
+
         //public Component1()
         //{
         //    InitializeComponent();

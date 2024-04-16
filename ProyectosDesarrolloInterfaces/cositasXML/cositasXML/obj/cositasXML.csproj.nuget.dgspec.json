@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj": {}
+    "D:\\Sergio\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj": {}
   },
   "projects": {
-    "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj": {
+    "D:\\Sergio\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj",
+        "projectUniqueName": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj",
         "projectName": "cositasXML",
-        "projectPath": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj",
-        "packagesPath": "C:\\Users\\okron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okron\\OneDrive\\Escritorio\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\obj\\",
+        "projectPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\cositasXML.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\cositasXML\\cositasXML\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\okron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
