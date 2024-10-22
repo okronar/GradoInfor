@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HamburgueseriaQueHamburguesea")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+130e0ecbe041db1d2345f0824a58d4ef5433625d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c7363be1fbec78a50f44985f799a76040fcb653")]
 [assembly: System.Reflection.AssemblyProductAttribute("HamburgueseriaQueHamburguesea")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HamburgueseriaQueHamburguesea")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

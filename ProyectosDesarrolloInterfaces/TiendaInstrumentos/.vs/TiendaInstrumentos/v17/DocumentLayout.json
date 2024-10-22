@@ -1,34 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\",
+  "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|d:\\sergio\\proyectosdesarrollointerfaces\\tiendainstrumentos\\tiendainstrumentos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|c:\\users\\okron\\damd\\gradoinfor\\proyectosdesarrollointerfaces\\tiendainstrumentos\\tiendainstrumentos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|d:\\sergio\\proyectosdesarrollointerfaces\\tiendainstrumentos\\tiendainstrumentos\\formusuariocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\formusuariocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|d:\\sergio\\proyectosdesarrollointerfaces\\tiendainstrumentos\\tiendainstrumentos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\cesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\cesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\formnousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\formnousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\formusuariocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\formusuariocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\landing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\landing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\tiendainstrumentos\\registrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5423AF8-CE84-47B5-86D4-155E421E4B82}|TiendaInstrumentos\\TiendaInstrumentos.csproj|solutionrelative:tiendainstrumentos\\registrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,87 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "formUsuariocs.cs",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\formUsuariocs.cs",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\formUsuariocs.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\formUsuariocs.cs",
-              "RelativeToolTip": "TiendaInstrumentos\\formUsuariocs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABiAAAA",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Form1.cs",
+              "RelativeDocumentMoniker": "TiendaInstrumentos\\Form1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Form1.cs [Design]",
+              "RelativeToolTip": "TiendaInstrumentos\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T15:28:32.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:45:37.537Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Producto.cs",
+              "RelativeDocumentMoniker": "TiendaInstrumentos\\Producto.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Producto.cs",
+              "RelativeToolTip": "TiendaInstrumentos\\Producto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T20:24:31.44Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\App.config",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\App.config",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\App.config",
-              "RelativeToolTip": "TiendaInstrumentos\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-03-25T15:27:07.427Z",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Form1.cs",
+              "RelativeDocumentMoniker": "TiendaInstrumentos\\Form1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Form1.cs",
+              "RelativeToolTip": "TiendaInstrumentos\\Form1.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAowAMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T11:30:51.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Cesta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Cesta.cs",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\Cesta.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Cesta.cs [Dise\u00F1o]",
+              "Title": "Registrar.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Registrar.cs",
+              "RelativeDocumentMoniker": "TiendaInstrumentos\\Registrar.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Registrar.cs",
+              "RelativeToolTip": "TiendaInstrumentos\\Registrar.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:35:46.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "formNoUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\formNoUsuario.cs",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\formNoUsuario.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\formNoUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:35:19.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "formUsuariocs.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\formUsuariocs.cs",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\formUsuariocs.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\formUsuariocs.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TiendaInstrumentos\\formUsuariocs.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:33:18.782Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Landing.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Landing.cs",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\Landing.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\GradoInfor\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Landing.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:32:47.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Login.cs",
-              "RelativeDocumentMoniker": "TiendaInstrumentos\\Login.cs",
-              "ToolTip": "D:\\Sergio\\ProyectosDesarrolloInterfaces\\TiendaInstrumentos\\TiendaInstrumentos\\Login.cs [Design]",
-              "RelativeToolTip": "TiendaInstrumentos\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:31:24.477Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-29T17:53:56.157Z"
             }
           ]
         }
